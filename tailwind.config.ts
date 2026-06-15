@@ -1,17 +1,22 @@
+// tailwind.config.ts
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#2ECC71",
+        dark: "#1A1A2E",
+        light: "#F5F5F5",
+        secondary: "#FFFFFF",
+        black: "#000000",
+        gray: "#1E1E1E",
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        assistant: ["Assistant", "sans-serif"],
+        merriweather: ["Merriweather", "serif"],
       },
     },
   },
