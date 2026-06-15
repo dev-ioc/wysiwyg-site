@@ -12,10 +12,10 @@ import {
 const Navbar = () => {
   return (
     <div className="grid grid-cols-12 col-span-12 h-[761px] w-full border-b border-light bg-[url('/images/bg.png')] bg-cover bg-center bg-no-repeat">
-      <div className="col-span-12 flex flex-col lg:flex-row h-auto lg:h-[150px] justify-between items-center bg-white/40 backdrop-blur-sm px-4 py-3 gap-4">
+      <div className="col-span-12 flex flex-col lg:flex-row h-auto lg:h-[150px] justify-between items-center bg-white/40 px-4 py-3 gap-4">
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
           <img
-            src="/images/logo.png"
+            src="/images/header.png"
             alt="logo"
             className="w-[160px] h-[77px] cursor-pointer"
             onClick={() => (window.location.href = "/")}
@@ -54,8 +54,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="container px-4 xl:px-0 mx-auto col-span-12 flex  fixed left-1/2 transform -translate-x-1/2 top-28 ml-14 z-20 py-2">
-        <nav className="w-full bg-white rounded-full shadow-lg flex items-center justify-between h-[64px]">
+      <div className="container px-4 xl:px-0 mx-auto col-span-12 flex  fixed left-1/2 transform -translate-x-1/2 top-28 ml-14 z-20 py-2 ">
+        <nav className="w-full bg-white rounded-full shadow-lg flex items-center justify-between h-[64px] backdrop-blur-sm bg-white">
           <ul className="flex items-center gap-8 list-none px-4 font-assistant text-[17px] text-gray">
             {[
               { label: "Accueil", href: "/" },

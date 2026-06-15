@@ -1,7 +1,13 @@
-import Image from "next/image";
+import Navbar from "@/components/layout/Navbar";
+import About from "@/components/sections/About";
+import QuickServices from "@/components/sections/QuickServices";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main>
+      <Navbar />
+      <QuickServices />
+      <About />
+    </main>
   );
 }
