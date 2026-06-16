@@ -1,13 +1,21 @@
 import Navbar from "@/components/layout/Navbar";
 import About from "@/components/sections/About";
 import QuickServices from "@/components/sections/QuickServices";
+import Services from "@/components/sections/Services";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
-      <QuickServices />
-      <About />
+      <section id="QuickServices">
+        <QuickServices />
+      </section>
+      <section id="about-section">
+        <About />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
     </main>
   );
 }

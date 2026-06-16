@@ -14,7 +14,8 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
     --font-assistant: "Assistant", sans-serif;
-    --font-merriweather: "Merriweather", serif;
+    --font-merriweather: "Merriweather", sans-serif;
+    --font-inter: "Inter", sans-serif;
   }
 }
 
@@ -32,4 +33,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 140px;
 }

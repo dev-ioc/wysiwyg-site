@@ -9,14 +9,16 @@ const features = [
 
 const About = () => {
   return (
-    <section className="w-full py-16 bg-gray-100 grid-cols-12 gap-4 col-span-12">
+    <div className="w-full py-0 bg-gray-100 grid-cols-12 gap-4 col-span-12">
       <div className="container mx-auto flex flex-row justify-center items-center gap-20 px-12 col-span-10 col-start-2">
-        <img
-          src="/images/logo.png"
-          alt="WYSIWYG"
-          className="w-[521px] h-[600px] py-10 col-span-4 col-start-2"
-        />
-        <div className="flex-1 flex flex-col gap-4 col-span-6 col-start-6">
+        <div className="pt-10">
+          <img
+            src="/images/logo.png"
+            alt="WYSIWYG"
+            className="w-[500px] h-[710px] py-10 col-span-4 col-start-2"
+          />
+        </div>
+        <div className="flex-1 flex flex-col gap-4 col-span-6 col-start-6 space-y-4">
           <span className="text-primary text-[13px] font-bold uppercase tracking-widest">
             Bienvenue à WYSIWYG
           </span>
@@ -57,7 +59,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
