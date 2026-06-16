@@ -1,6 +1,6 @@
 const WhyUs = () => {
   return (
-    <div className="px-8 h-auto mb-8 bg-[#D9D9D9] py-2">
+    <div className="px-8 h-auto mb-0 bg-[#D9D9D9] py-2">
       <div className="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
         <div className="flex flex-col gap-8">
           <h1 className="text-left text-[#222222] font-bold text-[38px] font-merriweather">

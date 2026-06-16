@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import About from "@/components/sections/About";
+import Offers from "@/components/sections/Offers";
 import QuickServices from "@/components/sections/QuickServices";
 import Services from "@/components/sections/Services";
 import WhyUs from "@/components/sections/WhyUs";
@@ -19,6 +20,9 @@ export default function Home() {
       </section>
       <section id="why-us">
         <WhyUs />
+      </section>
+      <section id="offers">
+        <Offers />
       </section>
     </main>
   );
