@@ -5,7 +5,7 @@ const Offers = () => {
         <h1 className="text-center font-bold text-[38px] font-merriweather text-[#222222]">
           Offres associées
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14giti">
           <div className="flex flex-col items-center text-center gap-4 ">
             <div className="bg-[url('/images/support-users.png')] bg-no-repeat bg-contain bg-center w-[210px] h-[210px]" />
             <div className="flex flex-col gap-2 w-full">
