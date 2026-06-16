@@ -9,20 +9,20 @@ const features = [
 
 const About = () => {
   return (
-    <div className="w-full py-0 bg-[#D9D9D9] grid-cols-12 gap-4 col-span-12">
-      <div className="container mx-auto flex flex-row justify-center items-center gap-20 px-12 col-span-10 col-start-2">
-        <div className="pt-10">
+    <div className="w-full py-0 bg-[#D9D9D9]">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-20 px-6 lg:px-12">
+        <div className="pt-10 px-4 lg:px-0 md:px-4 sm:px-4">
           <img
             src="/images/logo.png"
             alt="WYSIWYG"
-            className="w-[500px] h-[710px] py-10 col-span-4 col-start-2"
+            className="w-[480px] h-[710px] py-10 col-span-4 col-start-2"
           />
         </div>
-        <div className="flex-1 flex flex-col gap-4 col-span-6 col-start-6 space-y-4">
+        <div className="flex-1 flex flex-col gap-4 w-full space-y-4">
           <span className="text-primary text-[13px] font-bold uppercase tracking-widest">
             Bienvenue à WYSIWYG
           </span>
-          <h2 className="text-4xl font-bold text-gray-800 leading-snug">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-snug">
             What You See Is What You Get
           </h2>
           <p className="text-gray-600 text-[15px] leading-relaxed">
@@ -38,6 +38,7 @@ const About = () => {
             Wysiwyg s&apos;engage à traiter les métiers de ses clients comme
             s&apos;il s&apos;agissait des siens.
           </p>
+
           <ul className="flex flex-col gap-2 mt-2">
             {features.map((feature) => (
               <li
@@ -49,6 +50,7 @@ const About = () => {
               </li>
             ))}
           </ul>
+
           <div className="mt-4">
             <a
               href="/a-propos"
