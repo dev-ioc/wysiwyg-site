@@ -17,6 +17,7 @@ const config: Config = {
         sans: ["Inter", "sans-serif"],
         assistant: ["Assistant", "sans-serif"],
         merriweather: ["Merriweather", "sans-serif"],
+        merriweather_serif: ["Merriweather", "serif"],
       },
     },
   },

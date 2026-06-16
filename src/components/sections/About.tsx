@@ -9,7 +9,7 @@ const features = [
 
 const About = () => {
   return (
-    <div className="w-full py-0 bg-gray-100 grid-cols-12 gap-4 col-span-12">
+    <div className="w-full py-0 bg-[#D9D9D9] grid-cols-12 gap-4 col-span-12">
       <div className="container mx-auto flex flex-row justify-center items-center gap-20 px-12 col-span-10 col-start-2">
         <div className="pt-10">
           <img

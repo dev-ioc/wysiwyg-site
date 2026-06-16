@@ -10,7 +10,6 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-// Fonction unique pour extraire l'id depuis le href, utilisée partout
 const getSectionId = (href: string) => href.replace("/", "").replace("#", "");
 
 const navLinks = [
@@ -95,7 +94,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="container px-4 xl:px-0 mx-auto col-span-12 flex  fixed left-1/2 transform -translate-x-1/2 top-28 ml-14 z-20 py-2 ">
-          <nav className="w-full bg-white rounded-full shadow-lg flex items-center justify-between h-[64px] backdrop-blur-sm bg-white">
+          <nav className="w-full bg-white rounded-full shadow-lg flex items-center justify-between h-[64px] backdrop-blur-sm bg-white/25">
             <ul className="flex items-center gap-8 list-none px-4 font-assistant text-[17px] text-gray">
               {navLinks.map((item) => {
                 const isActive = activeSection === getSectionId(item.href);
