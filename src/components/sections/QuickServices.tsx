@@ -1,4 +1,3 @@
-// src/components/sections/QuickServices.tsx
 const services = [
   {
     label: "Automatisation IA",
