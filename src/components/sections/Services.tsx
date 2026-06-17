@@ -17,10 +17,10 @@ const Services = () => {
                 Gestion & Comptabilité
               </h1>
               <p className="text-[#A8A8A8] text-[18px] font-assistant font-bold">
-                Un outil simple, fiable et complet de comptabilité, de reporting
-                et d’analyse, offrant des accès rapides et exhaustifs à
-                l’information et permettant d’optimiser vos processus
-                comptables.
+                Un apport significatif à votre performance financière grâce à
+                une information fiable et accessible, un reporting pertinent et
+                des analyses approfondies permettant d'améliorer la prise de
+                décision et l'efficacité des processus comptables.
               </p>
             </div>
           </div>
