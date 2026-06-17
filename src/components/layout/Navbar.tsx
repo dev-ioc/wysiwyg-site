@@ -14,7 +14,7 @@ const getSectionId = (href: string) => href.replace("/", "").replace("#", "");
 
 const navLinks = [
   { label: "Accueil", href: "#accueil" },
-  { label: "À propos", href: "#about-section" },
+  { label: "À propos", href: "/about" },
   { label: "Actualités", href: "#actualites" },
   { label: "Services", href: "#services" },
   { label: "Blog", href: "#blog" },

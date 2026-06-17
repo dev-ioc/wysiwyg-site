@@ -13,9 +13,9 @@ export default function Home() {
       <section id="QuickServices">
         <QuickServices />
       </section>
-      <section id="about-section">
+      {/* <section id="about-section">
         <About />
-      </section>
+      </section> */}
       <section id="services">
         <Services />
       </section>
