@@ -1,6 +1,6 @@
 const Offers = () => {
   return (
-    <div className="px-8 h-auto space-y-0 mb-0 bg-white">
+    <div className="px-8 h-auto space-y-0 py-16 bg-white">
       <div className="container mx-auto py-8 space-y-8">
         <h1 className="text-center font-bold text-[38px] font-merriweather text-[#222222]">
           Offres associées

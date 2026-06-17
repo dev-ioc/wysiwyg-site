@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import About from "@/components/sections/About";
+import ContactForm from "@/components/sections/ContactForm";
 import Offers from "@/components/sections/Offers";
 import QuickServices from "@/components/sections/QuickServices";
 import Services from "@/components/sections/Services";
@@ -23,6 +24,9 @@ export default function Home() {
       </section>
       <section id="offers">
         <Offers />
+      </section>
+      <section id="contact">
+        <ContactForm />
       </section>
     </main>
   );
