@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import PageHeader from "@/components/layout/Header";
 import About from "@/components/sections/About";
 
@@ -14,6 +15,7 @@ export default function AboutPage() {
     <>
       <PageHeader navLinks={navLinks} />
       <About />
+      <Footer />
     </>
   );
 }

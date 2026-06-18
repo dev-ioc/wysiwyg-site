@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import AlsoSection from "@/components/sections/AlsoSection";
 import ContactForm from "@/components/sections/ContactForm";
@@ -31,6 +32,9 @@ export default function Home() {
       </section>
       <section id="also">
         <AlsoSection />
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
     </main>
   );
