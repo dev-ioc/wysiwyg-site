@@ -20,7 +20,7 @@ const cards = [
   {
     title: "Satisfaction client",
     description:
-      "La confiance de nos clients est le moteur de notre croissance et de notre engagement qualité.",
+      "La confiance de nos clients est le moteur de notre croissance et de notre engagement qualité. Nous sommes fiers de nos 207 Clients entreprise. Ce chiffre ne cesse de s’accroitre.",
     hoverTitle: "Clients satisfaits",
     hoverDescription:
       "Nous sommes fiers de nos 207 Clients entreprise. Ce chiffre ne cesse de s’accroitre.",
@@ -55,7 +55,7 @@ const AlsoSection = () => {
                     absolute inset-0
                     rounded-[8px]
                     bg-white
-                    shadow-xl
+                    shadow-lg
                     px-6 py-10
                     [backface-visibility:hidden]
                   "
@@ -76,7 +76,7 @@ const AlsoSection = () => {
                     absolute inset-0
                     rounded-[8px]
                     bg-[#52BC71]
-                    shadow-xl
+                    shadow-lg
                     px-6 py-10
                     text-white
                     [transform:rotateY(180deg)]
