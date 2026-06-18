@@ -164,14 +164,7 @@ const Footer = () => {
               </h2>
               <ul className="text-black text-[15px] md:text-[16px] font-assistant space-y-2 leading-[1.6rem]">
                 {servicesList.map((service) => (
-                  <li key={service}>
-                    <Link
-                      href={`/services/${service.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-")}`}
-                      className="hover:text-[#52BC71] transition-colors duration-300"
-                    >
-                      {service}
-                    </Link>
-                  </li>
+                  <li key={service}>{service}</li>
                 ))}
               </ul>
             </section>
@@ -210,7 +203,7 @@ const Footer = () => {
                   <Link
                     key={link.label}
                     href={link.href}
-                    className="text-black text-[15px] md:text-[16px] hover:text-[#52BC71] transition-colors duration-300 relative group w-fit mx-auto md:mx-0"
+                    className="text-black text-[15px] md:text-[16px] hover:text-white transition-colors duration-300 relative group w-fit mx-auto md:mx-0"
                   >
                     {link.label}
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#52BC71] transition-all duration-300 group-hover:w-full"></span>
