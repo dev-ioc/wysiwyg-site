@@ -1,8 +1,19 @@
+"use client";
+import { useInView } from "@/hooks/useInView";
+
 const WhyUs = () => {
+  const { ref, isVisible } = useInView(0.2);
   return (
     <div className="px-8 h-auto mb-0 bg-[#D9D9D9] py-2">
       <div className="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
-        <div className="flex flex-col gap-8">
+        <div
+          ref={ref}
+          className={`flex flex-col gap-8 transition-all duration-700 ease-out ${
+            isVisible
+              ? "opacity-100 translate-x-0"
+              : "opacity-0 -translate-x-10"
+          }`}
+        >
           <h1 className="text-left text-[#222222] font-bold text-[38px] font-merriweather">
             Pourquoi nous choisir ?
           </h1>
@@ -65,7 +76,10 @@ const WhyUs = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[url('/images/why-choise-us.png')] bg-no-repeat bg-contain bg-center w-full h-[450px] lg:h-[536px]" />
+        <div
+          ref={ref}
+          className={`bg-[url('/images/why-choise-us.png')] bg-no-repeat bg-contain bg-center w-full h-[450px] lg:h-[536px] ${isVisible ? "animate-slideLeft [animation-delay:200ms]" : "opacity-0"}   `}
+        />
       </div>
     </div>
   );

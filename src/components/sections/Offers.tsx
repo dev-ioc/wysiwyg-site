@@ -1,11 +1,17 @@
+"use client";
+import { useInView } from "@/hooks/useInView";
 const Offers = () => {
+  const { ref, isVisible } = useInView(0.2);
   return (
     <div className="px-8 h-auto space-y-0 py-16 bg-[#F1F1F1]">
       <div className="container mx-auto py-4 space-y-8">
         <h1 className="text-center font-bold text-[38px] font-merriweather text-[#222222]">
           Offres associées
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 py-10">
+        <div
+          ref={ref}
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 py-10 ${isVisible ? "animate-slideTop [animation-delay:200ms]" : "opacity-0"}`}
+        >
           <div className="flex flex-col items-center text-center gap-4 ">
             <div className="bg-[url('/images/support-users.png')] bg-no-repeat bg-contain bg-center w-[210px] h-[210px]" />
             <div className="flex flex-col gap-2 w-full">
