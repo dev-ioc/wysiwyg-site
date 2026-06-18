@@ -1,4 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
+import AlsoSection from "@/components/sections/AlsoSection";
 import ContactForm from "@/components/sections/ContactForm";
 import HostedServices from "@/components/sections/HostedServices";
 import Offers from "@/components/sections/Offers";
@@ -27,6 +28,9 @@ export default function Home() {
       </section>
       <section id="hosted-services">
         <HostedServices />
+      </section>
+      <section id="also">
+        <AlsoSection />
       </section>
     </main>
   );

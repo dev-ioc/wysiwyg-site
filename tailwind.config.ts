@@ -19,6 +19,7 @@ const config: Config = {
         assistant: ["Assistant", "sans-serif"],
         merriweather: ["Merriweather", "sans-serif"],
         merriweather_serif: ["Merriweather", "serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
