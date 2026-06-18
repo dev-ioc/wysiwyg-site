@@ -73,7 +73,6 @@ const Footer = () => {
     "Test 4",
     "Test 5",
     "Test 6",
-    "Test 7",
   ];
 
   return (
@@ -162,7 +161,7 @@ const Footer = () => {
               >
                 Nos Services
               </h2>
-              <ul className="text-white/90 text-[14px] md:text-[15px] font-assistant space-y-2 leading-[1.8rem]">
+              <ul className="text-white/90 text-[14px] md:text-[15px] font-assistant space-y-2">
                 {servicesList.map((service) => (
                   <li key={service}>{service}</li>
                 ))}
@@ -221,7 +220,7 @@ const Footer = () => {
               >
                 Dernier article
               </h2>
-              <ul className="text-white/90 text-[14px] md:text-[15px] font-assistant space-y-2 leading-[1.8rem]">
+              <ul className="text-white/90 text-[14px] md:text-[15px] font-assistant space-y-2 ">
                 {recentArticles.map((article, index) => (
                   <li key={index}>
                     <Link
