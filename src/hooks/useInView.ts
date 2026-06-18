@@ -7,19 +7,20 @@ export const useInView = (threshold = 0.2) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        setIsVisible(entry.isIntersecting);
       },
       { threshold },
     );
 
-    if (ref.current) observer.observe(ref.current);
+    observer.observe(element);
 
-    // return () => observer.disconnect();
-  }, []);
+    return () => observer.disconnect();
+  }, [threshold]);
 
   return { ref, isVisible };
 };
