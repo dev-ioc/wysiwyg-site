@@ -2,7 +2,7 @@ const ContactForm = () => {
   return (
     <div className="w-full bg-[url('/images/bg-contact.png')] bg-no-repeat bg-cover bg-center px-4 py-12 lg:h-[417px]">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-        <div className="text-white space-y-10 pt-4">
+        <div className="text-white space-y-10 lg:-mt-20">
           <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold font-merriweather leading-tight">
             Avez-vous des questions ?
           </h1>
@@ -32,7 +32,7 @@ const ContactForm = () => {
         mx-auto
         lg:mx-62
         lg:justify-self-end
-        mt-8 lg:-mt-28
+        mt-8 lg:-mt-24
         lg:h-[500px]
         lg:space-y-8
       "
