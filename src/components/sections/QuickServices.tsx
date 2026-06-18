@@ -4,42 +4,42 @@ const services = [
     description:
       "Automatisez vos taches avec les meilleurs outils et les lier à vos projets avec une possibilité d'optimisation.",
     icon: "/images/automatisation.avif",
-    href: "https://www.indianoceancloud.com/automatisation",
+    href: "/",
   },
   {
     label: "ERP Axelor",
     description:
       "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
     icon: "/images/logo_axelor.avif",
-    href: "https://www.indianoceancloud.com/erpaxelor",
+    href: "/",
   },
   {
     label: "Développement d'application",
     description:
       "De la conception au développement, en passant par la maintenance et la gestion d'applications logicielles.",
     icon: "/images/application.avif",
-    href: "https://www.indianoceancloud.com/appdev",
+    href: "/",
   },
   {
     label: "Visual Planning",
     description:
       "L'outil incontournable pour organiser et suivre vos projets efficacement. Planification des ressources, gestion des plannings et suivi en temps réel de vos activités.",
     icon: "/images/visualPlanning.avif",
-    href: "https://www.indianoceancloud.com/visualplanning",
+    href: "/",
   },
   {
     label: "Messagerie BlueMind",
     description:
       "Une plateforme collaborative pour optimiser vos échanges. Messagerie professionnelle, calendrier partagé, contacts unifiés — une solution souveraine et performante.",
     icon: "/images/bluemind.avif",
-    href: "https://www.indianoceancloud.com/bluemind",
+    href: "/",
   },
   {
     label: "Infogérance",
     description:
       "Une infrastructure IT performante et sécurisée. Nous prenons en charge la gestion, la supervision et l'optimisation de vos systèmes informatiques pour garantir leur disponibilité et leur performance.",
     icon: "/images/Infogérance.avif",
-    href: "https://www.indianoceancloud.com/infogerance",
+    href: "/",
   },
 ];
 
