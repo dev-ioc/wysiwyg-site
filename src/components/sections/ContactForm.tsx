@@ -8,7 +8,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState(false);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    const form = e.currentTarget;
     try {
       setLoading(true);
 
@@ -19,13 +19,13 @@ const ContactForm = () => {
         phone: formData.get("phone"),
         email: formData.get("email"),
         subject: formData.get("subject"),
-        date: formData.get("date"),
-        time: formData.get("time"),
+
         message: formData.get("message"),
       };
       const result = contactSchema.safeParse(rawData);
-      setMessage(!result.success);
+
       if (!result.success) {
+        setMessage(!result.success);
         const errors = result.error.flatten().fieldErrors;
         console.log(errors);
 
@@ -49,7 +49,7 @@ const ContactForm = () => {
       }
 
       toast.success(data.message);
-      e.currentTarget.reset();
+      form.reset();
     } catch (error: any) {
       console.error(error);
       alert(error.message || "Erreur lors de l'envoi du message");
@@ -117,7 +117,7 @@ const ContactForm = () => {
               />
               <input
                 name="phone"
-                type="tel"
+                type="text"
                 placeholder="Téléphone"
                 className={`border-b ${message ? "border-red-500 " : "border-grey"} px-3 py-2 text-sm focus:outline-none w-full`}
               />
