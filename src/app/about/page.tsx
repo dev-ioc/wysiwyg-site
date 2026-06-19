@@ -14,7 +14,7 @@ const navLinks = [
 export default function AboutPage() {
   return (
     <>
-      <About />;
+      <About />
     </>
   );
 }
