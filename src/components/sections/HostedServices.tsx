@@ -91,13 +91,13 @@ const HostedServices = () => {
   );
 
   return (
-    <div className="w-full py-16 px-4 bg-[#F1F1F1] lg:h-[580px] h-auto">
-      <div className="container mx-auto space-y-16">
+    <div className="w-full py-16 bg-[#F1F1F1] lg:h-[580px] h-auto">
+      <div className="container mx-auto space-y-16 px-16">
         <h1 className="text-center text-black font-bold font-merriweather text-[38px]">
           Services hébergés
         </h1>
 
-        <div className="relative">
+        <div className="relative ">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {services.map((service) => (
@@ -110,7 +110,7 @@ const HostedServices = () => {
                     px-3
                   "
                 >
-                  <div className="flex flex-row bg-white w-full min-h-[244px] px-6 gap-8 py-6 shadow-sm">
+                  <div className="flex lg:flex-row flex-col bg-white w-full min-h-[244px] px-6 gap-8 py-6 shadow-sm">
                     <img
                       src={service.icon}
                       alt={service.label}
