@@ -81,7 +81,7 @@ const ContactForm = () => {
           </div>
         </div>
       )}
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center lg:px-16">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-28 items-center lg:px-10">
         <div className="text-white space-y-10 lg:-mt-20">
           <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold font-merriweather leading-tight">
             Avez-vous des questions ?
@@ -108,88 +108,167 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit}>
           <div
             className={`bg-white rounded-lg shadow-xl p-6
-        w-full lg:max-w-[400px]
-        mx-auto
-        lg:mx-62
-        lg:justify-self-end
-        mt-8 lg:-mt-24
-        lg:h-[520px]
-        ${errors.name || errors.phone || errors.email || errors.subject || errors.message ? "lg:space-y-6" : "lg:space-y-8"} `}
+    w-full lg:max-w-[400px]
+    mx-auto lg:mx-62 lg:justify-self-end
+    mt-8 lg:-mt-24
+    lg:h-[520px]
+    ${errors.name || errors.phone || errors.email || errors.subject || errors.message ? "lg:space-y-5" : "lg:space-y-8"}`}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="relative z-0 w-full group">
                 <input
                   onChange={() => clearError("name")}
-                  name="name"
                   type="text"
-                  placeholder="Nom"
-                  className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
+                  name="name"
+                  id="floating_name"
+                  placeholder=" "
+                  className={`block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 ${
+                    errors.name ? "border-red-500" : "border-grey"
+                  } appearance-none focus:outline-none focus:ring-0 focus:border-[#54BE73] peer`}
                 />
+                <label
+                  htmlFor="floating_name"
+                  className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
+            peer-focus:text-[#54BE73]
+            peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+            peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Nom
+                </label>
                 {errors.name && (
                   <p className="text-red-500 text-xs mt-1">{errors.name[0]}</p>
                 )}
               </div>
-              <div>
+              <div className="relative z-0 w-full group">
                 <input
                   onChange={() => clearError("phone")}
-                  name="phone"
                   type="text"
-                  placeholder="Téléphone"
-                  className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
+                  name="phone"
+                  id="floating_phone"
+                  placeholder=" "
+                  className={`block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 ${
+                    errors.phone ? "border-red-500" : "border-grey"
+                  } appearance-none focus:outline-none focus:ring-0 focus:border-[#54BE73] peer`}
                 />
+                <label
+                  htmlFor="floating_phone"
+                  className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
+            peer-focus:text-[#54BE73]
+            peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+            peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Téléphone
+                </label>
                 {errors.phone && (
                   <p className="text-red-500 text-xs mt-1">{errors.phone[0]}</p>
                 )}
               </div>
             </div>
-            <div>
+            <div className="relative z-0 w-full mb-1 group">
               <input
                 onChange={() => clearError("email")}
-                name="email"
                 type="email"
-                placeholder="Adresse e-mail"
-                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-3"
+                name="email"
+                id="floating_email"
+                placeholder=" "
+                className={`block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 ${
+                  errors.email ? "border-red-500" : "border-grey"
+                } appearance-none focus:outline-none focus:ring-0 focus:border-[#54BE73] peer`}
               />
+              <label
+                htmlFor="floating_email"
+                className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
+          peer-focus:text-[#54BE73]
+          peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+          peer-focus:scale-75 peer-focus:-translate-y-6"
+              >
+                Adresse e-mail
+              </label>
               {errors.email && (
                 <p className="text-red-500 text-xs mt-1">{errors.email[0]}</p>
               )}
             </div>
-            <div>
+            <div className="relative z-0 w-full mb-1 group">
               <input
                 onChange={() => clearError("subject")}
-                name="subject"
                 type="text"
-                placeholder="Objet"
-                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-3"
+                name="subject"
+                id="floating_subject"
+                placeholder=" "
+                className={`block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 ${
+                  errors.subject ? "border-red-500" : "border-grey"
+                } appearance-none focus:outline-none focus:ring-0 focus:border-[#54BE73] peer`}
               />
+              <label
+                htmlFor="floating_subject"
+                className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
+          peer-focus:text-[#54BE73]
+          peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+          peer-focus:scale-75 peer-focus:-translate-y-6"
+              >
+                Objet
+              </label>
               {errors.subject && (
                 <p className="text-red-500 text-xs mt-1">{errors.subject[0]}</p>
               )}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
-              <input
-                name="date"
-                type="date"
-                className={`border-b border-grey px-3 py-2 text-sm focus:outline-none w-full`}
-              />
-              <input
-                name="time"
-                type="time"
-                className={`border-b  border-grey px-3 py-2 text-sm focus:outline-none w-full`}
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-1">
+              <div className="relative z-0 w-full group">
+                <input
+                  name="date"
+                  type="date"
+                  className="block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 border-grey appearance-none focus:outline-none focus:ring-0 focus:border-[#54BE73] peer"
+                />
+                <label
+                  className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
+          peer-focus:text-[#54BE73]
+          peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+          peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Date
+                </label>
+              </div>
+              <div className="relative z-0 w-full group">
+                <input
+                  name="time"
+                  type="time"
+                  className="block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 border-grey appearance-none focus:outline-none focus:ring-0 focus:border-[#54BE73] peer"
+                />
+                <label
+                  className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
+          peer-focus:text-[#54BE73]
+          peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+          peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Heure
+                </label>
+              </div>
             </div>
-            <div>
+            <div className="relative z-0 w-full mb-1 group">
               <textarea
                 onChange={() => clearError("message")}
                 name="message"
-                placeholder="Message"
-                rows={2}
-                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full resize-none"
+                id="floating_message"
+                placeholder=" "
+                rows={3}
+                className={`block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 ${
+                  errors.message ? "border-red-500" : "border-grey"
+                } appearance-none focus:outline-none focus:ring-0 focus:border-[#54BE73] peer resize-none`}
               />
+              <label
+                htmlFor="floating_message"
+                className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
+          peer-focus:text-[#54BE73]
+          peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
+          peer-focus:scale-75 peer-focus:-translate-y-6"
+              >
+                Message
+              </label>
               {errors.message && (
                 <p className="text-red-500 text-xs">{errors.message[0]}</p>
               )}
             </div>
+
             <button
               type="submit"
               className="bg-[#54BE73] text-white font-bold px-6 py-2 rounded-full hover:bg-green-700 transition-colors text-sm font-assistant"
