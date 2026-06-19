@@ -1,7 +1,7 @@
-// tailwind.config.ts
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
@@ -23,58 +23,28 @@ const config: Config = {
       },
       keyframes: {
         slideRight: {
-          "0%": {
-            opacity: "0",
-            transform: "translateX(-100px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateX(0)",
-          },
+          "0%": { opacity: "0", transform: "translateX(-100px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
         },
         slideLeft: {
-          "0%": {
-            opacity: "0",
-            transform: "translateX(100px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateX(0)",
-          },
+          "0%": { opacity: "0", transform: "translateX(100px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
         },
         slideTop: {
-          "0%": {
-            opacity: "0",
-            transform: "translateY(100px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
+          "0%": { opacity: "0", transform: "translateY(100px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
         fadeUp: {
-          "0%": {
-            opacity: "0",
-            transform: "translateY(20px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
         zoomIn: {
-          "0%": {
-            opacity: "0",
-            transform: "scale(0.8)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "scale(1)",
-          },
+          "0%": { opacity: "0", transform: "scale(0.8)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
         },
       },
       animation: {
@@ -89,4 +59,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

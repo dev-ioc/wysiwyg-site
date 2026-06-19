@@ -237,7 +237,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-black w-full py-4 md:py-6">
+      <div className="bg-black w-full py-4 md:py-6 dark:text-white dark:bg-slate-900">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 text-white gap-2 md:gap-0">
           <p className="text-sm md:text-base text-center">
             &copy; Copyright {currentYear} WYSIWYG. Tous droits réservés

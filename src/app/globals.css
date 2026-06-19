@@ -20,7 +20,17 @@
     --font-poppins: "Poppins", sans-serif;
   }
 }
-
+.dark {
+  --color-bg: #0f172a;
+  --color-text: #f1f5f9;
+  --color-card: #1e293b;
+}
+* {
+  transition:
+    background-color 1s ease,
+    color 1s ease,
+    border-color 1s ease;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

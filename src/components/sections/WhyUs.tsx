@@ -4,7 +4,7 @@ import { useInView } from "@/hooks/useInView";
 const WhyUs = () => {
   const { ref, isVisible } = useInView(0.2);
   return (
-    <div className="px-8 h-auto mb-0 bg-[#D9D9D9] py-2">
+    <div className="px-8 h-auto mb-0 bg-[#D9D9D9] py-2 dark:text-white  dark:bg-slate-900 border-b border-light">
       <div className="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
         <div
           ref={ref}
@@ -14,7 +14,7 @@ const WhyUs = () => {
               : "opacity-0 -translate-x-10"
           }`}
         >
-          <h1 className="text-left text-[#222222] font-bold text-[38px] font-merriweather">
+          <h1 className="text-left text-[#222222] font-bold text-[38px] font-merriweather dark:text-white">
             Pourquoi nous choisir ?
           </h1>
 
@@ -27,7 +27,7 @@ const WhyUs = () => {
               />
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="text-[19px] font-bold text-[#282828] font-assistant">
+              <h3 className="text-[19px] font-bold text-[#282828] font-assistant dark:text-white">
                 Informatique et SI
               </h3>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant">
@@ -46,7 +46,7 @@ const WhyUs = () => {
               />
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="text-[19px] font-bold text-[#282828] font-assistant">
+              <h3 className="text-[19px] font-bold text-[#282828] font-assistant dark:text-white">
                 Gestion et Processus
               </h3>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant">
@@ -65,7 +65,7 @@ const WhyUs = () => {
               />
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="text-[19px] font-bold text-[#282828] font-assistant">
+              <h3 className="text-[19px] font-bold text-[#282828] font-assistant dark:text-white">
                 Commercial et BI
               </h3>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant">

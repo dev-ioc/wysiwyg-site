@@ -29,7 +29,7 @@ const cards = [
 
 const AlsoSection = () => {
   return (
-    <div className="w-full py-16 px-4 bg-white lg:min-h-[400px]">
+    <div className="w-full py-16 px-4 bg-white lg:min-h-[400px] dark:text-white  dark:bg-slate-900">
       <div className="container mx-auto ">
         <h1 className="text-center text-[#E4373A] text-[38px] font-merriweather font-bold mb-16">
           Wysiwyg c&apos;est aussi

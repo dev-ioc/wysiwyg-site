@@ -9,6 +9,7 @@ import {
   FaPinterest,
   FaTwitter,
 } from "react-icons/fa";
+import ThemeSwitch from "../ThemeSwitch";
 
 const getSectionId = (href: string) => href.replace("/", "").replace("#", "");
 
@@ -61,7 +62,7 @@ const Navbar = () => {
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <div className="sticky top-0 z-30 w-full">
+    <div className="sticky top-0 z-30 w-full dark:text-white dark:bg-slate-900">
       <div className="hidden lg:flex h-[155px] justify-between items-center backdrop-blur-sm bg-white/25 px-4 py-3 gap-4 shadow-sm">
         <div className="container mx-auto flex flex-row justify-between items-center gap-4">
           <img
@@ -73,15 +74,18 @@ const Navbar = () => {
           <div className="flex items-center gap-6">
             <div className="flex gap-2 items-center">
               <Mail size={40} color="#54BE73" />
-              <label className="text-dark text-[18px] font-bold">
+              <label className="text-dark text-[18px] font-bold dark:text-white">
                 sales@wysiwyg.fr
               </label>
             </div>
             <div className="flex gap-2 items-center">
               <PhoneCall size={40} color="#54BE73" />
-              <label className="text-dark text-[18px] font-bold">
+              <label className="text-dark text-[18px] font-bold dark:text-white">
                 +33 1 34 20 16 19
               </label>
+            </div>
+            <div>
+              <ThemeSwitch />
             </div>
           </div>
           <div className="flex gap-4 items-center">
@@ -134,8 +138,6 @@ const Navbar = () => {
           </a>
         </nav>
       </div>
-
-      {/* Mobile header */}
       <div className="lg:hidden fixed top-0 left-0 w-full z-30 bg-white shadow-md flex items-center justify-between px-4 h-[72px]">
         <img
           src="/images/header.png"
@@ -155,7 +157,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile overlay */}
       <div
         className={`lg:hidden fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 ${
           isMobileMenuOpen
@@ -164,8 +165,6 @@ const Navbar = () => {
         }`}
         onClick={closeMobileMenu}
       />
-
-      {/* Mobile menu panel */}
       <div
         id="mobile-menu-panel"
         className={`lg:hidden fixed top-0 right-0 h-full w-[82%] max-w-[320px] bg-white z-50 shadow-2xl transition-transform duration-300 ease-out flex flex-col ${
@@ -245,6 +244,10 @@ const Navbar = () => {
             <a href="#">
               <FaLinkedin className="w-4 h-4 hover:text-blue-700" />
             </a>
+
+            <div>
+              <ThemeSwitch />
+            </div>
           </div>
         </div>
       </div>

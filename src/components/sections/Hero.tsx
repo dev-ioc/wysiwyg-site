@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
-    <div className="relative grid grid-cols-12 col-span-12 h-auto lg:h-[761px] w-full bg-[url('/images/pexels-christina-morillo-1181341-768x512.jpg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden pb-10">
-      <div className="col-span-12 lg:col-start-5 flex flex-col items-center justify-center text-center gap-10 px-6 text-white relative z-10 pt-20 lg:pt-20 lg:-top-5 w-full lg:w-[583px]">
+    <div className="relative grid grid-cols-12 col-span-12 h-auto lg:h-[761px] w-full bg-[url('/images/pexels-christina-morillo-1181341-768x512.jpg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden pb-10 ">
+      <div className="col-span-12 lg:col-start-5 flex flex-col items-center justify-center text-center gap-10 px-6 text-white relative z-10 pt-20 lg:pt-20 lg:-top-5 w-full lg:w-[583px] ">
         <span className="text-[36px] lg:text-[53px] font-bold font-merriweather">
           WYSIWYG
         </span>

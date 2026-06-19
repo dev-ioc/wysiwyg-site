@@ -4,7 +4,7 @@ import { useInView } from "@/hooks/useInView";
 const Services = () => {
   const { ref, isVisible } = useInView(0.2);
   return (
-    <div className="px-8 h-auto space-y-0 mb-0 bg-secondary">
+    <div className="px-8 h-auto space-y-0 mb-0 bg-secondary dark:text-white  dark:bg-slate-900 border-b border-light">
       <div
         ref={ref}
         className={`container mx-auto py-8 transition-all ${
@@ -13,7 +13,7 @@ const Services = () => {
             : "opacity-0 scale-90"
         }`}
       >
-        <div className="text-center text-dark font-bold text-[38px] font-merriweather ">
+        <div className="text-center text-dark font-bold text-[38px] font-merriweather dark:text-white">
           Nos Services
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

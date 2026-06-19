@@ -69,7 +69,7 @@ const ContactForm = () => {
     });
   };
   return (
-    <div className="w-full bg-[url('/images/bg-contact.png')] bg-no-repeat bg-cover bg-center px-4 py-12 lg:h-[417px]">
+    <div className="w-full bg-[url('/images/bg-contact.png')] bg-no-repeat bg-cover bg-center px-4 py-12 lg:h-[417px] ">
       <Toaster position="top-right" reverseOrder={false} />
       {loading && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
@@ -112,9 +112,10 @@ const ContactForm = () => {
     mx-auto lg:mx-62 lg:justify-self-end
     mt-8 lg:-mt-24
     lg:h-[520px]
+    
     ${errors.name || errors.phone || errors.email || errors.subject || errors.message ? "lg:space-y-5" : "lg:space-y-8"}`}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
               <div className="relative z-0 w-full group">
                 <input
                   onChange={() => clearError("name")}

@@ -9,7 +9,10 @@ const features = [
 
 const About = () => {
   return (
-    <div className="w-full  bg-[#D9D9D9]" id="no-section">
+    <div
+      className="w-full  bg-[#D9D9D9] dark:text-white bg-white dark:bg-slate-900"
+      id="no-section"
+    >
       <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-20 px-6 lg:px-12">
         <div className="pt-10 px-4 lg:px-0 md:px-4 sm:px-4">
           <img
@@ -18,11 +21,11 @@ const About = () => {
             className="w-[480px] h-[710px] py-10 col-span-4 col-start-2"
           />
         </div>
-        <div className="flex-1 flex flex-col gap-4 w-full space-y-4">
-          <span className="text-primary text-[13px] font-bold uppercase tracking-widest">
+        <div className="flex-1 flex flex-col gap-4 w-full space-y-4 ">
+          <span className="text-primary text-[13px] font-bold uppercase tracking-widest ">
             Bienvenue à WYSIWYG
           </span>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-snug">
+          <h2 className="text-3xl lg:text-4xl font-bold  text-gray-800 leading-snug">
             What You See Is What You Get
           </h2>
           <p className="text-gray-600 text-[15px] leading-relaxed">
