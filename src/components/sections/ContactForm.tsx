@@ -1,4 +1,37 @@
+"use client";
+import { useState } from "react";
+
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    const formData = new FormData(e.currentTarget);
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.get("name"),
+        phone: formData.get("phone"),
+        email: formData.get("email"),
+        subject: formData.get("subject"),
+        message: formData.get("message"),
+      }),
+    });
+
+    const data = await response.json();
+
+    alert(data.message);
+
+    setLoading(false);
+  };
+
   return (
     <div className="w-full bg-[url('/images/bg-contact.png')] bg-no-repeat bg-cover bg-center px-4 py-12 lg:h-[417px]">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -25,8 +58,9 @@ const ContactForm = () => {
             </a>
           </div>
         </div>
-        <div
-          className="
+        <form onSubmit={handleSubmit}>
+          <div
+            className="
         bg-white rounded-lg shadow-xl p-6
         w-full lg:max-w-[400px]
         mx-auto
@@ -36,56 +70,63 @@ const ContactForm = () => {
         lg:h-[500px]
         lg:space-y-8
       "
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
-            <input
-              type="text"
-              placeholder="Nom"
-              className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
-            />
-            <input
-              type="tel"
-              placeholder="Téléphone"
-              className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
-            />
-          </div>
-
-          <input
-            type="email"
-            placeholder="Adresse e-mail"
-            className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-3"
-          />
-
-          <input
-            type="text"
-            placeholder="Objet"
-            className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-3"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
-            <input
-              type="date"
-              className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
-            />
-            <input
-              type="time"
-              className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
-            />
-          </div>
-
-          <textarea
-            placeholder="Message"
-            rows={3}
-            className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-4 resize-none"
-          />
-
-          <button
-            type="button"
-            className="bg-[#54BE73] text-white font-bold px-6 py-2 rounded-full hover:bg-green-700 transition-colors text-sm font-assistant"
           >
-            Envoyer la demande
-          </button>
-        </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+              <input
+                name="name"
+                type="text"
+                placeholder="Nom"
+                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
+              />
+              <input
+                name="phone"
+                type="tel"
+                placeholder="Téléphone"
+                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
+              />
+            </div>
+            <input
+              name="email"
+              type="email"
+              placeholder="Adresse e-mail"
+              className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-3"
+            />
+
+            <input
+              name="subject"
+              type="text"
+              placeholder="Objet"
+              className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-3"
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+              <input
+                name="date"
+                type="date"
+                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
+              />
+              <input
+                name="time"
+                type="time"
+                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
+              />
+            </div>
+
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows={3}
+              className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-4 resize-none"
+            />
+            <button
+              type="submit"
+              className="bg-[#54BE73] text-white font-bold px-6 py-2 rounded-full hover:bg-green-700 transition-colors text-sm font-assistant"
+              disabled={loading}
+            >
+              {loading ? "Envoi..." : "Envoyer"}
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );
