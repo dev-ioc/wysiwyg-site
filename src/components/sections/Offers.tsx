@@ -18,7 +18,7 @@ const Offers = () => {
               <h2 className="font-bold text-[#282828] font-assistant text-[22px]">
                 Support utilisateurs
               </h2>
-              <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto">
+              <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto lg:px-8">
                 Nous le mettons à votre disposition afin de prendre en charge
                 votre ticket pour une résolution la plus rapide possible.e
               </p>
@@ -30,7 +30,7 @@ const Offers = () => {
               <h2 className="font-bold text-[#282828] font-assistant text-[22px]">
                 Infogérance sur site.
               </h2>
-              <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto">
+              <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto lg:px-8">
                 Nos équipes vous apportent leur soutien dans toutes les tâches
                 quotidiennes de la gestion de votre parc.
               </p>
@@ -42,7 +42,7 @@ const Offers = () => {
               <h2 className="font-bold text-[#282828] font-assistant text-[22px]">
                 DSI Externalisé
               </h2>
-              <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto">
+              <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto lg:px-8">
                 Nous confier votre SI c’est vous assurer de bénéficier de la
                 meilleure expertise informatique, à la demande et sans aucune
                 contrainte budgétaire.
@@ -55,7 +55,7 @@ const Offers = () => {
               <h2 className="font-bold text-[#282828] font-assistant text-[22px]">
                 Sauvegarde externalisé
               </h2>
-              <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto">
+              <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto lg:px-8">
                 L’infogérance d’infrastructures permet la gestion du parc
                 informatique
               </p>

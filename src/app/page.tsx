@@ -2,6 +2,8 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import AlsoSection from "@/components/sections/AlsoSection";
 import ContactForm from "@/components/sections/ContactForm";
+import Hero from "@/components/sections/Hero";
+import HomePage from "@/components/sections/Home";
 import HostedServices from "@/components/sections/HostedServices";
 import Offers from "@/components/sections/Offers";
 import QuickServices from "@/components/sections/QuickServices";
@@ -11,7 +13,9 @@ import WhyUs from "@/components/sections/WhyUs";
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      <section id="accueil">
+        <Hero />
+      </section>
       <section id="QuickServices">
         <QuickServices />
       </section>
@@ -32,9 +36,6 @@ export default function Home() {
       </section>
       <section id="also">
         <AlsoSection />
-      </section>
-      <section id="footer">
-        <Footer />
       </section>
     </main>
   );

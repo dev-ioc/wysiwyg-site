@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/Footer";
 import PageHeader from "@/components/layout/Header";
+import Navbar from "@/components/layout/Navbar";
 import About from "@/components/sections/About";
 
 const navLinks = [
@@ -13,9 +14,7 @@ const navLinks = [
 export default function AboutPage() {
   return (
     <>
-      <PageHeader navLinks={navLinks} />
-      <About />
-      <Footer />
+      <About />;
     </>
   );
 }

@@ -45,7 +45,7 @@ const services = [
 
 const QuickServices = () => {
   return (
-    <section className="w-full py-16 px-4 bg-[#F0EDEA]">
+    <div className="w-full py-28 px-4 bg-[#F0EDEA]">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16">
           {services.map((service) => (
@@ -76,7 +76,7 @@ const QuickServices = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

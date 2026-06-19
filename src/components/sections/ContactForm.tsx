@@ -81,7 +81,7 @@ const ContactForm = () => {
           </div>
         </div>
       )}
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center lg:px-16">
         <div className="text-white space-y-10 lg:-mt-20">
           <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold font-merriweather leading-tight">
             Avez-vous des questions ?
@@ -107,18 +107,16 @@ const ContactForm = () => {
         </div>
         <form onSubmit={handleSubmit}>
           <div
-            className="
-        bg-white rounded-lg shadow-xl p-6
+            className={`bg-white rounded-lg shadow-xl p-6
         w-full lg:max-w-[400px]
         mx-auto
         lg:mx-62
         lg:justify-self-end
         mt-8 lg:-mt-24
         lg:h-[520px]
-        lg:space-y-6
-      "
+        ${errors.name || errors.phone || errors.email || errors.subject || errors.message ? "lg:space-y-6" : "lg:space-y-8"} `}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
               <div>
                 <input
                   onChange={() => clearError("name")}
