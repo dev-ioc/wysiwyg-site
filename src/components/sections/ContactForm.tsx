@@ -5,7 +5,6 @@ import toast, { Toaster } from "react-hot-toast";
 
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState(false);
   const [errors, setErrors] = useState<Record<string, string[]>>({});
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
