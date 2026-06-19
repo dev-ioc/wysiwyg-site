@@ -6,31 +6,35 @@ import toast, { Toaster } from "react-hot-toast";
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string[]>>({});
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     const form = e.currentTarget;
+
     try {
       setLoading(true);
 
-      const formData = new FormData(e.currentTarget);
+      const formData = new FormData(form);
 
       const rawData = {
         name: formData.get("name"),
         phone: formData.get("phone"),
         email: formData.get("email"),
         subject: formData.get("subject"),
-
         message: formData.get("message"),
       };
+
       const result = contactSchema.safeParse(rawData);
 
+      setErrors({});
+
       if (!result.success) {
-        setMessage(!result.success);
-        const errors = result.error.flatten().fieldErrors;
-        console.log(errors);
+        const fieldErrors = result.error.flatten().fieldErrors;
 
-        toast.error("Veuillez remplir les champs obligatoires");
+        setErrors(fieldErrors);
 
+        toast.error("Veuillez corriger les champs");
         return;
       }
 
@@ -49,15 +53,22 @@ const ContactForm = () => {
       }
 
       toast.success(data.message);
+
       form.reset();
     } catch (error: any) {
       console.error(error);
-      alert(error.message || "Erreur lors de l'envoi du message");
+      toast.error(error.message || "Erreur lors de l'envoi");
     } finally {
       setLoading(false);
     }
   };
-
+  const clearError = (field: string) => {
+    setErrors((prev) => {
+      const newErrors = { ...prev };
+      delete newErrors[field];
+      return newErrors;
+    });
+  };
   return (
     <div className="w-full bg-[url('/images/bg-contact.png')] bg-no-repeat bg-cover bg-center px-4 py-12 lg:h-[417px]">
       <Toaster position="top-right" reverseOrder={false} />
@@ -104,38 +115,60 @@ const ContactForm = () => {
         lg:mx-62
         lg:justify-self-end
         mt-8 lg:-mt-24
-        lg:h-[500px]
-        lg:space-y-8
+        lg:h-[520px]
+        lg:space-y-6
       "
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
-              <input
-                name="name"
-                type="text"
-                placeholder={`${message ? "Nom obligatoire" : "Nom"}`}
-                className={`border-b ${message ? "border-red-500 " : "border-grey"} px-3 py-2 text-sm focus:outline-none w-full`}
-              />
-              <input
-                name="phone"
-                type="text"
-                placeholder="Téléphone"
-                className={`border-b ${message ? "border-red-500 " : "border-grey"} px-3 py-2 text-sm focus:outline-none w-full`}
-              />
+              <div>
+                <input
+                  onChange={() => clearError("name")}
+                  name="name"
+                  type="text"
+                  placeholder="Nom"
+                  className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
+                />
+                {errors.name && (
+                  <p className="text-red-500 text-xs mt-1">{errors.name[0]}</p>
+                )}
+              </div>
+              <div>
+                <input
+                  onChange={() => clearError("phone")}
+                  name="phone"
+                  type="text"
+                  placeholder="Téléphone"
+                  className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full"
+                />
+                {errors.phone && (
+                  <p className="text-red-500 text-xs mt-1">{errors.phone[0]}</p>
+                )}
+              </div>
             </div>
-            <input
-              name="email"
-              type="email"
-              placeholder="Adresse e-mail"
-              className={`border-b ${message ? "border-red-500 " : "border-grey"} px-3 py-2 text-sm focus:outline-none w-full mb-3`}
-            />
-
-            <input
-              name="subject"
-              type="text"
-              placeholder="Objet"
-              className={`border-b ${message ? "border-red-500 " : "border-grey"} px-3 py-2 text-sm focus:outline-none w-full mb-3`}
-            />
-
+            <div>
+              <input
+                onChange={() => clearError("email")}
+                name="email"
+                type="email"
+                placeholder="Adresse e-mail"
+                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-3"
+              />
+              {errors.email && (
+                <p className="text-red-500 text-xs mt-1">{errors.email[0]}</p>
+              )}
+            </div>
+            <div>
+              <input
+                onChange={() => clearError("subject")}
+                name="subject"
+                type="text"
+                placeholder="Objet"
+                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full mb-3"
+              />
+              {errors.subject && (
+                <p className="text-red-500 text-xs mt-1">{errors.subject[0]}</p>
+              )}
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
               <input
                 name="date"
@@ -148,13 +181,18 @@ const ContactForm = () => {
                 className={`border-b  border-grey px-3 py-2 text-sm focus:outline-none w-full`}
               />
             </div>
-
-            <textarea
-              name="message"
-              placeholder="Message"
-              rows={3}
-              className={`border-b ${message ? "border-red-500 " : "border-grey"} px-3 py-2 text-sm focus:outline-none w-full mb-4 resize-none`}
-            />
+            <div>
+              <textarea
+                onChange={() => clearError("message")}
+                name="message"
+                placeholder="Message"
+                rows={2}
+                className="border-b border-grey px-3 py-2 text-sm focus:outline-none w-full resize-none"
+              />
+              {errors.message && (
+                <p className="text-red-500 text-xs">{errors.message[0]}</p>
+              )}
+            </div>
             <button
               type="submit"
               className="bg-[#54BE73] text-white font-bold px-6 py-2 rounded-full hover:bg-green-700 transition-colors text-sm font-assistant"
