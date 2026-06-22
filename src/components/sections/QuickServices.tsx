@@ -1,55 +1,16 @@
-const services = [
-  {
-    id: 1,
-    label: "Automatisation IA",
-    description:
-      "Automatisez vos taches avec les meilleurs outils et les lier à vos projets avec une possibilité d'optimisation.",
-    icon: "/images/automatisation.avif",
-    href: "/",
-  },
-  {
-    id: 2,
-    label: "ERP Axelor",
-    description:
-      "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
-    icon: "/images/logo_axelor.avif",
-    href: "/",
-  },
-  {
-    id: 3,
-    label: "Développement d'application",
-    description:
-      "De la conception au développement, en passant par la maintenance et la gestion d'applications logicielles.",
-    icon: "/images/application.avif",
-    href: "/",
-  },
-  {
-    id: 4,
-    label: "Visual Planning",
-    description:
-      "L'outil incontournable pour organiser et suivre vos projets efficacement. Planification des ressources, gestion des plannings et suivi en temps réel de vos activités.",
-    icon: "/images/visualPlanning.avif",
-    href: "/",
-  },
-  {
-    id: 5,
-    label: "Messagerie BlueMind",
-    description:
-      "Une plateforme collaborative pour optimiser vos échanges. Messagerie professionnelle, calendrier partagé, contacts unifiés — une solution souveraine et performante.",
-    icon: "/images/bluemind.avif",
-    href: "/",
-  },
-  {
-    id: 6,
-    label: "Infogérance",
-    description:
-      "Une infrastructure IT performante et sécurisée. Nous prenons en charge la gestion, la supervision et l'optimisation de vos systèmes informatiques pour garantir leur disponibilité et leur performance.",
-    icon: "/images/Infogérance.avif",
-    href: "/",
-  },
-];
+import { useTranslations } from "next-intl";
 
+type Service = {
+  id: number;
+  label: string;
+  description: string;
+  icon: string;
+  href: string;
+};
 const QuickServices = () => {
+  const t = useTranslations("QuickServices");
+  const tp = useTranslations("Hero");
+  const services = t.raw("services") as Service[];
   return (
     <div className="w-full py-28 px-4 bg-[#F0EDEA] dark:text-white  dark:bg-slate-900 border-b border-light">
       <div className="container mx-auto">
@@ -76,7 +37,7 @@ const QuickServices = () => {
                 href={service.href}
                 className="dark:text-black mt-1 border border-grey text-gray-800 text-[12px] bg-secondary hover:bg-gray-800 transition-colors px-4 py-1.5 rounded-full "
               >
-                En savoir plus
+                {tp("BtnPlus")}
               </a>
             </div>
           ))}

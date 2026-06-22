@@ -1,12 +1,14 @@
 "use client";
 import { useInView } from "@/hooks/useInView";
+import { useTranslations } from "next-intl";
 const Offers = () => {
   const { ref, isVisible } = useInView(0.2);
+  const t = useTranslations("Offers");
   return (
     <div className="px-8 h-auto space-y-0 py-16 bg-[#F1F1F1] dark:text-white  dark:bg-slate-900">
       <div className="container mx-auto py-4 space-y-8 ">
         <h1 className="text-center font-bold text-[38px] font-merriweather text-[#222222] dark:text-white">
-          Offres associées
+          {t("title")}
         </h1>
         <div
           ref={ref}
@@ -16,11 +18,10 @@ const Offers = () => {
             <div className="bg-[url('/images/support-users.png')] bg-no-repeat bg-contain bg-center w-[210px] h-[210px]" />
             <div className="flex flex-col gap-2 w-full">
               <h2 className="font-bold text-[#282828] font-assistant text-[22px] dark:text-white">
-                Support utilisateurs
+                {t("support")}
               </h2>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto lg:px-8 ">
-                Nous le mettons à votre disposition afin de prendre en charge
-                votre ticket pour une résolution la plus rapide possible.e
+                {t("descriptionS1")}
               </p>
             </div>
           </div>
@@ -28,11 +29,10 @@ const Offers = () => {
             <div className="bg-[url('/images/infogerence-on-site.png')] bg-no-repeat bg-contain bg-center w-[210px] h-[210px]" />
             <div className="flex flex-col gap-2">
               <h2 className="font-bold text-[#282828] font-assistant text-[22px] dark:text-white">
-                Infogérance sur site.
+                {t("infogerence")}
               </h2>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto lg:px-8">
-                Nos équipes vous apportent leur soutien dans toutes les tâches
-                quotidiennes de la gestion de votre parc.
+                {t("descriptionS2")}
               </p>
             </div>
           </div>
@@ -40,12 +40,10 @@ const Offers = () => {
             <div className="bg-[url('/images/dsi-externalise.png')] bg-no-repeat bg-contain bg-center w-[210px] h-[210px]" />
             <div className="flex flex-col gap-2">
               <h2 className="font-bold text-[#282828] font-assistant text-[22px] dark:text-white">
-                DSI Externalisé
+                {t("dsi")}
               </h2>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto lg:px-8">
-                Nous confier votre SI c’est vous assurer de bénéficier de la
-                meilleure expertise informatique, à la demande et sans aucune
-                contrainte budgétaire.
+                {t("descriptionS3")}
               </p>
             </div>
           </div>
@@ -53,11 +51,10 @@ const Offers = () => {
             <div className="bg-[url('/images/save-extern.png')] bg-no-repeat bg-contain bg-center w-[210px] h-[210px]" />
             <div className="flex flex-col gap-2">
               <h2 className="font-bold text-[#282828] font-assistant text-[22px] dark:text-white">
-                Sauvegarde externalisé
+                {t("save")}
               </h2>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant w-full h-auto lg:px-8">
-                L’infogérance d’infrastructures permet la gestion du parc
-                informatique
+                {t("descriptionS4")}
               </p>
             </div>
           </div>

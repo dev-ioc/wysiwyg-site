@@ -3,39 +3,17 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useCallback, useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
+type Service = {
+  label: string;
+  description: string;
+  icon: string;
+  href: string;
+};
 const HostedServices = () => {
-  const services = [
-    {
-      label: "Automatisation IA",
-      description:
-        "Dans un environnement de plus en plus mobile, les entreprises et les fournisseurs sont toujours à la recherche de moyens pour offrir à leurs utilisateurs une expérience de travail sécurisée, où qu'ils soient. Avec notre solution, le déploiement et la gestion de l'environnement de bureau sont simplifiés.",
-      icon: "/images/bvt.png",
-      href: "/",
-    },
-    {
-      label: "ERP Axelor",
-      description:
-        "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
-      icon: "/images/message.png",
-      href: "/",
-    },
-    {
-      label: "test",
-      description:
-        "Dans un environnement de plus en plus mobile, les entreprises et les fournisseurs sont toujours à la recherche de moyens pour offrir à leurs utilisateurs une expérience de travail sécurisée, où qu'ils soient. Avec notre solution, le déploiement et la gestion de l'environnement de bureau sont simplifiés.",
-      icon: "/images/bvt.png",
-      href: "/",
-    },
-    {
-      label: "test2",
-      description:
-        "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
-      icon: "/images/message.png",
-      href: "/",
-    },
-  ];
-
+  const t = useTranslations("HostedServices");
+  const services = t.raw("services") as Service[];
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -94,7 +72,7 @@ const HostedServices = () => {
     <div className="w-full py-16 bg-[#F1F1F1] lg:h-[580px] h-auto dark:text-white  dark:bg-slate-900 border-b border-light">
       <div className="container mx-auto space-y-16 px-16">
         <h1 className="text-center text-black font-bold font-merriweather text-[38px] dark:text-white">
-          Services hébergés
+          {t("title")}
         </h1>
 
         <div className="relative ">

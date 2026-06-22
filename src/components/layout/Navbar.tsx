@@ -10,23 +10,23 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import ThemeSwitch from "../ThemeSwitch";
-
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter, usePathname } from "@/i18n/navigation";
 const getSectionId = (href: string) => href.replace("/", "").replace("#", "");
-
-const navLinks = [
-  { label: "Accueil", href: "/#accueil" },
-  { label: "À propos", href: "/about" },
-  { label: "Actualités", href: "#actualites" },
-  { label: "Services", href: "/#services" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "/#contact" },
-];
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeRoute, setActiveRoute] = useState("");
-
+  const t = useTranslations("Navbar");
+  const navLinks = [
+    { label: t("Accueil"), href: "/#accueil" },
+    { label: t("About"), href: "/about" },
+    { label: t("Actualites"), href: "#actualites" },
+    { label: t("Services"), href: "/#services" },
+    { label: t("Blog"), href: "#blog" },
+    { label: t("Contact"), href: "/#contact" },
+  ];
   useEffect(() => {
     setActiveRoute(window.location.pathname);
 
@@ -74,18 +74,15 @@ const Navbar = () => {
           <div className="flex items-center gap-6">
             <div className="flex gap-2 items-center">
               <Mail size={40} color="#54BE73" />
-              <label className="text-dark text-[18px] font-bold dark:text-white">
+              <span className="text-dark text-[18px] font-bold dark:text-white">
                 sales@wysiwyg.fr
-              </label>
+              </span>
             </div>
             <div className="flex gap-2 items-center">
               <PhoneCall size={40} color="#54BE73" />
-              <label className="text-dark text-[18px] font-bold dark:text-white">
+              <span className="text-dark text-[18px] font-bold dark:text-white">
                 +33 1 34 20 16 19
-              </label>
-            </div>
-            <div>
-              <ThemeSwitch />
+              </span>
             </div>
           </div>
           <div className="flex gap-4 items-center">
@@ -129,13 +126,12 @@ const Navbar = () => {
               );
             })}
           </ul>
-
-          <a
-            href="#contact"
-            className="bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-5 rounded-r-full transition-colors whitespace-nowrap"
-          >
-            Get Free Quote
-          </a>
+          <div className="flex flex-row gap-4 items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-2.5 rounded-r-full transition-colors whitespace-nowrap">
+            <LocaleSwitcher />
+            <div>
+              <ThemeSwitch />
+            </div>
+          </div>
         </nav>
       </div>
       <div className="lg:hidden fixed top-0 left-0 w-full z-30 bg-white shadow-md flex items-center justify-between px-4 h-[72px] ">
@@ -207,26 +203,25 @@ const Navbar = () => {
           })}
         </ul>
 
-        <a
-          href="#contact"
-          onClick={closeMobileMenu}
-          className="block bg-[#54BE73] text-white text-[15px] font-semibold text-center mx-5 mt-4 px-6 py-3 rounded-full transition-colors"
-        >
-          Get Free Quote
-        </a>
+        <div className="flex flex-row gap-4 justify-center items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-2.5  transition-colors whitespace-nowrap">
+          <LocaleSwitcher />
+          <div>
+            <ThemeSwitch />
+          </div>
+        </div>
 
         <div className="mt-auto px-5 py-5 border-t border-light flex flex-col gap-3 shrink-0">
           <div className="flex gap-2 items-center">
             <Mail size={22} color="#54BE73" />
-            <label className="text-dark text-[14px] font-bold">
+            <span className="text-dark text-[14px] font-bold">
               sales@wysiwyg.fr
-            </label>
+            </span>
           </div>
           <div className="flex gap-2 items-center">
             <PhoneCall size={22} color="#54BE73" />
-            <label className="text-dark text-[14px] font-bold">
+            <span className="text-dark text-[14px] font-bold">
               +33 1 34 20 16 19
-            </label>
+            </span>
           </div>
           <div className="flex gap-4 items-center pt-2 ">
             <a href="#">
@@ -244,10 +239,6 @@ const Navbar = () => {
             <a href="#">
               <FaLinkedin className="w-4 h-4 hover:text-blue-700" />
             </a>
-
-            <div>
-              <ThemeSwitch />
-            </div>
           </div>
         </div>
       </div>
@@ -256,3 +247,23 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+const LocaleSwitcher = ({ className = "" }: { className?: string }) => {
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const toggle = () => {
+    const next = locale === "fr" ? "en" : "fr";
+    router.replace(pathname, { locale: next });
+  };
+
+  return (
+    <button
+      onClick={toggle}
+      className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-[13px] font-semibold  ${className}`}
+    >
+      <span className="text-white uppercase text-[20px]">{locale}</span>
+    </button>
+  );
+};

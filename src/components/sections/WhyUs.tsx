@@ -1,8 +1,10 @@
 "use client";
 import { useInView } from "@/hooks/useInView";
+import { useTranslations } from "next-intl";
 
 const WhyUs = () => {
   const { ref, isVisible } = useInView(0.2);
+  const t = useTranslations("WhyUs");
   return (
     <div className="px-8 h-auto mb-0 bg-[#D9D9D9] py-2 dark:text-white  dark:bg-slate-900 border-b border-light">
       <div className="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
@@ -15,7 +17,7 @@ const WhyUs = () => {
           }`}
         >
           <h1 className="text-left text-[#222222] font-bold text-[38px] font-merriweather dark:text-white">
-            Pourquoi nous choisir ?
+            {t("title")}
           </h1>
 
           <div className="flex flex-row items-start gap-6">
@@ -28,11 +30,10 @@ const WhyUs = () => {
             </div>
             <div className="flex flex-col gap-1">
               <h3 className="text-[19px] font-bold text-[#282828] font-assistant dark:text-white">
-                Informatique et SI
+                {t("information")}
               </h3>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant">
-                Développement de solutions logicielles professionnelles
-                spécifiques sur mesure.
+                {t("descriptionW1")}
               </p>
             </div>
           </div>
@@ -47,11 +48,10 @@ const WhyUs = () => {
             </div>
             <div className="flex flex-col gap-1">
               <h3 className="text-[19px] font-bold text-[#282828] font-assistant dark:text-white">
-                Gestion et Processus
+                {t("management")}
               </h3>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant">
-                Optimisez la gestion et améliorez vos processus pour une
-                organisation plus efficace et performante.
+                {t("descriptionW2")}
               </p>
             </div>
           </div>
@@ -66,12 +66,10 @@ const WhyUs = () => {
             </div>
             <div className="flex flex-col gap-1">
               <h3 className="text-[19px] font-bold text-[#282828] font-assistant dark:text-white">
-                Commercial et BI
+                {t("commercial")}
               </h3>
               <p className="text-[15px] text-[#7E7E7E] leading-[1.5rem] font-medium font-assistant">
-                La Business Intelligence (BI) comprend les stratégies et les
-                technologies utilisées par les entreprises pour l&apos;analyse
-                des données d&apos;informations commerciales.
+                {t("descriptionW3")}
               </p>
             </div>
           </div>

@@ -1,9 +1,11 @@
 "use client";
 import { contactSchema } from "@/lib/contactSchema";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 const ContactForm = () => {
+  const t = useTranslations("Contact");
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string[]>>({});
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -24,7 +26,8 @@ const ContactForm = () => {
         message: formData.get("message"),
       };
 
-      const result = contactSchema.safeParse(rawData);
+      const schema = contactSchema(t);
+      const result = schema.safeParse(rawData);
 
       setErrors({});
 
@@ -76,7 +79,7 @@ const ContactForm = () => {
           <div className="bg-white px-6 py-5 rounded-lg shadow-lg flex items-center gap-3">
             <div className="w-6 h-6 border-4 border-gray-200 border-t-green-600 rounded-full animate-spin"></div>
             <span className="text-sm font-medium text-gray-700">
-              Envoi du message...
+              {t("sending")}
             </span>
           </div>
         </div>
@@ -84,16 +87,13 @@ const ContactForm = () => {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-28 items-center lg:px-10">
         <div className="text-white space-y-10 lg:-mt-20">
           <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold font-merriweather leading-tight">
-            Avez-vous des questions ?
+            {t("title1")}
           </h1>
           <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold font-merriweather leading-tight">
-            Contactez-nous
+            {t("title2")}
           </h1>
           <p className="text-sm md:text-base text-white font-merriweather max-w-full lg:max-w-[609px]">
-            L’entreprise propose également des prestations de formation et de
-            conseil dans les domaines de la gestion de production, des
-            Technologies de l’Information et de la Communication, et du
-            management de la qualité.
+            {t("description")}
           </p>
 
           <div>
@@ -101,7 +101,7 @@ const ContactForm = () => {
               href="/a-propos"
               className="inline-block bg-white text-black font-bold px-6 py-2 rounded-full hover:bg-gray-200 transition-colors text-sm"
             >
-              Prendre rendez-vous
+              {t("rdv")}
             </a>
           </div>
         </div>
@@ -134,7 +134,7 @@ const ContactForm = () => {
             peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
             peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
-                  Nom
+                  {t("name")}
                 </label>
                 {errors.name && (
                   <p className="text-red-500 text-xs mt-1">{errors.name[0]}</p>
@@ -158,7 +158,7 @@ const ContactForm = () => {
             peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
             peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
-                  Téléphone
+                  {t("phone")}
                 </label>
                 {errors.phone && (
                   <p className="text-red-500 text-xs mt-1">{errors.phone[0]}</p>
@@ -183,7 +183,7 @@ const ContactForm = () => {
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
           peer-focus:scale-75 peer-focus:-translate-y-6"
               >
-                Adresse e-mail
+                {t("email")}
               </label>
               {errors.email && (
                 <p className="text-red-500 text-xs mt-1">{errors.email[0]}</p>
@@ -207,7 +207,7 @@ const ContactForm = () => {
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
           peer-focus:scale-75 peer-focus:-translate-y-6"
               >
-                Objet
+                {t("subject")}
               </label>
               {errors.subject && (
                 <p className="text-red-500 text-xs mt-1">{errors.subject[0]}</p>
@@ -226,7 +226,7 @@ const ContactForm = () => {
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
           peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
-                  Date
+                  {t("date")}
                 </label>
               </div>
               <div className="relative z-0 w-full group">
@@ -241,7 +241,7 @@ const ContactForm = () => {
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
           peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
-                  Heure
+                  {t("time")}
                 </label>
               </div>
             </div>
@@ -275,7 +275,7 @@ const ContactForm = () => {
               className="bg-[#54BE73] text-white font-bold px-6 py-2 rounded-full hover:bg-green-700 transition-colors text-sm font-assistant"
               disabled={loading}
             >
-              {loading ? "Envoi..." : "Envoyer"}
+              {loading ? t("sending") : t("send")}
             </button>
           </div>
         </form>

@@ -1,8 +1,10 @@
 "use client";
 import { useInView } from "@/hooks/useInView";
+import { useTranslations } from "next-intl";
 
 const Services = () => {
   const { ref, isVisible } = useInView(0.2);
+  const t = useTranslations("NosServices");
   return (
     <div className="px-8 h-auto space-y-0 mb-0 bg-secondary dark:text-white  dark:bg-slate-900 border-b border-light">
       <div
@@ -14,7 +16,7 @@ const Services = () => {
         }`}
       >
         <div className="text-center text-dark font-bold text-[38px] font-merriweather dark:text-white">
-          Nos Services
+          {t("title")}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="w-full flex flex-row gap-8">
@@ -25,13 +27,10 @@ const Services = () => {
             />
             <div className="flex flex-col gap-2">
               <h1 className="text-[#3699BE] font-inter font-bold text-[22px]">
-                Gestion & Comptabilité
+                {t("HeadServices1")}
               </h1>
               <p className="text-[#A8A8A8] text-[18px] font-assistant font-bold">
-                Un apport significatif à votre performance financière grâce à
-                une information fiable et accessible, un reporting pertinent et
-                des analyses approfondies permettant d'améliorer la prise de
-                décision et l'efficacité des processus comptables.
+                {t("descritpion1")}
               </p>
             </div>
           </div>
@@ -43,12 +42,10 @@ const Services = () => {
             />
             <div className="flex flex-col gap-2">
               <h1 className="text-[#3699BE] font-inter font-bold text-[22px]">
-                Production Management
+                {t("HeadServices2")}
               </h1>
               <p className="text-[#A8A8A8] text-[18px] font-assistant font-bold">
-                La mondialisation et l’évolution du marché ont renforcé les
-                exigences de respect des délais, de rapidité de réaction et de
-                rentabilité dans le processus de fabrication.
+                {t("descritpion2")}
               </p>
             </div>
           </div>
@@ -60,12 +57,10 @@ const Services = () => {
             />
             <div className="flex flex-col gap-2">
               <h1 className="text-[#3699BE] font-inter font-bold text-[22px]">
-                Production Management
+                {t("HeadServices3")}
               </h1>
               <p className="text-[#A8A8A8] text-[18px] font-assistant font-bold">
-                La mondialisation et l’évolution du marché ont renforcé les
-                exigences de respect des délais, de rapidité de réaction et de
-                rentabilité dans le processus de fabrication.
+                {t("descritpion3")}
               </p>
             </div>
           </div>
@@ -77,12 +72,10 @@ const Services = () => {
             />
             <div className="flex flex-col gap-2">
               <h1 className="text-[#3699BE] font-inter font-bold text-[22px]">
-                ISO Management Systems
+                {t("HeadServices4")}
               </h1>
               <p className="text-[#A8A8A8] text-[18px] font-assistant font-bold">
-                Le management de la qualité, ou gestion de la qualité est une
-                discipline du management regroupant l’ensemble des concepts et
-                méthodes visant à satisfaire les clients de l’entreprise.
+                {t("descritpion4")}
               </p>
             </div>
           </div>
@@ -94,12 +87,10 @@ const Services = () => {
             />
             <div className="flex flex-col gap-2">
               <h1 className="text-[#3699BE] font-inter font-bold text-[22px]">
-                Architecte ERP et BPM
+                {t("HeadServices5")}
               </h1>
               <p className="text-[#A8A8A8] text-[18px] font-assistant font-bold">
-                La stratégie de WYSIWYG permet aux PME d’optimiser et d’intégrer
-                les solutions CFAO et ERP grâce à une solution globale et
-                intégrée.
+                {t("descritpion5")}
               </p>
             </div>
           </div>
@@ -111,12 +102,10 @@ const Services = () => {
             />
             <div className="flex flex-col gap-2">
               <h1 className="text-[#3699BE] font-inter font-bold text-[22px]">
-                Supply chain Management
+                {t("HeadServices6")}
               </h1>
               <p className="text-[#A8A8A8] text-[18px] font-assistant font-bold">
-                Aujourd’hui, les chaînes d’approvisionnement sont plus
-                interconnectées, complexes et mondiales pour produire et livrer
-                aux clients.
+                {t("descritpion6")}
               </p>
             </div>
           </div>

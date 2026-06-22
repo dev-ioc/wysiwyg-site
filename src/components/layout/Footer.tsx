@@ -10,6 +10,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -47,25 +48,18 @@ const Footer = () => {
       url: "#",
     },
   ];
-
+  const t = useTranslations("Navbar");
+  const ts = useTranslations("NosServices");
   const navigationLinks = [
-    { label: "Accueil", href: "/#accueil" },
-    { label: "À propos", href: "/about" },
-    { label: "Actualités", href: "/actualites" },
-    { label: "Services", href: "/#services" },
-    { label: "Blog", href: "/blog" },
-    { label: "Contact", href: "/#contact" },
+    { label: t("Accueil"), href: "/#accueil" },
+    { label: t("About"), href: "/about" },
+    { label: t("Actualites"), href: "#actualites" },
+    { label: t("Services"), href: "/#services" },
+    { label: t("Blog"), href: "#blog" },
+    { label: t("Contact"), href: "/#contact" },
   ];
-
-  const servicesList = [
-    "Gestion & Comptabilité",
-    "Production Management",
-    "Analyse Prédictive / BI",
-    "ISO Management Systems",
-    "Architecte ERP et BPM",
-    "Supply chain Management",
-  ];
-
+  const tf = useTranslations("Footer");
+  const servicesList = tf.raw("servicesList") as string[];
   const recentArticles = [
     "Test 1",
     "Test 2",
@@ -120,25 +114,21 @@ const Footer = () => {
                 id="contact-title"
                 className="text-[20px] text-white font-poppins font-bold mb-4 md:mb-6"
               >
-                Contactez-nous
+                {tf("contact")}
               </h2>
               <div className="text-white/90 text-[14px] md:text-[15px] font-assistant leading-[1.8rem] space-y-3">
-                <p>
-                  WYSIWYG a été créée le 1er Avril 1999
-                  <br className="hidden md:block" />
-                  par Xavier LOPEZ.
-                </p>
+                <p>{tf("description")}</p>
                 <address className="not-italic space-y-1">
                   <p>
-                    <span className="text-[#52BC71]">Téléphone</span> : +33 08
+                    <span className="text-[#52BC71]">{tf("phone")}</span> : +33
                     92 49 00 71
                   </p>
                   <p>
-                    <span className="text-[#52BC71]">E-mail</span> :
+                    <span className="text-[#52BC71]">{tf("email")}</span> :
                     support@caspeo.fr
                   </p>
                   <p>
-                    <span className="text-[#52BC71]">Site web </span> :{" "}
+                    <span className="text-[#52BC71]">{tf("website")} </span> :{" "}
                     <a
                       href="https://wysiwyg-website.onrender.com/"
                       target="_blank"
@@ -159,7 +149,7 @@ const Footer = () => {
                 id="services-title"
                 className="text-[20px] text-white font-poppins font-bold mb-4 md:mb-6"
               >
-                Nos Services
+                {ts("title")}
               </h2>
               <ul className="text-white/90 text-[14px] md:text-[15px] font-assistant space-y-2">
                 {servicesList.map((service) => (
@@ -176,7 +166,7 @@ const Footer = () => {
                   id="navigation-title"
                   className="text-[20px] text-white font-poppins font-bold"
                 >
-                  Navigation
+                  {tf("navigation")}
                 </h2>
                 <button
                   onClick={() => setIsNavOpen(!isNavOpen)}
@@ -218,7 +208,7 @@ const Footer = () => {
                 id="articles-title"
                 className="text-[20px] text-white font-poppins font-bold mb-4 md:mb-6"
               >
-                Dernier article
+                {tf("articles")}
               </h2>
               <ul className="text-white/90 text-[14px] md:text-[15px] font-assistant space-y-2 ">
                 {recentArticles.map((article, index) => (
@@ -240,12 +230,10 @@ const Footer = () => {
       <div className="bg-black w-full py-4 md:py-6 dark:text-white dark:bg-slate-900">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 text-white gap-2 md:gap-0">
           <p className="text-sm md:text-base text-center">
-            &copy; Copyright {currentYear} WYSIWYG. Tous droits réservés
+            &copy; {currentYear} WYSIWYG. {tf("copyright")}
           </p>
           <div className="flex items-center gap-4">
-            <p className="text-sm md:text-base text-center">
-              Conception par l&apos;équipe IOC
-            </p>
+            <p className="text-sm md:text-base text-center">{tf("design")}</p>
           </div>
         </div>
       </div>

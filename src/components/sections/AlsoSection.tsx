@@ -1,38 +1,21 @@
 "use client";
 
-const cards = [
-  {
-    title: "Une Equipe d’expert",
-    description:
-      "Une Equipe de professionnel consistant d’ingénieurs, de système Admin, de commerciaux et des Techniciens de support.",
-    hoverTitle: "Experts certifiés",
-    hoverDescription:
-      "Notre équipe accompagne les entreprises dans leurs projets d'infrastructure, cloud, cybersécurité et transformation digitale.",
-  },
-  {
-    title: "Gamme complète de solutions et de services",
-    description:
-      "WYSIWYG détient de nombreuses certifications, validant nos compétences techniques. Notre façon d’intervenir chez nos clients pour solutionner leur besoins fait de nous des experts dans des domaines très larges.",
-    hoverTitle: "Solutions innovantes",
-    hoverDescription:
-      "ERP, Cloud, Infrastructure, Cybersécurité, IA et services managés pour répondre à tous vos besoins.",
-  },
-  {
-    title: "Satisfaction client",
-    description:
-      "La confiance de nos clients est le moteur de notre croissance et de notre engagement qualité. Nous sommes fiers de nos 207 Clients entreprise. Ce chiffre ne cesse de s’accroitre.",
-    hoverTitle: "Clients satisfaits",
-    hoverDescription:
-      "Nous sommes fiers de nos 207 Clients entreprise. Ce chiffre ne cesse de s’accroitre.",
-  },
-];
+import { useTranslations } from "next-intl";
 
+type Card = {
+  title: string;
+  description: string;
+  hoverTitle: string;
+  hoverDescription: string;
+};
 const AlsoSection = () => {
+  const t = useTranslations("AlsoSection");
+  const cards = t.raw("cards") as Card[];
   return (
     <div className="w-full py-16 px-4 bg-white lg:min-h-[400px] dark:text-white  dark:bg-slate-900">
       <div className="container mx-auto ">
         <h1 className="text-center text-[#E4373A] text-[38px] font-merriweather font-bold mb-16">
-          Wysiwyg c&apos;est aussi
+          {t("title")}
         </h1>
         <div className="flex lg:flex-row flex-col lg:gap-16 gap-12 items-center justify-center py-16">
           {cards.map((card, index) => (

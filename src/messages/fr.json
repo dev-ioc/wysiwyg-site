@@ -1,0 +1,199 @@
+{
+  "Hero": {
+    "title": "Ce nom est basé sur un concept basique de qualité totale. Chaque entreprise doit avoir une vision de ce qu'elle veut être",
+    "BtnPlus": "En savoir plus"
+  },
+  "Navbar": {
+    "Accueil": "Accueil",
+    "About": "À propos",
+    "Actualites": "Actualités",
+    "Services": "Services",
+    "Blog": "Blog",
+    "Contact": "Contact"
+  },
+  "AboutPage": {
+    "bienvenue": "Bienvenue à WYSIWYG",
+    "title": "Ce que vous voyez est ce que vous obtenez",
+    "description": "Ce nom est basé sur un concept basique de qualité totale. Chaque entreprise doit avoir une vision de ce qu'elle veut être Donner à nos clients et à nous-mêmes les moyens de gérer et d'améliorer leurs activités avec succès grâce à des solutions informatiques innovantes.",
+    "Wysiwyg": "Wysiwyg s'engage à traiter les métiers de ses clients comme s'il s'agissait des siens.",
+    "features": [
+      "Sécurité",
+      "Développement",
+      "Services hébergés",
+      "Infogérance"
+    ],
+    "btn": "Découvrir"
+  },
+  "QuickServices": {
+    "services": [
+      {
+        "id": 1,
+        "label": "Automatisation IA",
+        "description": "Automatisez vos taches avec les meilleurs outils et les lier à vos projets avec une possibilité d'optimisation.",
+        "icon": "/images/automatisation.avif",
+        "href": "/"
+      },
+      {
+        "id": 2,
+        "label": "ERP Axelor",
+        "description": "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
+        "icon": "/images/logo_axelor.avif",
+        "href": "/"
+      },
+      {
+        "id": 3,
+        "label": "Développement d'application",
+        "description": "De la conception au développement, en passant par la maintenance et la gestion d'applications logicielles.",
+        "icon": "/images/application.avif",
+        "href": "/"
+      },
+      {
+        "id": 4,
+        "label": "Visual Planning",
+        "description": "L'outil incontournable pour organiser et suivre vos projets efficacement. Planification des ressources, gestion des plannings et suivi en temps réel de vos activités.",
+        "icon": "/images/visualPlanning.avif",
+        "href": "/"
+      },
+      {
+        "id": 5,
+        "label": "Messagerie BlueMind",
+        "description": "Une plateforme collaborative pour optimiser vos échanges. Messagerie professionnelle, calendrier partagé, contacts unifiés — une solution souveraine et performante.",
+        "icon": "/images/bluemind.avif",
+        "href": "/"
+      },
+      {
+        "id": 6,
+        "label": "Infogérance",
+        "description": "Une infrastructure IT performante et sécurisée. Nous prenons en charge la gestion, la supervision et l'optimisation de vos systèmes informatiques pour garantir leur disponibilité et leur performance.",
+        "icon": "/images/Infogérance.avif",
+        "href": "/"
+      }
+    ]
+  },
+  "NosServices": {
+    "title": "Nos Services",
+    "HeadServices1": "Gestion & Comptabilité",
+    "HeadServices2": "Production Management",
+    "HeadServices3": "Analyse Prédictive / BI",
+    "HeadServices4": "ISO Management Systems",
+    "HeadServices5": "Architecte ERP et BPM",
+    "HeadServices6": "Supply chain Management",
+    "descritpion1": "Un apport significatif à votre performance financière grâce à une information fiable et accessible, un reporting pertinent et des analyses approfondies permettant d'améliorer la prise de décision et l'efficacité des processus comptables.",
+    "descritpion2": "La mondialisation et l’évolution du marché ont renforcé les exigences de respect des délais, de rapidité de réaction et de rentabilité dans le processus de fabrication.",
+    "descritpion3": "La Business Intelligence (BI) comprend les stratégies et les technologies utilisées par les entreprises pour l’analyse des données d’informations commerciales",
+    "descritpion4": "Le management de la qualité, ou gestion de la qualité est une discipline du management regroupant l’ensemble des concepts et méthodes visant à satisfaire les clients de l’entreprise.",
+    "descritpion5": "La stratégie de WYSIWYG permet aux PME d’optimiser et d’intégrer les solutions CFAO et ERP grâce à une solution globale et intégrée.",
+    "descritpion6": "Aujourd’hui, les chaînes d’approvisionnement sont plus interconnectées, complexes et mondiales pour produire et livrer aux clients."
+  },
+  "WhyUs": {
+    "title": "Pourquoi nous choisir ?",
+    "information": "Informatique et SI",
+    "management": "Gestion et Processus",
+    "commercial": "Commercial et BI",
+    "descriptionW1": "Développement de solutions logicielles professionnelles spécifiques sur mesure.",
+    "descriptionW2": "Optimisez la gestion et améliorez vos processus pour une organisation plus efficace et performante.",
+    "descriptionW3": "La Business Intelligence (BI) comprend les stratégies et les technologies utilisées par les entreprises pour l'analyse des données d'informations commerciales."
+  },
+  "Offers": {
+    "title": "Offres associées",
+    "support": "Support utilisateurs",
+    "infogerence": "Infogérance sur site.",
+    "dsi": "DSI Externalisé",
+    "save": "Sauvegarde externalisé",
+    "descriptionS1": "Nous le mettons à votre disposition afin de prendre en charge votre ticket pour une résolution la plus rapide possible.",
+    "descriptionS2": "Nos équipes vous apportent leur soutien dans toutes les tâches quotidiennes de la gestion de votre parc.",
+    "descriptionS3": "Nous confier votre SI c’est vous assurer de bénéficier de la meilleure expertise informatique, à la demande et sans aucune contrainte budgétaire.",
+    "descriptionS4": "L’infogérance d’infrastructures permet la gestion du parc informatique"
+  },
+  "Contact": {
+    "title1": "Avez-vous des questions ?",
+    "title2": "Contactez-nous",
+    "description": "L’entreprise propose également des prestations de formation et de conseil dans les domaines de la gestion de production, des technologies de l’Information et de la Communication, et du  management de la qualité.",
+    "rdv": "Prendre rendez-vous",
+    "phone": "Téléphone",
+    "email": "Adresse e-mail",
+    "name": "Nom",
+    "message": "Message",
+    "subject": "Objet",
+    "date": "Date",
+    "time": "Heure",
+    "send": "Envoyer",
+    "sending": "Envoi du message...",
+    "nameError": "Le nom est requis",
+    "phoneError": "Numéro invalide",
+    "emailError": "Email invalide",
+    "subjectError": "Objet requis",
+    "messageError": "Message est requis"
+  },
+  "HostedServices": {
+    "title": "Sevices hébergés",
+    "services": [
+      {
+        "label": "Automatisation IA",
+        "description": "Dans un environnement de plus en plus mobile, les entreprises et les fournisseurs sont toujours à la recherche de moyens pour offrir à leurs utilisateurs une expérience de travail sécurisée, où qu'ils soient. Avec notre solution, le déploiement et la gestion de l'environnement de bureau sont simplifiés.",
+        "icon": "/images/bvt.png",
+        "href": "/"
+      },
+      {
+        "label": "ERP Axelor",
+        "description": "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
+        "icon": "/images/message.png",
+        "href": "/"
+      },
+      {
+        "label": "test",
+        "description": "Dans un environnement de plus en plus mobile, les entreprises et les fournisseurs sont toujours à la recherche de moyens pour offrir à leurs utilisateurs une expérience de travail sécurisée, où qu'ils soient. Avec notre solution, le déploiement et la gestion de l'environnement de bureau sont simplifiés.",
+        "icon": "/images/bvt.png",
+        "href": "/"
+      },
+      {
+        "label": "test2",
+        "description": "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
+        "icon": "/images/message.png",
+        "href": "/"
+      }
+    ]
+  },
+  "AlsoSection": {
+    "title": "Wysiwyg c'est aussi",
+    "cards": [
+      {
+        "title": "Une Equipe d’expert",
+        "description": "Une Equipe de professionnel consistant d’ingénieurs, de système Admin, de commerciaux et des Techniciens de support.",
+        "hoverTitle": "Experts certifiés",
+        "hoverDescription": "Notre équipe accompagne les entreprises dans leurs projets d'infrastructure, cloud, cybersécurité et transformation digitale."
+      },
+      {
+        "title": "Gamme complète de solutions et de services",
+        "description": "WYSIWYG détient de nombreuses certifications, validant nos compétences techniques. Notre façon d’intervenir chez nos clients pour solutionner leur besoins fait de nous des experts dans des domaines très larges.",
+        "hoverTitle": "Solutions innovantes",
+        "hoverDescription": "ERP, Cloud, Infrastructure, Cybersécurité, IA et services managés pour répondre à tous vos besoins."
+      },
+      {
+        "title": "Satisfaction client",
+        "description": "La confiance de nos clients est le moteur de notre croissance et de notre engagement qualité. Nous sommes fiers de nos 207 Clients entreprise. Ce chiffre ne cesse de s’accroitre.",
+        "hoverTitle": "Clients satisfaits",
+        "hoverDescription": "Nous sommes fiers de nos 207 Clients entreprise. Ce chiffre ne cesse de s’accroitre."
+      }
+    ]
+  },
+  "Footer": {
+    "servicesList": [
+      "Gestion & Comptabilité",
+      "Production Management",
+      "Analyse Prédictive / BI",
+      "ISO Management Systems",
+      "Architecte ERP et BPM",
+      "Supply chain Management"
+    ],
+    "contact": "Contactez-nous",
+    "description": "WYSIWYG a été créée le 1er Avril 1999par Xavier LOPEZ.",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "website": "Site web",
+    "navigation": "Navigation",
+    "articles": "Dernier article",
+    "copyright": "Tous droits réservés",
+    "design": "Conception par l'équipe IOC"
+  }
+}

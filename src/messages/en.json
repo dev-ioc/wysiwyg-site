@@ -1,0 +1,194 @@
+{
+  "Hero": {
+    "title": "This name is based on a basic concept of total quality. Every company must have a vision of what it wants to become.",
+    "BtnPlus": "View more"
+  },
+  "Navbar": {
+    "Accueil": "Home",
+    "About": "About",
+    "Actualites": "News",
+    "Services": "Services",
+    "Blog": "Blog",
+    "Contact": "Contact"
+  },
+  "AboutPage": {
+    "bienvenue": "Welcome to WYSIWYG",
+    "title": "What You See Is What You Get",
+    "description": "This name is based on a basic concept of total quality. Every company must have a vision of what it wants to become. Give our clients and us the means to manage and improve their activities successfully with innovative IT solutions.",
+    "Wysiwyg": "Wysiwyg is committed to treating the skills of its clients as if they were their own.",
+    "features": ["Security", "Development", "Hosted services", "Information"],
+    "btn": "Discover"
+  },
+  "QuickServices": {
+    "services": [
+      {
+        "id": 1,
+        "label": "AI Automation",
+        "description": "Automate your tasks using the best tools and integrate them into your projects with optimization capabilities.",
+        "icon": "/images/automatisation.avif",
+        "href": "/"
+      },
+      {
+        "id": 2,
+        "label": "Axelor ERP",
+        "description": "A powerful and customizable solution to simplify your business management. CRM, accounting, inventory, HR — centralize all your business processes on a single platform.",
+        "icon": "/images/logo_axelor.avif",
+        "href": "/"
+      },
+      {
+        "id": 3,
+        "label": "Application Development",
+        "description": "From design and development to maintenance and management of software applications.",
+        "icon": "/images/application.avif",
+        "href": "/"
+      },
+      {
+        "id": 4,
+        "label": "Visual Planning",
+        "description": "The essential tool to efficiently organize and monitor your projects. Resource planning, schedule management, and real-time activity tracking.",
+        "icon": "/images/visualPlanning.avif",
+        "href": "/"
+      },
+      {
+        "id": 5,
+        "label": "BlueMind Messaging",
+        "description": "A collaborative platform to optimize your communications. Professional email, shared calendars, unified contacts — a sovereign and high-performance solution.",
+        "icon": "/images/bluemind.avif",
+        "href": "/"
+      },
+      {
+        "id": 6,
+        "label": "Managed IT Services",
+        "description": "A high-performance and secure IT infrastructure. We handle the management, monitoring, and optimization of your information systems to ensure availability and performance.",
+        "icon": "/images/Infogérance.avif",
+        "href": "/"
+      }
+    ]
+  },
+  "NosServices": {
+    "title": "Our Services",
+    "HeadServices1": "Management & Accounting",
+    "HeadServices2": "Production Management",
+    "HeadServices3": "Predictive Analytics / BI",
+    "HeadServices4": "ISO Management Systems",
+    "HeadServices5": "ERP and BPM Architecture",
+    "HeadServices6": "Supply Chain Management",
+    "descritpion1": "A significant contribution to your financial performance through reliable and accessible information, relevant reporting, and in-depth analysis that improve decision-making and the efficiency of accounting processes.",
+    "descritpion2": "Globalization and market evolution have increased the demands for meeting deadlines, responsiveness, and profitability in the manufacturing process.",
+    "descritpion3": "Business Intelligence (BI) refers to the strategies and technologies employed by organizations to collect, analyze, and transform business data into actionable insights for informed decision-making.",
+    "descritpion5": "WYSIWYG's strategy enables SMEs to optimize and integrate CAD/CAM and ERP solutions through a comprehensive and integrated approach.",
+    "descritpion6": "Today, supply chains are more interconnected, complex, and global, ensuring efficient production and delivery to customers."
+  },
+  "WhyUs": {
+    "title": "Why choose us?",
+    "information": "IT and Information Systems",
+    "management": "Management and Processes",
+    "commercial": "Business and BI",
+    "descriptionW1": "Development of custom professional software solutions tailored to your needs.",
+    "descriptionW2": "Optimize management and improve your processes for a more efficient and high-performing organization.",
+    "descriptionW3": "Business Intelligence (BI) encompasses the strategies and technologies used by companies to analyze business data and information."
+  },
+  "Offers": {
+    "title": "Related Offers",
+    "support": "User Support",
+    "infogerence": "On-site IT Management",
+    "dsi": "Outsourced IT Department",
+    "save": "Externalized Backup",
+    "descriptionS1": "We provide this service to handle your ticket and ensure the fastest possible resolution.",
+    "descriptionS2": "Our teams support you in all daily tasks related to managing your IT infrastructure.",
+    "descriptionS3": "Outsourcing your IT system ensures access to top-level expertise on demand without budget constraints.",
+    "descriptionS4": "IT infrastructure management enables efficient administration of your computer systems."
+  },
+
+  "Contact": {
+    "title1": "Do you have any questions ?",
+    "title2": "Contact us",
+    "description": "The company also provides training and consulting services in production management, Information and Communication Technologies, and quality management.",
+    "rdv": "Schedule an appointment",
+    "phone": "Phone",
+    "email": "Email address",
+    "name": "Name",
+    "message": "Message",
+    "subject": "Subject",
+    "date": "Date",
+    "time": "Time",
+    "send": "Send",
+    "sending": "Sending message...",
+    "nameError": "Name is required",
+    "phoneError": "Invalid phone number",
+    "emailError": "Invalid email address",
+    "subjectError": "Subject is required",
+    "messageError": "Message is required"
+  },
+  "HostedServices": {
+    "title": "Hosted Services",
+    "services": [
+      {
+        "label": "AI Automation",
+        "description": "In an increasingly mobile environment, companies and providers are constantly looking for ways to offer users a secure working experience, wherever they are. With our solution, deployment and management of the desktop environment are simplified.",
+        "icon": "/images/bvt.png",
+        "href": "/"
+      },
+      {
+        "label": "Axelor ERP",
+        "description": "A powerful and customizable solution to simplify your business management. CRM, accounting, inventory, HR — centralize all your business processes on a single platform.",
+        "icon": "/images/message.png",
+        "href": "/"
+      },
+      {
+        "label": "test",
+        "description": "In an increasingly mobile environment, companies and providers are constantly looking for ways to offer users a secure working experience, wherever they are. With our solution, deployment and management of the desktop environment are simplified.",
+        "icon": "/images/bvt.png",
+        "href": "/"
+      },
+      {
+        "label": "test2",
+        "description": "A powerful and customizable solution to simplify your business management. CRM, accounting, inventory, HR — centralize all your business processes on a single platform.",
+        "icon": "/images/message.png",
+        "href": "/"
+      }
+    ]
+  },
+  "AlsoSection": {
+    "title": "WYSIWYG is also",
+    "cards": [
+      {
+        "title": "An expert team",
+        "description": "A professional team consisting of engineers, system administrators, sales staff, and support technicians.",
+        "hoverTitle": "Certified experts",
+        "hoverDescription": "Our team supports companies in their infrastructure, cloud, cybersecurity, and digital transformation projects."
+      },
+      {
+        "title": "Full range of solutions and services",
+        "description": "WYSIWYG holds numerous certifications validating our technical expertise. Our approach to solving client needs makes us experts across a wide range of fields.",
+        "hoverTitle": "Innovative solutions",
+        "hoverDescription": "ERP, Cloud, Infrastructure, Cybersecurity, AI, and managed services to meet all your needs."
+      },
+      {
+        "title": "Customer satisfaction",
+        "description": "The trust of our clients is the driving force behind our growth and quality commitment. We are proud of our 207 corporate clients. This number continues to grow.",
+        "hoverTitle": "Satisfied clients",
+        "hoverDescription": "We are proud of our 207 corporate clients. This number continues to grow."
+      }
+    ]
+  },
+  "Footer": {
+    "servicesList": [
+      "Management & Accounting",
+      "Production Management",
+      "Predictive Analytics / BI",
+      "ISO Management Systems",
+      "ERP and BPM Architect",
+      "Supply Chain Management"
+    ],
+    "contact": "Contact us",
+    "description": "WYSIWYG was founded on April 1st, 1999 by Xavier LOPEZ.",
+    "phone": "Phone",
+    "email": "Email",
+    "website": "Website",
+    "navigation": "Navigation",
+    "articles": "Latest article",
+    "copyright": "All rights reserved",
+    "design": "Designed by the IOC team"
+  }
+}
