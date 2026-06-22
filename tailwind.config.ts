@@ -46,6 +46,14 @@ const config: Config = {
           "0%": { opacity: "0", transform: "scale(0.8)" },
           "100%": { opacity: "1", transform: "scale(1)" },
         },
+        type: {
+          "0%": { clipPath: "inset(0 100% 0 0)" },
+          "100%": { clipPath: "inset(0 0% 0 0)" },
+        },
+        cursor: {
+          "0%, 40%": { opacity: "1" },
+          "60%, 100%": { opacity: "0" },
+        },
       },
       animation: {
         slideRight: "slideRight 0.8s ease-out both",
@@ -54,6 +62,8 @@ const config: Config = {
         fadeUp: "fadeUp 0.8s ease-out both",
         fadeIn: "fadeIn 0.8s ease-out both",
         zoomIn: "zoomIn 0.6s ease-out both",
+        type: "type 3s steps(30) 0.8s forwards",
+        cursor: "cursor 0.6s linear infinite alternate",
       },
     },
   },
