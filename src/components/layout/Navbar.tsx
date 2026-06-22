@@ -138,7 +138,7 @@ const Navbar = () => {
           </a>
         </nav>
       </div>
-      <div className="lg:hidden fixed top-0 left-0 w-full z-30 bg-white shadow-md flex items-center justify-between px-4 h-[72px]">
+      <div className="lg:hidden fixed top-0 left-0 w-full z-30 bg-white shadow-md flex items-center justify-between px-4 h-[72px] ">
         <img
           src="/images/header.png"
           alt="logo"
@@ -162,24 +162,24 @@ const Navbar = () => {
           isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
-        }`}
+        } `}
         onClick={closeMobileMenu}
       />
       <div
         id="mobile-menu-panel"
         className={`lg:hidden fixed top-0 right-0 h-full w-[82%] max-w-[320px] bg-white z-50 shadow-2xl transition-transform duration-300 ease-out flex flex-col ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        } dark:bg-slate-900`}
       >
-        <div className="flex items-center justify-between px-5 h-[72px] border-b border-light shrink-0">
-          <span className="font-merriweather font-bold text-dark text-[18px]">
+        <div className="flex items-center justify-between px-5 h-[72px] border-b border-light shrink-0 ">
+          <span className="font-merriweather font-bold text-dark text-[18px]  dark:text-white ">
             Menu
           </span>
           <button
             type="button"
             aria-label="Fermer le menu"
             onClick={closeMobileMenu}
-            className="flex items-center justify-center w-9 h-9 rounded-full bg-gray-100 text-dark"
+            className="flex items-center justify-center w-9 h-9 rounded-full bg-gray-100 text-dark  dark:text-white "
           >
             <X size={18} />
           </button>
@@ -190,7 +190,7 @@ const Navbar = () => {
             const isActive = activeSection === getSectionId(item.href);
             const isRouteActive = activeRoute === item.href;
             return (
-              <li key={item.label} className="border-b border-light">
+              <li key={item.label} className="border-b border-light ">
                 <a
                   href={item.href}
                   onClick={closeMobileMenu}
@@ -198,7 +198,7 @@ const Navbar = () => {
                     isActive || isRouteActive
                       ? "text-primary font-bold"
                       : "text-dark hover:text-primary"
-                  }`}
+                  }  dark:text-white text-center`}
                 >
                   {item.label}
                 </a>
@@ -228,7 +228,7 @@ const Navbar = () => {
               +33 1 34 20 16 19
             </label>
           </div>
-          <div className="flex gap-4 items-center pt-2">
+          <div className="flex gap-4 items-center pt-2 ">
             <a href="#">
               <FaFacebookF className="w-4 h-4 hover:text-blue-600" />
             </a>
