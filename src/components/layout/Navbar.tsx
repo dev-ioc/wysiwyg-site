@@ -17,7 +17,7 @@ const getSectionId = (href: string) => href.replace("/", "").replace("#", "");
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeRoute, setActiveRoute] = useState("");
+  const pathname = usePathname();
   const t = useTranslations("Navbar");
   const navLinks = [
     { label: t("Accueil"), href: "/#accueil" },
@@ -28,8 +28,6 @@ const Navbar = () => {
     { label: t("Contact"), href: "/#contact" },
   ];
   useEffect(() => {
-    setActiveRoute(window.location.pathname);
-
     const sections = navLinks
       .map((link) => document.getElementById(getSectionId(link.href)))
       .filter((el): el is HTMLElement => el !== null);
@@ -109,7 +107,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-8 list-none px-4 font-assistant text-[17px] text-gray">
             {navLinks.map((item) => {
               const isActive = activeSection === getSectionId(item.href);
-              const isRouteActive = activeRoute === item.href;
+              const isRouteActive = pathname === item.href;
               return (
                 <li key={item.label}>
                   <a
@@ -183,8 +181,8 @@ const Navbar = () => {
 
         <ul className="flex flex-col list-none font-assistant text-[17px] text-gray py-2 overflow-y-auto">
           {navLinks.map((item) => {
+            const isRouteActive = pathname === item.href;
             const isActive = activeSection === getSectionId(item.href);
-            const isRouteActive = activeRoute === item.href;
             return (
               <li key={item.label} className="border-b border-light ">
                 <a
