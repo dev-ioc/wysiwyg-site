@@ -97,7 +97,7 @@ const Navbar = () => {
               <FaPinterest className="w-5 h-5 hover:text-red-600" />
             </a>
             <a href="#">
-              <FaLinkedin className="w-5 h-5 hover:text-blue-700" />
+              <FaLinkedin className="w-5 h-5 hover:text-blue-700 rounded-[6.5px]" />
             </a>
           </div>
         </div>
@@ -211,13 +211,13 @@ const Navbar = () => {
         <div className="mt-auto px-5 py-5 border-t border-light flex flex-col gap-3 shrink-0">
           <div className="flex gap-2 items-center">
             <Mail size={22} color="#54BE73" />
-            <span className="text-dark text-[14px] font-bold">
+            <span className="text-dark text-[14px] font-bold dark:text-white">
               sales@wysiwyg.fr
             </span>
           </div>
           <div className="flex gap-2 items-center">
             <PhoneCall size={22} color="#54BE73" />
-            <span className="text-dark text-[14px] font-bold">
+            <span className="text-dark text-[14px] font-bold dark:text-white">
               +33 1 34 20 16 19
             </span>
           </div>
