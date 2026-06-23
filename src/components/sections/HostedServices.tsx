@@ -109,7 +109,7 @@ const HostedServices = () => {
           </div>
           <button
             onClick={scrollPrev}
-            className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none "
           >
             <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50 transition-colors shadow-lg">
               <svg
@@ -127,6 +127,7 @@ const HostedServices = () => {
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="m15 19-7-7 7-7"
+                  className="dark:bg-slate-900 dark:text-black"
                 />
               </svg>
               <span className="sr-only">Précédent</span>
@@ -153,6 +154,7 @@ const HostedServices = () => {
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="m9 5 7 7-7 7"
+                  className="dark:bg-slate-900 dark:text-black"
                 />
               </svg>
               <span className="sr-only">Suivant</span>

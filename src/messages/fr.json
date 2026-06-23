@@ -137,19 +137,25 @@
       {
         "label": "ERP Axelor",
         "description": "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
-        "icon": "/images/message.png",
+        "icon": "/images/f12-800.png.webp",
         "href": "/"
       },
       {
-        "label": "test",
-        "description": "Dans un environnement de plus en plus mobile, les entreprises et les fournisseurs sont toujours à la recherche de moyens pour offrir à leurs utilisateurs une expérience de travail sécurisée, où qu'ils soient. Avec notre solution, le déploiement et la gestion de l'environnement de bureau sont simplifiés.",
-        "icon": "/images/bvt.png",
+        "label": "Sauvegarde externalisé ",
+        "description": "Protégez et sauvegardez efficacement vos données contre le vol, la perte, les piratages dans nos data centers français de dernière génération. C’est l’assurance vie de vos données.",
+        "icon": "/images/f12-800-2.png.webp",
         "href": "/"
       },
       {
-        "label": "test2",
-        "description": "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
-        "icon": "/images/message.png",
+        "label": "Hébergement web ",
+        "description": "Grâce à notre service Surveillance & sécurisation, concentrez-vous sur votre cœur de métier pendant que nous assurons.",
+        "icon": "/images/f38-800-1.png.webp",
+        "href": "/"
+      },
+      {
+        "label": "Hébergement Cloud ",
+        "description": "Au lieu d’investir dans une infrastructure interne, choisissez un hébergement dédié de vos serveurs, applications, données dans nos data centers français.",
+        "icon": "/images/f2-800-1.png.webp",
         "href": "/"
       }
     ]

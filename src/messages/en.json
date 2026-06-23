@@ -132,19 +132,25 @@
       {
         "label": "Axelor ERP",
         "description": "A powerful and customizable solution to simplify your business management. CRM, accounting, inventory, HR — centralize all your business processes on a single platform.",
-        "icon": "/images/message.png",
+        "icon": "/images/f12-800.png.webp",
         "href": "/"
       },
       {
-        "label": "test",
-        "description": "In an increasingly mobile environment, companies and providers are constantly looking for ways to offer users a secure working experience, wherever they are. With our solution, deployment and management of the desktop environment are simplified.",
-        "icon": "/images/bvt.png",
+        "label": "Offsite Backup",
+        "description": "Protect and securely back up your data against theft, loss, and cyberattacks in our latest-generation French data centers. It is the lifeline of your data.",
+        "icon": "/images/f12-800-2.png.webp",
         "href": "/"
       },
       {
-        "label": "test2",
-        "description": "A powerful and customizable solution to simplify your business management. CRM, accounting, inventory, HR — centralize all your business processes on a single platform.",
-        "icon": "/images/message.png",
+        "label": "Web Hosting",
+        "description": "With our Monitoring & Security service, focus on your core business while we take care of the protection and supervision of your infrastructure.",
+        "icon": "/images/f38-800-1.png.webp",
+        "href": "/"
+      },
+      {
+        "label": "Cloud Hosting",
+        "description": "Instead of investing in an internal infrastructure, choose dedicated hosting for your servers, applications, and data in our French data centers.",
+        "icon": "/images/f2-800-1.png.webp",
         "href": "/"
       }
     ]
