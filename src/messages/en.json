@@ -197,5 +197,9 @@
     "articles": "Latest article",
     "copyright": "All rights reserved",
     "design": "Designed by the IOC team"
+  },
+  "News": {
+    "title": "TECHNOLOGY",
+    "AllNews": "ALL NEWS"
   }
 }

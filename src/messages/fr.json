@@ -81,7 +81,7 @@
     "descritpion1": "Un apport significatif à votre performance financière grâce à une information fiable et accessible, un reporting pertinent et des analyses approfondies permettant d'améliorer la prise de décision et l'efficacité des processus comptables.",
     "descritpion2": "La mondialisation et l’évolution du marché ont renforcé les exigences de respect des délais, de rapidité de réaction et de rentabilité dans le processus de fabrication.",
     "descritpion3": "La Business Intelligence (BI) comprend les stratégies et les technologies utilisées par les entreprises pour l’analyse des données d’informations commerciales",
-    "descritpion4": "Le management de la qualité, ou gestion de la qualité est une discipline du management regroupant l’ensemble des concepts et méthodes visant à satisfaire les clients de l’entreprise.",
+    "description4": "Le management de la qualité, ou gestion de la qualité est une discipline du management regroupant l’ensemble des concepts et méthodes visant à satisfaire les clients de l’entreprise.",
     "descritpion5": "La stratégie de WYSIWYG permet aux PME d’optimiser et d’intégrer les solutions CFAO et ERP grâce à une solution globale et intégrée.",
     "descritpion6": "Aujourd’hui, les chaînes d’approvisionnement sont plus interconnectées, complexes et mondiales pour produire et livrer aux clients."
   },
@@ -201,5 +201,9 @@
     "articles": "Dernier article",
     "copyright": "Tous droits réservés",
     "design": "Conception par l'équipe IOC"
+  },
+  "News": {
+    "title": "TECHNOLOGIES",
+    "AllNews": "Toutes les actualités"
   }
 }

@@ -22,7 +22,7 @@ const Navbar = () => {
   const navLinks = [
     { label: t("Accueil"), href: "/#accueil" },
     { label: t("About"), href: "/about" },
-    { label: t("Actualites"), href: "#actualites" },
+    { label: t("Actualites"), href: "/news" },
     { label: t("Services"), href: "/#services" },
     // { label: t("Blog"), href: "#blog" },
     { label: t("Contact"), href: "/#contact" },
