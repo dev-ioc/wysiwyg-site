@@ -1,3 +1,5 @@
+"use client";
+import { useInView } from "@/hooks/useInView";
 import { useTranslations } from "next-intl";
 
 type Service = {
@@ -11,6 +13,7 @@ const QuickServices = () => {
   const t = useTranslations("QuickServices");
   const tp = useTranslations("Hero");
   const services = t.raw("services") as Service[];
+  const { ref, isVisible } = useInView(0.2);
   return (
     <div className="w-full py-28 px-4 bg-[#F0EDEA] dark:text-white  dark:bg-slate-900 border-b border-light">
       <div className="container mx-auto">
@@ -20,11 +23,18 @@ const QuickServices = () => {
               key={service.label}
               className="flex flex-col items-center text-center gap-4"
             >
-              <div className="h-[120px] flex items-center justify-center">
+              <div
+                ref={ref}
+                className={`h-[120px] flex items-center justify-center ${
+                  isVisible
+                    ? "animate-slideUp opacity-100"
+                    : "opacity-0 scale-90"
+                }`}
+              >
                 <img
                   src={service.icon}
                   alt={service.label}
-                  className={`max-h-[120px] max-w-[200px] object-contain ${service.id === 1 ? "dark:invert" : ""} animate-slideUp`}
+                  className={`max-h-[120px] max-w-[200px] object-contain ${service.id === 1 ? "dark:invert" : ""} `}
                 />
               </div>
               <h3 className="text-[13px] font-bold text-gray-800 uppercase tracking-wide">

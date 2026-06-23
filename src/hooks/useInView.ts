@@ -16,7 +16,6 @@ export const useInView = (threshold = 0.2) => {
       },
       { threshold },
     );
-
     observer.observe(element);
 
     return () => observer.disconnect();

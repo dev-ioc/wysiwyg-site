@@ -104,7 +104,7 @@ const Navbar = () => {
       </div>
       <div className="hidden lg:block container px-4 xl:px-0 mx-auto col-span-12 fixed left-1/2 transform -translate-x-1/2 top-28 ml-14 z-20 py-2">
         <nav className="w-full bg-white rounded-full shadow-xl flex items-center justify-between h-[64px] backdrop-blur-sm bg-white/90">
-          <ul className="flex items-center gap-8 list-none px-8 font-assistant text-[22px] text-gray">
+          <ul className="flex items-center gap-12 list-none px-8 font-assistant text-[22px] text-gray">
             {navLinks.map((item) => {
               const isActive = activeSection === getSectionId(item.href);
               const isRouteActive = pathname === item.href;
@@ -112,7 +112,7 @@ const Navbar = () => {
                 <li key={item.label}>
                   <a
                     href={item.href}
-                    className={`text-[15px] transition-colors ${
+                    className={`text-[18px] transition-colors ${
                       isActive || isRouteActive
                         ? "text-primary font-bold"
                         : "text-dark hover:text-primary font-bold"
@@ -124,7 +124,7 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <div className="flex flex-row gap-4 items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-2.5 rounded-r-full transition-colors whitespace-nowrap">
+          <div className="flex flex-row gap-4 items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-3.5 rounded-r-full transition-colors whitespace-nowrap">
             <LocaleSwitcher />
             <div>
               <ThemeSwitch />
@@ -201,7 +201,7 @@ const Navbar = () => {
           })}
         </ul>
 
-        <div className="flex flex-row gap-4 justify-center items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-2.5  transition-colors whitespace-nowrap">
+        <div className="flex flex-row gap-4 justify-center items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-1  transition-colors whitespace-nowrap">
           <LocaleSwitcher />
           <div>
             <ThemeSwitch />
@@ -261,7 +261,7 @@ const LocaleSwitcher = ({ className = "" }: { className?: string }) => {
       onClick={toggle}
       className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-[13px] font-semibold  ${className}`}
     >
-      <span className="text-white uppercase text-[20px]">{locale}</span>
+      <span className="text-white uppercase text-[16px]">{locale}</span>
     </button>
   );
 };

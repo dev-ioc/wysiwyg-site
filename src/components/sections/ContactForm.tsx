@@ -1,4 +1,5 @@
 "use client";
+import { useInView } from "@/hooks/useInView";
 import { contactSchema } from "@/lib/contactSchema";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
@@ -6,6 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 const ContactForm = () => {
   const t = useTranslations("Contact");
+  const { ref, isVisible } = useInView(0.2);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string[]>>({});
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -84,7 +86,7 @@ const ContactForm = () => {
           </div>
         </div>
       )}
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-28 items-center lg:px-10">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-28 items-center lg:px-10 ">
         <div className="text-white space-y-10 lg:-mt-20">
           <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold font-merriweather leading-tight">
             {t("title1")}
@@ -107,13 +109,19 @@ const ContactForm = () => {
         </div>
         <form onSubmit={handleSubmit}>
           <div
+            ref={ref}
             className={`bg-white rounded-lg shadow-xl p-6
     w-full lg:max-w-[400px]
     mx-auto lg:mx-62 lg:justify-self-end
     mt-8 lg:-mt-24
     lg:h-[520px]
     
-    ${errors.name || errors.phone || errors.email || errors.subject || errors.message ? "lg:space-y-5" : "lg:space-y-8"}`}
+    ${errors.name || errors.phone || errors.email || errors.subject || errors.message ? "lg:space-y-5" : "lg:space-y-8"}  `}
+            style={
+              isVisible
+                ? { animation: "zoomIn 0.6s ease-out both" }
+                : { opacity: 0, transform: "scale(0.9)" }
+            }
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
               <div className="relative z-0 w-full group">

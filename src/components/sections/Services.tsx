@@ -75,7 +75,7 @@ const Services = () => {
                 {t("HeadServices4")}
               </h1>
               <p className="text-[#A8A8A8] text-[18px] font-assistant font-bold">
-                {t("descritpion4")}
+                {t("description4")}
               </p>
             </div>
           </div>

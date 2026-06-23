@@ -18,9 +18,9 @@ export default function ThemeSwitch() {
       aria-label="Toggle theme"
     >
       {resolvedTheme === "dark" ? (
-        <FiSun className="w-7 h-7 text-yellow-400" />
+        <FiSun className="w-5 h-5 text-yellow-400" />
       ) : (
-        <FiMoon className="w-7 h-7 text-gray-600" />
+        <FiMoon className="w-5 h-5 text-gray-600" />
       )}
     </button>
   );
