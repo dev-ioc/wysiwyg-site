@@ -54,6 +54,10 @@ const config: Config = {
           "0%, 40%": { opacity: "1" },
           "60%, 100%": { opacity: "0" },
         },
+        slideUp: {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         slideRight: "slideRight 0.8s ease-out both",
@@ -64,6 +68,7 @@ const config: Config = {
         zoomIn: "zoomIn 0.6s ease-out both",
         type: "type 3s steps(30) 0.8s forwards",
         cursor: "cursor 0.6s linear infinite alternate",
+        slideUp: "slideUp 0.8s ease-out both",
       },
     },
   },

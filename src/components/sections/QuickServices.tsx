@@ -24,7 +24,7 @@ const QuickServices = () => {
                 <img
                   src={service.icon}
                   alt={service.label}
-                  className={`max-h-[120px] max-w-[200px] object-contain ${service.id === 1 ? "dark:invert" : ""}`}
+                  className={`max-h-[120px] max-w-[200px] object-contain ${service.id === 1 ? "dark:invert" : ""} animate-slideUp`}
                 />
               </div>
               <h3 className="text-[13px] font-bold text-gray-800 uppercase tracking-wide">

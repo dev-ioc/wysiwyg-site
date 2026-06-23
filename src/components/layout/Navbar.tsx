@@ -61,7 +61,7 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-30 w-full dark:text-white dark:bg-slate-900">
-      <div className="hidden lg:flex h-[155px] justify-between items-center backdrop-blur-sm bg-white/25 px-4 py-3 gap-4 shadow-sm">
+      <div className="hidden lg:flex h-[155px] justify-between items-center backdrop-blur-sm bg-white/60 px-4 py-3 gap-4 shadow-sm">
         <div className="container mx-auto flex flex-row justify-between items-center gap-4">
           <img
             src="/images/header.png"
@@ -103,8 +103,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className="hidden lg:block container px-4 xl:px-0 mx-auto col-span-12 fixed left-1/2 transform -translate-x-1/2 top-28 ml-14 z-20 py-2">
-        <nav className="w-full bg-white rounded-full shadow-lg flex items-center justify-between h-[64px] backdrop-blur-sm bg-white/25">
-          <ul className="flex items-center gap-8 list-none px-4 font-assistant text-[17px] text-gray">
+        <nav className="w-full bg-white rounded-full shadow-xl flex items-center justify-between h-[64px] backdrop-blur-sm bg-white/90">
+          <ul className="flex items-center gap-8 list-none px-8 font-assistant text-[22px] text-gray">
             {navLinks.map((item) => {
               const isActive = activeSection === getSectionId(item.href);
               const isRouteActive = pathname === item.href;
