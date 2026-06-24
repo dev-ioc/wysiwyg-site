@@ -187,7 +187,7 @@ const News = () => {
               </div>
             </div>
             <div className="lg:w-[50%] w-full">
-              <div className="bg-[url('/images/CMK2OXZNMJJFXPM5OE3RP67ZHI.avif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px]" />
+              <div className="bg-[url('/images/images_10.jfif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -275,9 +275,8 @@ const News = () => {
           <div>
             <p className="leading-[1.8rem]">{t("description")}</p>
           </div>
-          <div className="bg-[url('/images/pexels-fauxels-3183197-768x512.jpg.webp')] bg-no-repeat bg-cover bg-center h-[40vh] " />
-
-          <div className="bg-[url('/images/pexels-burst-374074-r4vkxxp465ugxrl96hm7ejrhtep1450egrhout2npw.jpg.webp')] bg-no-repeat bg-cover bg-center h-[40vh] " />
+          <div className="bg-[url('/images/pexels-fauxels-3183197-768x512.jpg.webp')] bg-no-repeat bg-cover bg-center h-[40vh] rounded-[16px]" />
+          <div className="bg-[url('/images/pexels-burst-374074-r4vkxxp465ugxrl96hm7ejrhtep1450egrhout2npw.jpg.webp')] bg-no-repeat bg-cover bg-center h-[40vh] rounded-[16px]" />
         </div>
       </div>
     </section>
