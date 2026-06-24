@@ -1,5 +1,4 @@
 "use client";
-import { useInView } from "@/hooks/useInView";
 import { contactSchema } from "@/lib/contactSchema";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
@@ -25,6 +24,7 @@ const ContactForm = () => {
         email: formData.get("email"),
         subject: formData.get("subject"),
         message: formData.get("message"),
+        service: formData.get("service"),
       };
 
       const schema = contactSchema(t);
@@ -165,30 +165,68 @@ const ContactForm = () => {
                 )}
               </div>
             </div>
-            <div className="relative z-0 w-full mb-1 group">
-              <input
-                onChange={() => clearError("email")}
-                type="email"
-                name="email"
-                id="floating_email"
-                placeholder=" "
-                className={`block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 ${
-                  errors.email ? "border-red-500" : "border-grey"
-                } appearance-none focus:outline-none focus:ring-0 focus:border-[#54BE73] peer`}
-              />
-              <label
-                htmlFor="floating_email"
-                className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+              <div className="relative z-0 w-full mb-1 group">
+                <input
+                  onChange={() => clearError("email")}
+                  type="email"
+                  name="email"
+                  id="floating_email"
+                  placeholder=" "
+                  className={`block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 ${
+                    errors.email ? "border-red-500" : "border-grey"
+                  } appearance-none focus:outline-none focus:ring-0 focus:border-[#54BE73] peer`}
+                />
+                <label
+                  htmlFor="floating_email"
+                  className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
           peer-focus:text-[#54BE73]
           peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
           peer-focus:scale-75 peer-focus:-translate-y-6"
-              >
-                {t("email")}
-              </label>
-              {errors.email && (
-                <p className="text-red-500 text-xs mt-1">{errors.email[0]}</p>
-              )}
+                >
+                  {t("email")}
+                </label>
+                {errors.email && (
+                  <p className="text-red-500 text-xs mt-1">{errors.email[0]}</p>
+                )}
+              </div>
+              <div className="relative z-0 w-full mb-1 group">
+                <select
+                  onChange={() => clearError("service")}
+                  name="service"
+                  id="floating_service"
+                  defaultValue=""
+                  className={`block py-2.5 px-0 w-full text-sm text-dark bg-transparent border-0 border-b-2 ${
+                    errors.service ? "border-red-500" : "border-grey"
+                  } focus:outline-none focus:ring-0 focus:border-[#54BE73] peer`}
+                >
+                  <option value="">{t("serviceSelect")}</option>
+                  <option value="Automatisation IA">{t("Ai")}</option>
+                  <option value="ERP Axelor">{t("Axelor")}</option>
+                  <option value="Développement d'application">
+                    {t("development")}
+                  </option>
+                  <option value="Visual planning">{t("visualPlanning")}</option>
+                  <option value="Messagerie BlueMind">{t("blueMind")}</option>
+                  <option value="Infogérance">{t("managedITServices")}</option>
+                </select>
+
+                {/* <label
+                  htmlFor="floating_service"
+                  className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
+      peer-focus:text-[#54BE73]"
+                >
+                  {t("serviceSelect")}
+                </label> */}
+
+                {errors.service && (
+                  <p className="text-red-500 text-xs mt-1">
+                    {errors.service[0]}
+                  </p>
+                )}
+              </div>
             </div>
+
             <div className="relative z-0 w-full mb-1 group">
               <input
                 onChange={() => clearError("subject")}

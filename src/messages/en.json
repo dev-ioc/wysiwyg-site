@@ -119,7 +119,15 @@
     "phoneError": "Invalid phone number",
     "emailError": "Invalid email address",
     "subjectError": "Subject is required",
-    "messageError": "Message is required"
+    "messageError": "Message is required",
+    "serviceError": "Service is required",
+    "serviceSelect": "Select a service",
+    "Ai": "AI Automation",
+    "Axelor": "Axelor ERP",
+    "development": "Application Development",
+    "visualPlanning": "Visual Planning",
+    "blueMind": "BlueMind Messaging",
+    "managedITServices": "Managed IT Services"
   },
   "HostedServices": {
     "title": "Hosted Services",

@@ -260,7 +260,7 @@ const News = () => {
             <div className="hidden lg:block" />
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4">
             <h1 className="text-red-400 text-[32px] font-bold uppercase">
               {t("Security")}

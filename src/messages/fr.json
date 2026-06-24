@@ -123,7 +123,15 @@
     "phoneError": "Numéro invalide",
     "emailError": "Email invalide",
     "subjectError": "Objet requis",
-    "messageError": "Message est requis"
+    "messageError": "Message est requis",
+    "serviceError": "Service est requis",
+    "serviceSelect": "Sélectionnez un service",
+    "Ai": "Automatisation IA",
+    "Axelor": "ERP Axelor",
+    "development": "Développement d'application",
+    "visualPlanning": "Visual planning",
+    "blueMind": "Messagerie BlueMind",
+    "managedITServices": "Infogérance"
   },
   "HostedServices": {
     "title": "Sevices hébergés",

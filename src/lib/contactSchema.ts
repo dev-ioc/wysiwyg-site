@@ -7,4 +7,5 @@ export const contactSchema = (t: (key: string) => string) =>
     email: z.string().email(t("emailError")),
     subject: z.string().min(3, t("subjectError")),
     message: z.string().min(2, t("messageError")),
+    service: z.string().min(2, t("serviceError")),
   });

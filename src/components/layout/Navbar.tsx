@@ -97,9 +97,9 @@ const Navbar = () => {
             </a> */}
               <a href="#">
                 <FaLinkedin
-                  className="w-5 h-5 hover:text-blue-700 rounded-[6.5px]"
+                  className="w-5 h-5 hover:text-blue-700 rounded-[6.5px] "
                   size={50}
-                  color="#01090a"
+                  color="#000000"
                 />
               </a>
             </div>

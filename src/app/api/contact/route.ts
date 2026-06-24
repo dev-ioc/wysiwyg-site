@@ -23,6 +23,7 @@ export async function POST(req: Request) {
         <p><strong>Email:</strong> ${body.email}</p>
         <p><strong>Téléphone:</strong> ${body.phone}</p>
         <p><strong>Objet:</strong> ${body.subject}</p>
+        <p><strong>Service:</strong> ${body.service}</p>
         <p><strong>Message:</strong> ${body.message}</p>
       `,
     });
