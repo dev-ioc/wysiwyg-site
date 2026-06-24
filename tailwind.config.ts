@@ -69,6 +69,7 @@ const config: Config = {
         type: "type 3s steps(30) 0.8s forwards",
         cursor: "cursor 0.6s linear infinite alternate",
         slideUp: "slideUp 0.8s ease-out both",
+        pulseSlow: "pulse 10s cubic-bezier(0.7, 0, 0.9, 1) infinite",
       },
     },
   },
