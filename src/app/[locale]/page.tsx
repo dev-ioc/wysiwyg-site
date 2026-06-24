@@ -28,14 +28,14 @@ export default function Home() {
       <section id="offers">
         <Offers />
       </section>
-      <section id="contact">
-        <ContactForm />
-      </section>
       <section id="hosted-services">
         <HostedServices />
       </section>
       <section id="also">
         <AlsoSection />
+      </section>
+      <section id="contact">
+        <ContactForm />
       </section>
     </main>
   );

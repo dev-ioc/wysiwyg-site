@@ -7,7 +7,6 @@ import toast, { Toaster } from "react-hot-toast";
 
 const ContactForm = () => {
   const t = useTranslations("Contact");
-  const { ref, isVisible } = useInView(0.2);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string[]>>({});
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -74,7 +73,7 @@ const ContactForm = () => {
     });
   };
   return (
-    <div className="w-full bg-[url('/images/bg-contact.png')] bg-no-repeat bg-cover bg-center px-4 py-12 lg:h-[417px] ">
+    <div className="w-full bg-[url('/images/bg-contact.png')] bg-no-repeat bg-cover bg-center px-4 py-12 lg:h-auto ">
       <Toaster position="top-right" reverseOrder={false} />
       {loading && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
@@ -109,19 +108,12 @@ const ContactForm = () => {
         </div>
         <form onSubmit={handleSubmit}>
           <div
-            ref={ref}
             className={`bg-white rounded-lg shadow-xl p-6
-    w-full lg:max-w-[400px]
+    w-full 
     mx-auto lg:mx-62 lg:justify-self-end
-    mt-8 lg:-mt-24
-    lg:h-[520px]
+    mt-8 
     
     ${errors.name || errors.phone || errors.email || errors.subject || errors.message ? "lg:space-y-5" : "lg:space-y-8"}  `}
-            style={
-              isVisible
-                ? { animation: "zoomIn 0.6s ease-out both" }
-                : { opacity: 0, transform: "scale(0.9)" }
-            }
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
               <div className="relative z-0 w-full group">
