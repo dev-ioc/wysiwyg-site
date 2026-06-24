@@ -37,7 +37,7 @@ export async function POST(req: Request) {
                 <tr>
                   <td style="background-color:#54BE73; padding: 32px 40px; text-align:center;">
                     <h1 style="margin:0; color:#ffffff; font-size:24px; letter-spacing:1px;">WYSIWYG</h1>
-                    <p style="margin:8px 0 0; color:#f8c8c8; font-size:13px;">Nouveau message reçu via le site web WYSIWYG</p>
+                    <p style="margin:8px 0 0; color:#ffffff; font-size:13px;">Nouveau message reçu via le site web WYSIWYG</p>
                   </td>
                 </tr>
 
@@ -93,7 +93,7 @@ export async function POST(req: Request) {
                       <tr>
                         <td width="140" style="color:#888888; font-size:13px; padding: 10px 0;">Service</td>
                         <td style="padding: 10px 0; border-bottom:1px solid #f0f0f0;">
-                          <span style="background-color:#fdecea; color:#222222; font-size:12px; font-weight:bold; padding:4px 10px; border-radius:20px;">
+                          <span style="color:#222222; font-size:12px; font-weight:bold; padding:4px 10px; border-radius:20px;">
                             ${body.service}
                           </span>
                         </td>
