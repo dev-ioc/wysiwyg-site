@@ -61,8 +61,8 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-30 w-full dark:text-white dark:bg-slate-900">
-      <div className="hidden lg:flex h-[155px] justify-between items-center backdrop-blur-sm bg-white/60 px-4 py-3 gap-4 shadow-sm">
-        <div className="container mx-auto flex flex-row justify-between items-center gap-4">
+      <div className="hidden lg:flex h-[130px] justify-between items-center backdrop-blur-sm bg-white/60 px-4 gap-4 shadow-sm">
+        <div className="container mx-auto flex flex-row justify-between items-center gap-4 px-4">
           <img
             src="/images/header.png"
             alt="logo"
@@ -82,9 +82,8 @@ const Navbar = () => {
                 +33 1 34 20 16 19
               </span>
             </div>
-          </div>
-          <div className="flex gap-4 items-center">
-            <a href="#">
+            <div className="flex gap-4 items-center">
+              {/* <a href="#">
               <FaFacebookF className="w-5 h-5 hover:text-blue-600" />
             </a>
             <a href="#">
@@ -95,15 +94,22 @@ const Navbar = () => {
             </a>
             <a href="#">
               <FaPinterest className="w-5 h-5 hover:text-red-600" />
-            </a>
-            <a href="#">
-              <FaLinkedin className="w-5 h-5 hover:text-blue-700 rounded-[6.5px]" />
-            </a>
+            </a> */}
+              <a href="#">
+                <FaLinkedin
+                  className="w-5 h-5 hover:text-blue-700 rounded-[6.5px]"
+                  size={50}
+                  color="#01090a"
+                />
+              </a>
+            </div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>
-      <div className="hidden lg:block container px-4 xl:px-0 mx-auto col-span-12 fixed left-1/2 transform -translate-x-1/2 top-28 ml-14 z-20 py-2">
-        <nav className="w-full bg-white rounded-full shadow-xl flex items-center justify-between h-[64px] backdrop-blur-sm bg-white/90">
+      <div className="hidden lg:block container px-20 xl:px-0 mx-auto col-span-12 fixed left-1/2 transform -translate-x-1/2 top-24 ml-14 z-20 py-2">
+        <nav className="w-full bg-white rounded-full shadow-xl flex items-center justify-between h-[60px] backdrop-blur-sm bg-white/90">
           <ul className="flex items-center gap-12 list-none px-8 font-assistant text-[22px] text-gray">
             {navLinks.map((item) => {
               const isActive = activeSection === getSectionId(item.href);
@@ -124,7 +130,7 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <div className="flex flex-row gap-4 items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-3.5 rounded-r-full transition-colors whitespace-nowrap">
+          <div className="flex flex-row gap-4 items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-3 rounded-r-full transition-colors whitespace-nowrap">
             <LocaleSwitcher />
             <div>
               <ThemeSwitch />
@@ -208,7 +214,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="mt-auto px-5 py-5 border-t border-light flex flex-col gap-3 shrink-0">
+        <div className="mt-auto px-4 py-5 border-t border-light flex flex-col gap-3 shrink-0 items-start">
           <div className="flex gap-2 items-center">
             <Mail size={22} color="#54BE73" />
             <span className="text-dark text-[14px] font-bold dark:text-white">
@@ -222,7 +228,7 @@ const Navbar = () => {
             </span>
           </div>
           <div className="flex gap-4 items-center pt-2 ">
-            <a href="#">
+            {/* <a href="#">
               <FaFacebookF className="w-4 h-4 hover:text-blue-600" />
             </a>
             <a href="#">
@@ -233,7 +239,7 @@ const Navbar = () => {
             </a>
             <a href="#">
               <FaPinterest className="w-4 h-4 hover:text-red-600" />
-            </a>
+            </a> */}
             <a href="#">
               <FaLinkedin className="w-4 h-4 hover:text-blue-700" />
             </a>
