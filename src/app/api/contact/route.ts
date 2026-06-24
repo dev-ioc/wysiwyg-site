@@ -106,7 +106,7 @@ export async function POST(req: Request) {
                         <td style="color:#888888; font-size:13px; padding-bottom:10px;">Message</td>
                       </tr>
                       <tr>
-                        <td style="background-color:#f9f9f9; border-left: 4px solid #c0392b; padding: 16px 20px; border-radius:4px; color:#333333; font-size:14px; line-height:1.7;">
+                        <td style="background-color:#f9f9f9; border-left: 4px solid #54BE73; padding: 16px 20px; border-radius:4px; color:#333333; font-size:14px; line-height:1.7;">
                           ${body.message}
                         </td>
                       </tr>
