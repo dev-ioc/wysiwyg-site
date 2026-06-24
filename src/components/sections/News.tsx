@@ -6,7 +6,7 @@ const News = () => {
 
   return (
     <section className="w-full bg-[#F1F1F1] dark:bg-slate-900 dark:text-white border-b border-gray-200 dark:border-slate-700">
-      <div className="container mx-auto px-6 lg:px-12 py-32 space-y-16">
+      <div className="container mx-auto px-16 py-32 space-y-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center">
           <div />
 
@@ -239,22 +239,25 @@ const News = () => {
               </div>
             </div>
           </div>
-          <div className="grid lg:grid-cols-3 grid-cols-1">
-            <div className="w-full flex flex-row gap-2 items-center md:text-center">
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
+          <div className="flex flex-col items-center gap-6 lg:grid lg:grid-cols-3 lg:items-center">
+            <div className="flex flex-row gap-3 items-center justify-center lg:justify-start">
+              <FaArrowLeft className="cursor-pointer text-gray-500 hover:text-red-400" />
+              <span className="cursor-pointer hover:text-red-400">1</span>
+              <span className="cursor-pointer hover:text-red-400">2</span>
+              <span className="cursor-pointer hover:text-red-400">3</span>
               <span>...</span>
-              <span>10</span>
-              <FaArrowLeft />
-              <FaArrowRight />
+              <span className="cursor-pointer hover:text-red-400">10</span>
+              <FaArrowRight className="cursor-pointer text-gray-500 hover:text-red-400" />
             </div>
-            <div className="w-full text-center">
-              <button className=" justify-center items-center w-[100px] h-[100px] rounded-full border border-red-400 text-red-400">
+
+            {/* Bouton Voir Plus */}
+            <div className="w-full flex justify-center">
+              <button className="flex justify-center items-center w-[100px] h-[100px] rounded-full border border-red-400 text-red-400 hover:bg-red-400 hover:text-white transition-colors">
                 {t("viewAll")}
               </button>
             </div>
-            <div></div>
+
+            <div className="hidden lg:block" />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
