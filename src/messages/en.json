@@ -200,6 +200,10 @@
   },
   "News": {
     "title": "TECHNOLOGY",
-    "AllNews": "ALL NEWS"
+    "AllNews": "ALL NEWS",
+    "Security": "Security",
+    "parfeu": "Firewall",
+    "description": "With our Advanced Security Solutions, we support companies in protecting data, securing networks, and defending against external attacks on IT infrastructures. The Wysiwyg team is ready to help you implement the most relevant defense measures for your IT environment. Do not hesitate to contact us for a free consultation on any security issue you may have, and we will define and implement the most optimal way to address it.",
+    "viewAll": "View More"
   }
 }

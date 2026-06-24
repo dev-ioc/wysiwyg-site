@@ -1,4 +1,3 @@
-import { BackpackIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -31,9 +30,9 @@ const News = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex flex-col gap-4">
             <img
-              src="/images/pexels-brett-sayles-4508751-r4vkxymyczvr9djw100tz1iyeskebu44sw56c319jo-1.jpg.webp"
+              src="/images/images.jfif"
               alt="news"
-              className="w-full h-[34vh] object-cover rounded"
+              className="w-full h-[34vh] object-cover rounded-[16px]"
             />
 
             <span className="text-red-400 font-bold text-xs uppercase">
@@ -70,7 +69,7 @@ const News = () => {
               <img
                 src="/images/pexels-serpstat-572056.jpg"
                 alt="news-1"
-                className="w-full md:w-[161px] h-[100px] object-cover rounded"
+                className="w-full md:w-[161px] h-[100px] object-cover rounded-[16px]"
               />
             </div>
 
@@ -94,7 +93,7 @@ const News = () => {
               <img
                 src="/images/pexels-burst-374074-r4vkxxp465ugxrl96hm7ejrhtep1450egrhout2npw.jpg.webp"
                 alt="news-2"
-                className="w-full md:w-[161px] h-[100px] object-cover rounded"
+                className="w-full md:w-[161px] h-[100px] object-cover rounded-[16px]"
               />
             </div>
 
@@ -132,7 +131,7 @@ const News = () => {
         <div className="grid grid-cols-1  gap-6">
           <div className="flex lg:flex-row lg:gap-8 flex-col gap-4">
             <div className="lg:w-[50%] w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] " />
+              <div className="bg-[url('/images/images.jfif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
@@ -146,7 +145,7 @@ const News = () => {
               </div>
             </div>
             <div className="lg:w-[25%] w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] " />
+              <div className="bg-[url('/images/images_1.jfif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -156,7 +155,7 @@ const News = () => {
               </div>
             </div>
             <div className="lg:w-[25%] w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center  lg:h-[400px] h-[200px]" />
+              <div className="bg-[url('/images/images_2.jfif')] bg-no-repeat bg-cover bg-center  lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -168,7 +167,7 @@ const News = () => {
           </div>
           <div className="flex lg:flex-row lg:gap-8 flex-col gap-4 w-full">
             <div className="lg:w-[23%] w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] " />
+              <div className="bg-[url('/images/images_8.jfif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px] " />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -178,7 +177,7 @@ const News = () => {
               </div>
             </div>
             <div className="lg:w-[23%] w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] " />
+              <div className="bg-[url('/images/images_3.jfif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -188,7 +187,7 @@ const News = () => {
               </div>
             </div>
             <div className="lg:w-[50%] w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] " />
+              <div className="bg-[url('/images/CMK2OXZNMJJFXPM5OE3RP67ZHI.avif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -200,7 +199,7 @@ const News = () => {
           </div>
           <div className="grid lg:grid-cols-4 gap-4 grid-cols-1">
             <div className="w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center h-[30vh] " />
+              <div className="bg-[url('/images/images_7.jfif')] bg-no-repeat bg-cover bg-center h-[30vh] rounded-[16px] " />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -210,7 +209,7 @@ const News = () => {
               </div>
             </div>
             <div className="w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center h-[30vh] " />
+              <div className="bg-[url('/images/generative-formation.jpg')] bg-no-repeat bg-cover bg-center h-[30vh] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -220,7 +219,7 @@ const News = () => {
               </div>
             </div>
             <div className="w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center h-[30vh] " />
+              <div className="bg-[url('/images/images_5.jfif')] bg-no-repeat bg-cover bg-center h-[30vh] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -230,43 +229,7 @@ const News = () => {
               </div>
             </div>
             <div className="w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center h-[30vh] " />
-              <div className="flex flex-col gap-4 py-6">
-                <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
-                  <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex lg:flex-row lg:gap-8 flex-col gap-4">
-            <div className="lg:w-[50%] w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] " />
-              <div className="flex flex-col gap-4 py-6">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
-                  vel quis deleniti modi aliquid, voluptatum, doloremque
-                  voluptas,
-                </span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
-                  <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-[25%] w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] " />
-              <div className="flex flex-col gap-4 py-6">
-                <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
-                  <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-[25%] w-full">
-              <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-cover bg-center  lg:h-[400px] h-[200px]" />
+              <div className="bg-[url('/images/images_6.jfif')] bg-no-repeat bg-cover bg-center h-[30vh] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-gray-500 text-sm">
@@ -288,7 +251,7 @@ const News = () => {
             </div>
             <div className="w-full text-center">
               <button className=" justify-center items-center w-[100px] h-[100px] rounded-full border border-red-400 text-red-400">
-                Voir Plus
+                {t("viewAll")}
               </button>
             </div>
             <div></div>
@@ -296,23 +259,21 @@ const News = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           <div className="flex flex-col gap-4">
-            <h1>Security</h1>
-            <label>AI</label>
-            <label>GADGETS</label>
-            <label>MILITARY</label>
+            <h1 className="text-red-400 text-[32px] font-bold uppercase">
+              {t("Security")}
+            </h1>
+            <label className="dark:text-white text-[32px] font-bold uppercase">
+              RGPD
+            </label>
+            <label className="dark:text-white text-[32px] font-bold uppercase">
+              PCA / PRA
+            </label>
+            <label className="dark:text-white text-[32px] font-bold uppercase ">
+              {t("parfeu")}
+            </label>
           </div>
           <div>
-            <p>
-              Grâce à nos Solutions Sécurités Avancés, nous accompagnons les
-              Entreprises dans la protection des données, la sécurisation des
-              réseaux et des attaques extérieures aux infrastructures
-              informatiques. L’équipe de Wysiwyg est prête à vous aider à
-              appliquer les mesures de défense les plus pertinentes pour votre
-              environnement informatique. N’hésitez pas à nous contacter pour
-              une consultation gratuite sur n’importe quel problème de sécurité
-              que vous avez, et nous définirons et mettrons en œuvre une manière
-              optimale de l’aborder.
-            </p>
+            <p className="leading-[1.8rem]">{t("description")}</p>
           </div>
           <div className="bg-[url('/images/pexels-fauxels-3183197-768x512.jpg.webp')] bg-no-repeat bg-cover bg-center h-[40vh] " />
 

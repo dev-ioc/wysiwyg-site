@@ -204,6 +204,10 @@
   },
   "News": {
     "title": "TECHNOLOGIES",
-    "AllNews": "Toutes les actualités"
+    "AllNews": "Toutes les actualités",
+    "Security": "Sécurité",
+    "parfeu": "Pare-feu",
+    "description": "Grâce à nos Solutions Sécurités Avancés, nous accompagnons les Entreprises dans la protection des données, la sécurisation des réseaux et des attaques extérieures aux infrastructures informatiques. L’équipe de Wysiwyg est prête à vous aider à appliquer les mesures de défense les plus pertinentes pour votre environnement informatique. N’hésitez pas à nous contacter pour une consultation gratuite sur n’importe quel problème de sécurité que vous avez, et nous définirons et mettrons en œuvre une manière optimale de l’aborder.",
+    "viewAll": "Voir Plus"
   }
 }
