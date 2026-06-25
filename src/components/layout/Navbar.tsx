@@ -61,15 +61,15 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-30 w-full dark:text-white dark:bg-slate-900">
-      <div className="hidden lg:flex h-[130px] justify-between items-center backdrop-blur-sm bg-white/60 px-4 gap-4 shadow-sm">
-        <div className="container mx-auto flex flex-row justify-between items-center gap-4 px-4">
+      <div className="hidden lg:flex h-[120px] justify-between items-center backdrop-blur-sm bg-white/60 px-4  gap-4 shadow-sm">
+        <div className="container mx-auto flex flex-row justify-between items-center gap-4 px-2 -mt-12">
           <img
             src="/images/header.png"
             alt="logo"
             className="w-[160px] h-[77px] cursor-pointer"
             onClick={() => (window.location.href = "/")}
           />
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-8 px-8">
             <div className="flex gap-2 items-center">
               <Mail size={40} color="#54BE73" />
               <span className="text-dark text-[18px] font-bold dark:text-white">
@@ -108,7 +108,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:block container px-20 xl:px-0 mx-auto col-span-12 fixed left-1/2 transform -translate-x-1/2 top-24 ml-14 z-20 py-2">
+      <div className="hidden lg:block container px-12 mx-auto fixed left-1/2 transform -translate-x-1/2 top-20  z-20 py-2">
         <nav className="w-full bg-white rounded-full shadow-xl flex items-center justify-between h-[60px] backdrop-blur-sm bg-white/90">
           <ul className="flex items-center gap-12 list-none px-8 font-assistant text-[22px] text-gray">
             {navLinks.map((item) => {
