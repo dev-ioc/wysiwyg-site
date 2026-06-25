@@ -85,7 +85,7 @@ const ContactForm = () => {
           </div>
         </div>
       )}
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-28 items-center lg:px-10 ">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-28 items-center lg:px-12 ">
         <div className="text-white space-y-10 lg:-mt-20">
           <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold font-merriweather leading-tight">
             {t("title1")}

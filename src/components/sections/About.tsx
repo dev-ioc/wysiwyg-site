@@ -10,7 +10,7 @@ const About = () => {
       id="no-section"
     >
       <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-2 lg:gap-20 px-6 lg:px-12 py-6">
-        <div className="pt-10 px-4 lg:px-0 md:px-4 sm:px-4">
+        <div className="pt-10  lg:px-0 md:px-4 sm:px-4">
           <img
             src="/images/logo.png"
             alt="WYSIWYG"

@@ -5,8 +5,8 @@ const Offers = () => {
   const { ref, isVisible } = useInView(0.2);
   const t = useTranslations("Offers");
   return (
-    <div className="px-8 h-auto space-y-0 py-16 bg-[#F1F1F1] dark:text-white  dark:bg-slate-900">
-      <div className="container mx-auto py-4 space-y-8 ">
+    <div className="h-auto space-y-0 py-16 bg-[#F1F1F1] dark:text-white  dark:bg-slate-900">
+      <div className="container mx-auto py-4 space-y-8 lg:px-8">
         <h1 className="text-center font-bold text-[38px] font-merriweather text-[#222222] dark:text-white">
           {t("title")}
         </h1>

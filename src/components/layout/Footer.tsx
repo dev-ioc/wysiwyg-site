@@ -77,7 +77,7 @@ const Footer = () => {
     >
       <div className="relative w-full py-12 md:py-16 px-4 bg-[url('https://www.wysiwyg.fr/wp-content/uploads/elementor/thumbs/pexels-brett-sayles-4508751-r4vkxymyczvr9djw100tz1iyeskebu44sw56c319jo.jpg')] bg-cover bg-center bg-no-repeat min-h-[584px]">
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative z-10 container mx-auto">
+        <div className="relative z-10 container mx-auto lg:px-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
             <div className="relative w-[150px] md:w-[188px] h-[120px] md:h-[148px]">
               <Image

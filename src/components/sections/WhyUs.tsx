@@ -7,7 +7,7 @@ const WhyUs = () => {
   const t = useTranslations("WhyUs");
   return (
     <div className="px-8 h-auto mb-0 bg-[#D9D9D9] py-2 dark:text-white  dark:bg-slate-900 border-b border-light">
-      <div className="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
+      <div className="container mx-auto lg:px-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
         <div
           ref={ref}
           className={`flex flex-col gap-8 transition-all duration-700 ease-out ${

@@ -9,7 +9,7 @@ const Services = () => {
     <div className="px-8 h-auto space-y-0 mb-0 bg-secondary dark:text-white  dark:bg-slate-900 border-b border-light">
       <div
         ref={ref}
-        className={`container mx-auto py-8 transition-all ${
+        className={`container mx-auto lg:px-12 py-8 transition-all ${
           isVisible
             ? "animate-zoomIn opacity-100 scale-100"
             : "opacity-0 scale-90"
