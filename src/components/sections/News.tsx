@@ -3,7 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const News = () => {
   const t = useTranslations("News");
-
+  const tc = useTranslations("Contact");
   return (
     <section className="w-full bg-[#F1F1F1] dark:bg-slate-900 dark:text-white border-b border-gray-200 dark:border-slate-700">
       <div className="container mx-auto px-16 py-32 space-y-16">
@@ -18,8 +18,8 @@ const News = () => {
             <div className="grid grid-cols-2 lg:py-2">
               <div className="border-r border-grey dark:border-gray-600 mt-1" />
               <div className="flex flex-col gap-1 px-3 text-sm font-merriweather">
-                <span>Consectetur adipiscing elit gggg</span>
-                <span>Consectetur adipiscing elit gsqg</span>
+                <span>{tc("development")}</span>
+                <span>{tc("Ai")}</span>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const News = () => {
               nesciunt enim cumque inventore.
             </p>
 
-            <div className="flex gap-2 items-center text-gray-500 text-sm">
+            <div className="flex gap-2 items-center text-grey text-sm">
               <span>{new Date().toLocaleDateString()}</span>
               <span className="border-l border-gray-400 pl-2">By Roby</span>
             </div>
@@ -60,7 +60,7 @@ const News = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit
                 </span>
 
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -84,7 +84,7 @@ const News = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit
                 </span>
 
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -108,7 +108,7 @@ const News = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit
                 </span>
 
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -138,7 +138,7 @@ const News = () => {
                   vel quis deleniti modi aliquid, voluptatum, doloremque
                   voluptas,
                 </span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -148,7 +148,7 @@ const News = () => {
               <div className="bg-[url('/images/images_1.jfif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -158,7 +158,7 @@ const News = () => {
               <div className="bg-[url('/images/images_2.jfif')] bg-no-repeat bg-cover bg-center  lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -170,7 +170,7 @@ const News = () => {
               <div className="bg-[url('/images/images_8.jfif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px] " />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -180,7 +180,7 @@ const News = () => {
               <div className="bg-[url('/images/images_3.jfif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -190,7 +190,7 @@ const News = () => {
               <div className="bg-[url('/images/images_10.jfif')] bg-no-repeat bg-cover bg-center lg:h-[400px] h-[200px] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -202,7 +202,7 @@ const News = () => {
               <div className="bg-[url('/images/images_7.jfif')] bg-no-repeat bg-cover bg-center h-[30vh] rounded-[16px] " />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -212,7 +212,7 @@ const News = () => {
               <div className="bg-[url('/images/generative-formation.jpg')] bg-no-repeat bg-cover bg-center h-[30vh] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -222,7 +222,7 @@ const News = () => {
               <div className="bg-[url('/images/images_5.jfif')] bg-no-repeat bg-cover bg-center h-[30vh] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -232,7 +232,7 @@ const News = () => {
               <div className="bg-[url('/images/images_6.jfif')] bg-no-repeat bg-cover bg-center h-[30vh] rounded-[16px]" />
               <div className="flex flex-col gap-4 py-6">
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
-                <div className="flex gap-2 items-center text-gray-500 text-sm">
+                <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
                   <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
@@ -241,13 +241,13 @@ const News = () => {
           </div>
           <div className="flex flex-col items-center gap-6 lg:grid lg:grid-cols-3 lg:items-center">
             <div className="flex flex-row gap-3 items-center justify-center lg:justify-start">
-              <FaArrowLeft className="cursor-pointer text-gray-500 hover:text-red-400" />
+              <FaArrowLeft className="cursor-pointer text-grey hover:text-red-400" />
               <span className="cursor-pointer hover:text-red-400">1</span>
               <span className="cursor-pointer hover:text-red-400">2</span>
               <span className="cursor-pointer hover:text-red-400">3</span>
               <span>...</span>
               <span className="cursor-pointer hover:text-red-400">10</span>
-              <FaArrowRight className="cursor-pointer text-gray-500 hover:text-red-400" />
+              <FaArrowRight className="cursor-pointer text-grey hover:text-red-400" />
             </div>
 
             {/* Bouton Voir Plus */}

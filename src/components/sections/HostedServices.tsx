@@ -69,7 +69,7 @@ const HostedServices = () => {
   );
 
   return (
-    <div className="w-full py-16 bg-[#F1F1F1] lg:h-[580px] h-auto dark:text-white  dark:bg-slate-900 border-b border-light">
+    <div className="w-full py-16 bg-[#D9D9D9] lg:h-[580px] h-auto dark:text-white  dark:bg-slate-900 border-b border-t border-light">
       <div className="container mx-auto space-y-16 px-16">
         <h1 className="text-center text-black font-bold font-merriweather text-[38px] dark:text-white">
           {t("title")}

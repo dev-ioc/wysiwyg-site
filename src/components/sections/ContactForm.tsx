@@ -73,7 +73,7 @@ const ContactForm = () => {
     });
   };
   return (
-    <div className="w-full bg-[url('/images/bg-contact.png')] bg-no-repeat bg-cover bg-center px-4 py-12 lg:h-auto ">
+    <div className="w-full bg-[url('/images/bg-contact.png')] bg-no-repeat bg-cover bg-center px-4 py-12 lg:h-auto border-b dark:border-light">
       <Toaster position="top-right" reverseOrder={false} />
       {loading && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
@@ -210,15 +210,6 @@ const ContactForm = () => {
                   <option value="Messagerie BlueMind">{t("blueMind")}</option>
                   <option value="Infogérance">{t("managedITServices")}</option>
                 </select>
-
-                {/* <label
-                  htmlFor="floating_service"
-                  className="absolute text-sm text-gray duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]
-      peer-focus:text-[#54BE73]"
-                >
-                  {t("serviceSelect")}
-                </label> */}
-
                 {errors.service && (
                   <p className="text-red-500 text-xs mt-1">
                     {errors.service[0]}

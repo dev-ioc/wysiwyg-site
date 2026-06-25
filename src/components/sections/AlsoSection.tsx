@@ -12,7 +12,7 @@ const AlsoSection = () => {
   const t = useTranslations("AlsoSection");
   const cards = t.raw("cards") as Card[];
   return (
-    <div className="w-full py-16 px-4 bg-white lg:min-h-[400px] dark:text-white  dark:bg-slate-900">
+    <div className="w-full py-16 px-4 bg-white lg:min-h-[400px] dark:text-white  dark:bg-slate-900 border-b border-t border-light">
       <div className="container mx-auto ">
         <h1 className="text-center text-[#E4373A] text-[38px] font-merriweather font-bold mb-16">
           {t("title")}
