@@ -17,7 +17,7 @@ const About = () => {
             className="w-[480px] h-[710px] py-10 col-span-4 col-start-2"
           />
         </div>
-        <div className="flex-1 flex flex-col gap-4 w-full space-y-2 ">
+        <div className="flex-1 flex flex-col gap-4 w-full space-y-4 ">
           <span className="text-primary text-[13px] font-bold uppercase tracking-widest ">
             {t("bienvenue")}
           </span>
