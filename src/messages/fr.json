@@ -22,7 +22,31 @@
       "Services hébergés",
       "Infogérance"
     ],
-    "btn": "Découvrir"
+    "btn": "Découvrir",
+    "team": "Équipe",
+    "expert": "Experte",
+    "teamMembers": [
+      {
+        "image": "/images/expert1.png",
+        "role": "Responsable",
+        "name": "George Chan"
+      },
+      {
+        "image": "/images/expert2.png",
+        "role": "Planificateur d'itinéraires",
+        "name": "Emily Johnson"
+      },
+      {
+        "image": "/images/expert3.png",
+        "role": "Répartiteur",
+        "name": "Sophia Brown"
+      },
+      {
+        "image": "/images/expert4.png",
+        "role": "Coordinateur",
+        "name": "Arita Benson"
+      }
+    ]
   },
   "QuickServices": {
     "services": [

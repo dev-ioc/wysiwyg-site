@@ -17,7 +17,31 @@
     "description": "This name is based on a basic concept of total quality. Every company must have a vision of what it wants to become. Give our clients and us the means to manage and improve their activities successfully with innovative IT solutions.",
     "Wysiwyg": "Wysiwyg is committed to treating the skills of its clients as if they were their own.",
     "features": ["Security", "Development", "Hosted services", "Information"],
-    "btn": "Discover"
+    "btn": "Discover",
+    "team": "Team",
+    "expert": "Expert",
+    "teamMembers": [
+      {
+        "image": "/images/expert1.png",
+        "role": "Manager",
+        "name": "George Chan"
+      },
+      {
+        "image": "/images/expert2.png",
+        "role": "Route Planner",
+        "name": "Emily Johnson"
+      },
+      {
+        "image": "/images/expert3.png",
+        "role": "Dispatcher",
+        "name": "Sophia Brown"
+      },
+      {
+        "image": "/images/expert4.png",
+        "role": "Coordinator",
+        "name": "Arita Benson"
+      }
+    ]
   },
   "QuickServices": {
     "services": [
