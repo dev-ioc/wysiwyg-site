@@ -63,7 +63,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white py-6">
+      <div className="bg-white py-20">
         <div className="container mx-auto">
           <div className="flex flex-col gap-4 w-full justify-center items-center">
             <h1 className="text-[32px] font-bold">
@@ -84,7 +84,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 px-6 md:px-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 px-6 md:px-20">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
