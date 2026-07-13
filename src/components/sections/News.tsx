@@ -249,8 +249,6 @@ const News = () => {
               <span className="cursor-pointer hover:text-red-400">10</span>
               <FaArrowRight className="cursor-pointer text-grey hover:text-red-400" />
             </div>
-
-            {/* Bouton Voir Plus */}
             <div className="w-full flex justify-center">
               <button className="flex justify-center items-center w-[100px] h-[100px] rounded-full border border-red-400 text-red-400 hover:bg-red-400 hover:text-white transition-colors">
                 {t("viewAll")}

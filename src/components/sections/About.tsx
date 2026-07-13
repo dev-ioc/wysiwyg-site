@@ -25,7 +25,7 @@ const About = () => {
             </p>
 
             <div className="inline-block bg-orange-500 text-white rounded-md px-4 py-2 mt-4 shadow-lg z-30 w-1/2 sm:w-1/3 lg:w-1/4">
-              <p className="text-2xl sm:text-3xl font-bold leading-none">20+</p>
+              <p className="text-2xl sm:text-3xl font-bold leading-none">12+</p>
               <p className="text-xs mt-1 whitespace-nowrap">{t("secteur")}</p>
             </div>
           </div>
