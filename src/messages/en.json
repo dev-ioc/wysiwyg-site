@@ -6,9 +6,8 @@
   "Navbar": {
     "Accueil": "Home",
     "About": "About",
-    "Actualites": "News",
-    "Services": "Services",
     "Blog": "Blog",
+    "Services": "Services",
     "Contact": "Contact"
   },
   "AboutPage": {

@@ -53,21 +53,21 @@ const Footer = () => {
   const navigationLinks = [
     { label: t("Accueil"), href: "/#accueil" },
     { label: t("About"), href: "/about" },
-    { label: t("Actualites"), href: "#actualites" },
+    { label: t("Blog"), href: "/blog" },
     { label: t("Services"), href: "/#services" },
-    { label: t("Blog"), href: "#blog" },
+    // { label: t("Blog"), href: "#blog" },
     { label: t("Contact"), href: "/#contact" },
   ];
   const tf = useTranslations("Footer");
   const servicesList = tf.raw("servicesList") as string[];
-  const recentArticles = [
-    "Test 1",
-    "Test 2",
-    "Test 3",
-    "Test 4",
-    "Test 5",
-    "Test 6",
-  ];
+  // const recentArticles = [
+  //   "Test 1",
+  //   "Test 2",
+  //   "Test 3",
+  //   "Test 4",
+  //   "Test 5",
+  //   "Test 6",
+  // ];
 
   return (
     <footer
@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
           </div>
           <hr className="border-white/20 w-full mt-6 md:mt-8" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 py-8 md:py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-20 py-8 md:py-12">
             <section
               aria-labelledby="contact-title"
               className="text-center md:text-left"
@@ -140,22 +140,6 @@ const Footer = () => {
                   </p>
                 </address>
               </div>
-            </section>
-            <section
-              aria-labelledby="services-title"
-              className="text-center md:text-left"
-            >
-              <h2
-                id="services-title"
-                className="text-[20px] text-white font-poppins font-bold mb-4 md:mb-6"
-              >
-                {ts("title")}
-              </h2>
-              <ul className="text-white/90 text-[14px] md:text-[15px] font-assistant space-y-2">
-                {servicesList.map((service) => (
-                  <li key={service}>{service}</li>
-                ))}
-              </ul>
             </section>
             <section
               aria-labelledby="navigation-title"
@@ -200,7 +184,21 @@ const Footer = () => {
                 ))}
               </nav>
             </section>
-            <section
+            <section aria-labelledby="services-title" className="md:text-left">
+              <h2
+                id="services-title"
+                className="text-[20px] text-white font-poppins font-bold mb-4 md:mb-6"
+              >
+                {ts("title")}
+              </h2>
+              <ul className="text-white/90 text-[14px] md:text-[15px] font-assistant space-y-2">
+                {servicesList.map((service) => (
+                  <li key={service}>{service}</li>
+                ))}
+              </ul>
+            </section>
+
+            {/* <section
               aria-labelledby="articles-title"
               className="text-center md:text-left"
             >
@@ -222,7 +220,7 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </section>
+            </section> */}
           </div>
         </div>
       </div>
