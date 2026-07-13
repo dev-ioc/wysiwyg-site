@@ -41,7 +41,11 @@
         "role": "Coordinator",
         "name": "Arita Benson"
       }
-    ]
+    ],
+    "secteur": "Areas of Intervention",
+    "company_history": "WYSIWYG was founded on April 1, 1999, by Xavier LOPEZ.\n\nWYSIWYG stands for: \"What You See Is What You Get.\"\n\nIt means: \"What you see is what you get.\"",
+    "about_wysiwyg": "About Wysiwyg",
+    "for_mission": "Our History"
   },
   "QuickServices": {
     "services": [

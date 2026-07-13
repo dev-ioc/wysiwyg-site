@@ -12,25 +12,21 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-36 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">
           <div className="flex-1 w-full text-center lg:text-left">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-500 leading-tight mb-4 sm:mb-6">
-              Providing full range
+              {t("about_wysiwyg")}
               <br />
-              <span className="text-black"> of transportation</span>
+              <span className="text-black text-[20px]">
+                {" "}
+                {t("for_mission")}
+              </span>
             </h1>
 
-            <p className="text-gray-500 mb-2 text-sm sm:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-              ipsum non nam quibusdam ea laudantium harum a voluptate
-            </p>
-            <p className="text-gray-500 mb-6 sm:mb-8 text-sm sm:text-base">
-              molestiae nesciunt exercitationem similique alias quasi, pariatur
-              laboriosam sequi! Quisquam, aut nam.
+            <p className="text-gray-500 mb-2 text-sm sm:text-base leading-[2rem] whitespace-pre-line">
+              {t("company_history")}
             </p>
 
-            <div className="inline-block bg-orange-500 text-white rounded-md px-6 py-4 shadow-lg z-30 w-1/2 sm:w-1/3 lg:w-1/4">
+            <div className="inline-block bg-orange-500 text-white rounded-md px-4 py-2 mt-4 shadow-lg z-30 w-1/2 sm:w-1/3 lg:w-1/4">
               <p className="text-2xl sm:text-3xl font-bold leading-none">20+</p>
-              <p className="text-xs mt-1 whitespace-nowrap">
-                Years Of Experience
-              </p>
+              <p className="text-xs mt-1 whitespace-nowrap">{t("secteur")}</p>
             </div>
           </div>
           <div className="flex-1 relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[260px] sm:h-[320px] lg:h-[380px]">

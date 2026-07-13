@@ -46,7 +46,11 @@
         "role": "Coordinateur",
         "name": "Arita Benson"
       }
-    ]
+    ],
+    "secteur": "Secteurs d'interventions",
+    "company_history": "WYSIWYG a été créée le 1er avril 1999 par Xavier LOPEZ.\n\nLa signification de WYSIWYG est la suivante : « What You See Is What You Get ».\n\n« Ce que vous voyez est ce que vous obtenez. »",
+    "about_wysiwyg": "À propos de Wysiwyg",
+    "for_mission": "Notre Histoire"
   },
   "QuickServices": {
     "services": [
