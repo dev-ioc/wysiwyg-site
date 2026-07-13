@@ -8,11 +8,51 @@ const About = () => {
   const teamMembers = t.raw("teamMembers") as any[];
   return (
     <div className="grid grid-clos-1">
+      <div className="bg-white py-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-36 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">
+          <div className="flex-1 w-full text-center lg:text-left">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-500 leading-tight mb-4 sm:mb-6">
+              Providing full range
+              <br />
+              <span className="text-black"> of transportation</span>
+            </h1>
+
+            <p className="text-gray-500 mb-2 text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
+              ipsum non nam quibusdam ea laudantium harum a voluptate
+            </p>
+            <p className="text-gray-500 mb-6 sm:mb-8 text-sm sm:text-base">
+              molestiae nesciunt exercitationem similique alias quasi, pariatur
+              laboriosam sequi! Quisquam, aut nam.
+            </p>
+
+            <div className="inline-block bg-orange-500 text-white rounded-md px-6 py-4 shadow-lg z-30 w-1/2 sm:w-1/3 lg:w-1/4">
+              <p className="text-2xl sm:text-3xl font-bold leading-none">20+</p>
+              <p className="text-xs mt-1 whitespace-nowrap">
+                Years Of Experience
+              </p>
+            </div>
+          </div>
+          <div className="flex-1 relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[260px] sm:h-[320px] lg:h-[380px]">
+            <img
+              src="/images/expert3.png"
+              alt="Cargo ship"
+              className="absolute top-0 left-0 w-[70%] h-[80%] object-cover rounded-md shadow-lg z-10"
+            />
+
+            <img
+              src="/images/expert4.png"
+              alt="Container ship at sunset"
+              className="absolute bottom-0 right-8 w-[48%] h-[63%] object-cover rounded-md shadow-lg z-20"
+            />
+          </div>
+        </div>
+      </div>
       <div
-        className="w-full  dark:text-white  bg-[#D9D9D9] dark:bg-slate-900 "
+        className="w-full  dark:text-white  bg-[#F8F8FF] dark:bg-slate-900 "
         id="no-section"
       >
-        <div className="container mx-auto lg:gap-20 px-6 lg:px-12 py-6">
+        <div className="container mx-auto lg:gap-20 px-6 lg:px-20 py-6">
           <div className="flex flex-col lg:flex-row justify-center items-center gap-2 lg:gap-20">
             <div className="pt-10  lg:px-0 md:px-4 sm:px-4">
               <img
@@ -64,7 +104,7 @@ const About = () => {
         </div>
       </div>
       <div className="bg-white py-20">
-        <div className="container mx-auto">
+        <div className="container mx-auto lg:px-16">
           <div className="flex flex-col gap-4 w-full justify-center items-center">
             <h1 className="text-[32px] font-bold">
               {t("team") === "Équipe" ? (
