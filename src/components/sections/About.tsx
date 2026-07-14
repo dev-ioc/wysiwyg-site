@@ -59,10 +59,10 @@ const About = () => {
               <img
                 src="/images/logo.png"
                 alt="WYSIWYG"
-                className="w-[480px] h-[710px] py-10 col-span-4 col-start-2"
+                className="w-[460px] h-[700px] py-10 col-span-4 col-start-2"
               />
             </div>
-            <div className="flex-1 flex flex-col gap-4 w-full space-y-4 ">
+            <div className="flex-1 flex flex-col gap-4 w-full space-y-6 ">
               <span className="text-primary text-[13px] font-bold uppercase tracking-widest ">
                 {t("bienvenue")}
               </span>
@@ -91,7 +91,7 @@ const About = () => {
                   </li>
                 ))}
               </ul>
-
+              <div></div>
               {/* <div className="mt-4">
                 <a
                   href="/a-propos"
