@@ -49,7 +49,7 @@ body {
   .typing-cursor {
     animation:
       typing 4s steps(38, end) forwards,
-      blink 0.8s step-end;
+      blink 0.8s step-end infinite;
     animation-delay: 0s, 4s;
   }
 
