@@ -80,12 +80,10 @@ const Footer = () => {
         <div className="relative z-10 container mx-auto lg:px-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
             <div className="relative w-[150px] md:w-[188px] h-[120px] md:h-[148px]">
-              <Image
+              <img
                 src="/images/logo-footer.png"
                 alt="Logo WYSIWYG"
-                fill
-                className="object-contain"
-                priority={false}
+                className="object-contain w-full h-full"
                 loading="lazy"
               />
             </div>
