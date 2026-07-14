@@ -182,7 +182,7 @@ const HostedServices = () => {
                   ${
                     isActive
                       ? "bg-[#52BC71] w-8 h-8 rounded-full"
-                      : "bg-[#D9D9D9] hover:bg-gray-400 mt-2"
+                      : "bg-white hover:bg-gray-400 mt-2"
                   }
                 `}
                 aria-label={`Aller à la page ${pageIndex + 1}`}
