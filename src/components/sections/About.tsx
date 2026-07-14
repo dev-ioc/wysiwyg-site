@@ -30,17 +30,22 @@ const About = () => {
             </div>
           </div>
           <div className="flex-1 relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[260px] sm:h-[320px] lg:h-[380px]">
-            <img
-              src="/images/expert3.png"
-              alt="Cargo ship"
-              className="absolute top-0 left-0 w-[70%] h-[80%] object-cover rounded-md shadow-lg z-10"
-            />
-
-            <img
-              src="/images/expert4.png"
-              alt="Container ship at sunset"
-              className="absolute bottom-0 right-8 w-[48%] h-[63%] object-cover rounded-md shadow-lg z-20"
-            />
+            <div className="group absolute top-0 left-0 w-[70%] h-[80%] rounded-md shadow-lg z-10 overflow-hidden">
+              <img
+                src="/images/expert3.png"
+                alt="Cargo ship"
+                className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out" />
+            </div>
+            <div className="group absolute bottom-0 right-8 w-[48%] h-[63%] rounded-md shadow-lg z-20 overflow-hidden">
+              <img
+                src="/images/expert4.png"
+                alt="Container ship at sunset"
+                className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out" />
+            </div>
           </div>
         </div>
       </div>
@@ -87,14 +92,14 @@ const About = () => {
                 ))}
               </ul>
 
-              <div className="mt-4">
+              {/* <div className="mt-4">
                 <a
                   href="/a-propos"
                   className="inline-block bg-primary text-white font-bold px-8 py-3 rounded-full hover:bg-green-600 transition-colors uppercase tracking-wide"
                 >
                   {t("btn")}
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
