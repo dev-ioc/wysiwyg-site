@@ -22,8 +22,8 @@ const Navbar = () => {
   const navLinks = [
     { label: t("Accueil"), href: "/#accueil" },
     { label: t("About"), href: "/about" },
-    { label: t("Blog"), href: "/blog" },
     { label: t("Services"), href: "/#services" },
+    { label: t("Blog"), href: "/blog" },
     // { label: t("Blog"), href: "#blog" },
     { label: t("Contact"), href: "/#contact" },
   ];
