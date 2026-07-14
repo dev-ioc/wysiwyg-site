@@ -8,13 +8,13 @@ const About = () => {
   const teamMembers = t.raw("teamMembers") as any[];
   return (
     <div className="grid grid-clos-1">
-      <div className="bg-white py-20">
+      <div className="bg-white py-20 dark:text-white  bg-[#F8F8FF] dark:bg-slate-900 dark:border-b border-light">
         <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-36 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">
           <div className="flex-1 w-full text-center lg:text-left">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-500 leading-tight mb-4 sm:mb-6">
               {t("about_wysiwyg")}
               <br />
-              <span className="text-black text-[20px]">
+              <span className="text-black text-[20px] dark:text-white">
                 {" "}
                 {t("for_mission")}
               </span>
@@ -45,7 +45,7 @@ const About = () => {
         </div>
       </div>
       <div
-        className="w-full  dark:text-white  bg-[#F8F8FF] dark:bg-slate-900 "
+        className="w-full  dark:text-white  bg-[#F8F8FF] dark:bg-slate-900 dark:border-b border-light"
         id="no-section"
       >
         <div className="container mx-auto lg:gap-20 px-6 lg:px-20 py-6">
@@ -99,7 +99,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white py-20">
+      <div className="bg-white py-20 dark:text-white  bg-[#F8F8FF] dark:bg-slate-900 ">
         <div className="container mx-auto lg:px-16">
           <div className="flex flex-col gap-4 w-full justify-center items-center">
             <h1 className="text-[32px] font-bold">

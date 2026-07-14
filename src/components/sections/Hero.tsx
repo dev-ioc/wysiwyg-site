@@ -1,6 +1,8 @@
+"use client";
 import { useTranslations } from "next-intl";
 const Hero = () => {
   const t = useTranslations("Hero");
+
   return (
     <div className="relative grid grid-cols-12 col-span-12 h-auto lg:h-[761px] w-full bg-[url('/images/hero.png')] bg-cover bg-center bg-no-repeat overflow-hidden pb-10 ">
       <div className="absolute inset-0 bg-black/200 opacity-50 backdrop-blur-sm" />
@@ -34,9 +36,13 @@ const Hero = () => {
         <span className="max-w-[500px] text-[16px] lg:text-[22px] text-center text-secondary font-assistant font-bold lg:leading-[2rem]">
           {t("title")}
         </span>
-        <button className="bg-secondary px-6 py-2 rounded-full text-black font-medium transition font-assistant text-[21px]">
+        <a
+          type="button"
+          href="/about"
+          className="bg-secondary px-6 py-2 rounded-full text-black font-medium transition font-assistant text-[21px]"
+        >
           {t("BtnPlus")}
-        </button>
+        </a>
       </div>
     </div>
   );
