@@ -31,7 +31,6 @@ const Hero = () => {
             </span>
           </span>
         </h1>
-
         <span className="max-w-[500px] text-[16px] lg:text-[22px] text-center text-secondary font-assistant font-bold lg:leading-[2rem]">
           {t("title")}
         </span>
