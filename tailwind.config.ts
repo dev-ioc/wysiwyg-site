@@ -46,13 +46,20 @@ const config: Config = {
           "0%": { opacity: "0", transform: "scale(0.8)" },
           "100%": { opacity: "1", transform: "scale(1)" },
         },
-        type: {
-          "0%": { clipPath: "inset(0 100% 0 0)" },
-          "100%": { clipPath: "inset(0 0% 0 0)" },
+        typing: {
+          from: { width: "0" },
+          to: { width: "100%" },
         },
-        cursor: {
-          "0%, 40%": { opacity: "1" },
-          "60%, 100%": { opacity: "0" },
+
+        keepCursor: {
+          from: { borderColor: "#fff" },
+          to: { borderColor: "#fff" },
+        },
+
+        blink: {
+          "50%": {
+            borderColor: "transparent",
+          },
         },
         slideUp: {
           "0%": { opacity: "0", transform: "translateY(20px)" },
@@ -66,8 +73,9 @@ const config: Config = {
         fadeUp: "fadeUp 0.8s ease-out both",
         fadeIn: "fadeIn 0.8s ease-out both",
         zoomIn: "zoomIn 0.6s ease-out both",
-        type: "type 3s steps(30) 0.8s forwards",
-        cursor: "cursor 0.6s linear infinite alternate",
+        typing: "typing 4s steps(38,end) forwards",
+        keepCursor: "keepCursor 4s linear forwards",
+        blink: "blink .8s step-end 4s infinite",
         slideUp: "slideUp 0.8s ease-out both",
         pulseSlow: "pulse 10s cubic-bezier(0.7, 0, 0.9, 1) infinite",
       },

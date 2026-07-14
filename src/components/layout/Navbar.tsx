@@ -24,7 +24,6 @@ const Navbar = () => {
     { label: t("About"), href: "/about" },
     { label: t("Services"), href: "/#services" },
     { label: t("Blog"), href: "/blog" },
-    // { label: t("Blog"), href: "#blog" },
     { label: t("Contact"), href: "/#contact" },
   ];
   useEffect(() => {

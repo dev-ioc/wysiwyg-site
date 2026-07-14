@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="col-span-12 lg:col-start-5 flex flex-col items-center justify-center text-center w-full gap-6 relative z-10 pt-20 lg:pt-20 lg:-top-5 lg:w-[700px]">
         <h1 className="mb-2">
           <span className="relative inline-block font-mono">
-            <span className="whitespace-nowrap animate-type inline-block">
+            <span className="inline-block overflow-hidden whitespace-nowrap border-r-[3px] border-white typing-cursor">
               <span className="text-[#05e7eb] text-[20px] lg:text-[38px]">
                 C
               </span>
@@ -29,7 +29,6 @@ const Hero = () => {
               </span>
               <span className="text-white text-[16px] lg:text-[30px]">;</span>
             </span>
-            <span className="absolute -top-1 bottom-0 right-0 inline-block w-[3px] bg-white animate-cursor will-change-[opacity]" />
           </span>
         </h1>
 
