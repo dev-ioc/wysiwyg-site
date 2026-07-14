@@ -92,14 +92,6 @@ const About = () => {
                 ))}
               </ul>
               <div></div>
-              {/* <div className="mt-4">
-                <a
-                  href="/a-propos"
-                  className="inline-block bg-primary text-white font-bold px-8 py-3 rounded-full hover:bg-green-600 transition-colors uppercase tracking-wide"
-                >
-                  {t("btn")}
-                </a>
-              </div> */}
             </div>
           </div>
         </div>
