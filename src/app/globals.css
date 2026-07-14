@@ -45,11 +45,27 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
   .typing-cursor {
     animation:
       typing 4s steps(38, end) forwards,
       blink 0.8s step-end infinite;
-    animation-delay: 0s, 4s; /* le blink démarre après la frappe */
+    animation-delay: 0s, 4s;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
   }
 }
 html {
