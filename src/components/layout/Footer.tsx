@@ -195,7 +195,6 @@ const Footer = () => {
                 ))}
               </ul>
             </section>
-
             {/* <section
               aria-labelledby="articles-title"
               className="text-center md:text-left"
