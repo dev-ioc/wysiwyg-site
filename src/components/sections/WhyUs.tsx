@@ -37,7 +37,6 @@ const WhyUs = () => {
               </p>
             </div>
           </div>
-
           <div className="flex flex-row items-start gap-6">
             <div className="flex-shrink-0 w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center shadow-sm">
               <img
