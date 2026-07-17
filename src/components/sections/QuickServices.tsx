@@ -9,6 +9,7 @@ type Service = {
   icon: string;
   href: string;
 };
+
 const QuickServices = () => {
   const t = useTranslations("QuickServices");
   const tp = useTranslations("Hero");
