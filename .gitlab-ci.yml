@@ -1,21 +1,63 @@
+image: node:20-alpine
+
 stages:
   - install
   - build
   - test
   - deploy
+
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+
+# Réutilise node_modules et le cache npm entre les jobs (accéléré via lock file)
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - .npm/
+    - node_modules/
+
 install:
   stage: install
   script:
-    - npm install
+    - npm ci --prefer-offline --no-audit
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 hour
+
 build:
   stage: build
   script:
     - npm run build
+  artifacts:
+    paths:
+      - .next/
+      - public/
+    expire_in: 1 hour
+
 test:
   stage: test
   script:
-    - npm test
+    - npm test -- --ci --coverage
+  artifacts:
+    when: always
+    paths:
+      - coverage/
+    expire_in: 1 week
+
 deploy:
   stage: deploy
   script:
-    - echo "Déploiement..."
+    - echo "Déploiement de l'application Next.js..."
+    # Exemples selon ta cible :
+    # - npm run deploy
+    # - vercel deploy --prod --token=$VERCEL_TOKEN
+    # - rsync -avz .next/ user@server:/var/www/app
+  environment:
+    name: production
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: on_success
+    - when: manual
