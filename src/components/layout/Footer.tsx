@@ -171,14 +171,14 @@ const Footer = () => {
                 }`}
               >
                 {navigationLinks.map((link) => (
-                  <Link
+                  <a
                     key={link.label}
                     href={link.href}
                     className="text-white/90 text-[14px] md:text-[15px] hover:text-[#52BC71] transition-colors duration-300 relative group w-fit mx-auto md:mx-0"
                   >
                     {link.label}
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#52BC71] transition-all duration-300 group-hover:w-full"></span>
-                  </Link>
+                  </a>
                 ))}
               </nav>
             </section>

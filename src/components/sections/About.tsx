@@ -80,7 +80,7 @@ const About = () => {
               <ul className="flex flex-col gap-2 mt-2">
                 {features.map((feature, index) => (
                   <li
-                    key={feature}
+                    key={index}
                     className="flex items-center gap-2 text-gray-700 text-[15px]"
                   >
                     <CheckCircle
