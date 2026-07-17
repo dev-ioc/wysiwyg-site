@@ -3,24 +3,18 @@ stages:
   - build
   - test
   - deploy
-
 install:
   stage: install
   script:
-    - node -v
-    - npm -v
     - npm install
-
 build:
   stage: build
   script:
     - npm run build
-
 test:
   stage: test
   script:
-    - echo "Skipping tests"
-
+    - npm test
 deploy:
   stage: deploy
   script:
