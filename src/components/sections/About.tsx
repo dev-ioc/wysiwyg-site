@@ -76,7 +76,6 @@ const About = () => {
               <p className="text-gray-600 text-[15px] leading-relaxed">
                 {t("Wysiwyg")}
               </p>
-
               <ul className="flex flex-col gap-2 mt-2">
                 {features.map((feature, index) => (
                   <li
