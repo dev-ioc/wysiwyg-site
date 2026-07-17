@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl";
 const Hero = () => {
   const t = useTranslations("Hero");
+  const tW = useTranslations("AboutPage");
 
   return (
     <div className="relative grid grid-cols-12 col-span-12 h-auto lg:h-[761px] w-full bg-[url('/images/hero.png')] bg-cover bg-center bg-no-repeat overflow-hidden pb-10 ">
@@ -24,7 +25,7 @@ const Hero = () => {
                 (
               </span>
               <span className="text-primary text-[14px] lg:text-[30px] font-bold font-merriweather">
-                &quot;What You See Is What You Get&quot;
+                &quot;{tW("title")}&quot;
               </span>
               <span className="text-[#b205eb] text-[20px] lg:text-[40px]">
                 )
