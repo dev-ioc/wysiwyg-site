@@ -298,7 +298,6 @@ const ContactForm = () => {
                 <p className="text-red-500 text-xs">{errors.message[0]}</p>
               )}
             </div>
-
             <button
               type="submit"
               className="bg-[#54BE73] text-white font-bold px-6 py-2 rounded-full hover:bg-green-700 transition-colors text-sm font-assistant"
