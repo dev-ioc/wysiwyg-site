@@ -101,6 +101,8 @@ export default function ApplicationDevelopment() {
                 key={index}
                 className="
                 bg-white
+                dark:bg-slate-800
+                dark:text-white
                 rounded-lg
                 shadow-lg
                 p-6
