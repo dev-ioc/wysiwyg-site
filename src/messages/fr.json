@@ -58,7 +58,7 @@
         "label": "Automatisation IA",
         "description": "Automatisez vos taches avec les meilleurs outils et les lier à vos projets avec une possibilité d'optimisation.",
         "icon": "/images/automatisation.avif",
-        "href": "/"
+        "href": "/automatisation"
       },
       {
         "id": 2,
@@ -244,5 +244,39 @@
     "parfeu": "Pare-feu",
     "description": "Grâce à nos Solutions Sécurités Avancés, nous accompagnons les Entreprises dans la protection des données, la sécurisation des réseaux et des attaques extérieures aux infrastructures informatiques. L’équipe de Wysiwyg est prête à vous aider à appliquer les mesures de défense les plus pertinentes pour votre environnement informatique. N’hésitez pas à nous contacter pour une consultation gratuite sur n’importe quel problème de sécurité que vous avez, et nous définirons et mettrons en œuvre une manière optimale de l’aborder.",
     "viewAll": "Voir Plus"
+  },
+  "AIAutomatisation": {
+    "teams": [
+      {
+        "icon": "Megaphone",
+        "title": "Équipes Marketing",
+        "desc": "Générez des idées, des campagnes et des contenus sur mesure."
+      },
+      {
+        "icon": "SlidersHorizontal",
+        "title": "Opérations",
+        "desc": "Automatisez les rapports, la saisie et les déclencheurs de flux."
+      },
+      {
+        "icon": "Code2",
+        "title": "Développeurs",
+        "desc": "Intégrez des API puissantes et un apprentissage automatique."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Direction",
+        "desc": "Prenez des décisions fiables avec des tableaux de bord en direct."
+      }
+    ],
+    "title": "Automatisation IA",
+    "description": "Automatisez vos tâches avec les meilleurs outils et les lier à vos projets avec une possibilité d'optimisation.",
+    "btn": "Découvrir",
+    "teamConcu": "Conçu pour",
+    "teamConcu2": "chaque équipe",
+    "discover": "Découvrez ce qui rend notre IA différente",
+    "optimization": " Optimisation intelligente pilotée par l'IA",
+    "automatisationReport": " Automatisez les rapports, la saisie et les déclencheurs de flux de travail.",
+    "Adopt": "Adopté par les innovateurs",
+    "world": "partout dans le monde"
   }
 }

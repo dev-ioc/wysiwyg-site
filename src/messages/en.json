@@ -53,7 +53,7 @@
         "label": "AI Automation",
         "description": "Automate your tasks using the best tools and integrate them into your projects with optimization capabilities.",
         "icon": "/images/automatisation.avif",
-        "href": "/"
+        "href": "/automatisation"
       },
       {
         "id": 2,
@@ -240,5 +240,39 @@
     "parfeu": "Firewall",
     "description": "With our Advanced Security Solutions, we support companies in protecting data, securing networks, and defending against external attacks on IT infrastructures. The Wysiwyg team is ready to help you implement the most relevant defense measures for your IT environment. Do not hesitate to contact us for a free consultation on any security issue you may have, and we will define and implement the most optimal way to address it.",
     "viewAll": "View More"
+  },
+  "AIAutomatisation": {
+    "teams": [
+      {
+        "icon": "Megaphone",
+        "title": "Marketing Teams",
+        "desc": "Generate ideas, campaigns, and tailored content."
+      },
+      {
+        "icon": "SlidersHorizontal",
+        "title": "Operations",
+        "desc": "Automate reports, data entry, and workflow triggers."
+      },
+      {
+        "icon": "Code2",
+        "title": "Developers",
+        "desc": "Integrate powerful APIs and machine learning."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Executives",
+        "desc": "Make confident decisions with real-time dashboards."
+      }
+    ],
+    "title": "AI Automation",
+    "description": "Automate your tasks with the best tools and connect them to your projects, with room to optimize.",
+    "btn": "Discover",
+    "teamConcu": "Built for",
+    "teamConcu2": "every team",
+    "discover": "Discover what makes our AI different",
+    "optimization": "AI-powered intelligent optimization",
+    "automatisationReport": "Automate reports, data entry, and workflow triggers.",
+    "Adopt": "Adopted by innovators",
+    "world": "around the world"
   }
 }
