@@ -127,7 +127,7 @@ export default function ApplicationDevelopment() {
           })}
         </div>
       </main>
-      <div className=" bg-white">
+      <div className=" bg-white dark:bg-slate-900">
         <section className="py-16 container mx-auto px-16  dark:bg-slate-900">
           <div className="container mx-auto">
             <h2 className="text-4xl font-bold text-center mb-10 dark:text-white">
