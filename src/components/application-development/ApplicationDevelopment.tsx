@@ -44,8 +44,8 @@ export default function ApplicationDevelopment() {
 
   const technologies = t.raw("technologies") as Technology[];
   return (
-    <div className="min-h-screen flex flex-col dark:bg-slate-900 ">
-      <section className="relative bg-gray-800 text-white py-20 px-6">
+    <div className="min-h-screen flex flex-col dark:bg-slate-900">
+      <section className="relative bg-gray-800 text-white py-20">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
@@ -66,7 +66,7 @@ export default function ApplicationDevelopment() {
           </a>
         </div>
       </section>
-      <section className="py-16 px-6 bg-gray-50 dark:text-white">
+      <section className="py-16 bg-gray-50 dark:text-white container mx-auto px-16">
         <div className="container mx-auto flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <img
@@ -82,7 +82,7 @@ export default function ApplicationDevelopment() {
           </div>
         </div>
       </section>
-      <main className="flex-grow container mx-auto py-12 px-6">
+      <main className="flex-grow py-12 container mx-auto px-16">
         <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center dark:text-white">
           {t("process")}
         </h2>
@@ -127,20 +127,21 @@ export default function ApplicationDevelopment() {
           })}
         </div>
       </main>
-      <section className="py-16 px-6 bg-white dark:bg-slate-900">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-10 dark:text-white">
-            {t("technologiesTitle")}
-          </h2>
+      <div className=" bg-white">
+        <section className="py-16 container mx-auto px-16  dark:bg-slate-900">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-10 dark:text-white">
+              {t("technologiesTitle")}
+            </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {technologies.map((tech, index) => {
-              const Icon = technologyIcons[tech.icon];
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {technologies.map((tech, index) => {
+                const Icon = technologyIcons[tech.icon];
 
-              return (
-                <div
-                  key={index}
-                  className="
+                return (
+                  <div
+                    key={index}
+                    className="
               bg-gray-50
               dark:bg-slate-800
               rounded-xl
@@ -151,22 +152,23 @@ export default function ApplicationDevelopment() {
               transition-all
               duration-300
             "
-                >
-                  <Icon size={48} className="mx-auto mb-4 text-green-500" />
+                  >
+                    <Icon size={48} className="mx-auto mb-4 text-green-500" />
 
-                  <h3 className="text-xl font-semibold mb-3 dark:text-white">
-                    {tech.title}
-                  </h3>
+                    <h3 className="text-xl font-semibold mb-3 dark:text-white">
+                      {tech.title}
+                    </h3>
 
-                  <p className="text-gray-600 dark:text-gray-300 dark:text-white">
-                    {tech.desc}
-                  </p>
-                </div>
-              );
-            })}
+                    <p className="text-gray-600 dark:text-gray-300 dark:text-white">
+                      {tech.desc}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }
