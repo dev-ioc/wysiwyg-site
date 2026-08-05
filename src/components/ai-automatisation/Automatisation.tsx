@@ -7,7 +7,6 @@ import {
   Code2,
   BarChart3,
   Sparkles,
-  ArrowRight,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 const ICONS: any = {
@@ -25,7 +24,7 @@ export default function Automatisation() {
   const t = useTranslations("AIAutomatisation");
   const teams = t.raw("teams") as any[];
   return (
-    <div className="min-h-screen bg-white  font-sans container mx-auto px-16">
+    <div className="min-h-screen bg-white  font-sans container mx-auto px-16 dark:bg-slate-900 dark:text-white">
       <div className="min-h-screen font-body ">
         <section className="p-3">
           <div className="rounded-2xl overflow-hidden border border-stone-100">
@@ -57,7 +56,7 @@ export default function Automatisation() {
               const Icon = ICONS[team.icon];
               return (
                 <div
-                  key={team.title}
+                  key={i}
                   className="col-span-1 bg-white border border-stone-200 rounded-xl p-3 flex flex-col gap-2"
                 >
                   <span className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">

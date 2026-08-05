@@ -82,18 +82,6 @@ const Navbar = () => {
               </span>
             </div>
             <div className="flex gap-4 items-center">
-              {/* <a href="#">
-              <FaFacebookF className="w-5 h-5 hover:text-blue-600" />
-            </a>
-            <a href="#">
-              <FaTwitter className="w-5 h-5 hover:text-sky-500" />
-            </a>
-            <a href="#">
-              <FaInstagram className="w-5 h-5 hover:text-pink-500" />
-            </a>
-            <a href="#">
-              <FaPinterest className="w-5 h-5 hover:text-red-600" />
-            </a> */}
               <a href="#">
                 <FaLinkedin
                   className="w-5 h-5 hover:text-blue-700 rounded-[6.5px] "
@@ -227,18 +215,6 @@ const Navbar = () => {
             </span>
           </div>
           <div className="flex gap-4 items-center pt-2 ">
-            {/* <a href="#">
-              <FaFacebookF className="w-4 h-4 hover:text-blue-600" />
-            </a>
-            <a href="#">
-              <FaTwitter className="w-4 h-4 hover:text-sky-500" />
-            </a>
-            <a href="#">
-              <FaInstagram className="w-4 h-4 hover:text-pink-500" />
-            </a>
-            <a href="#">
-              <FaPinterest className="w-4 h-4 hover:text-red-600" />
-            </a> */}
             <a href="#">
               <FaLinkedin className="w-4 h-4 hover:text-blue-700" />
             </a>

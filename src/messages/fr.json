@@ -72,7 +72,7 @@
         "label": "Développement d'application",
         "description": "De la conception au développement, en passant par la maintenance et la gestion d'applications logicielles.",
         "icon": "/images/application.avif",
-        "href": "/"
+        "href": "/application-devepment"
       },
       {
         "id": 4,
@@ -278,5 +278,74 @@
     "automatisationReport": " Automatisez les rapports, la saisie et les déclencheurs de flux de travail.",
     "Adopt": "Adopté par les innovateurs",
     "world": "partout dans le monde"
+  },
+  "ApplicationDevelopment": {
+    "title": "Développement d'application",
+    "description": "De la conception au développement, en passant par la maintenance et la gestion d'applications logicielles.",
+    "transform": "Transformation des idées en applications puissantes",
+    "transform2": "Aux WYSIWYG, nous spécialisons dans la création de solutions logicielles personnalisées qui font du développement et de l'innovation. Nos services de développement d'application couvrent toute la chaîne logicielle, de la conception initiale à la mise en œuvre, la maintenance et le support continuel. Nous nous appuyons sur les technologies et les méthodes agiles pour fournir des applications évolutives, sécurisées et performantes adaptées à vos besoins uniques.",
+    "whether": "Que vous nécessiez un système d'entreprise robuste, une application web dynamique ou une application mobile conviviale, notre équipe d'experts est dédiée à vous apporter la vision à la lumière. Nous nous concentrons sur la création d'expériences utilisateur intuitives et sur les architectures de back-end robustes qui vous assurent que votre application est visible dans le monde numérique de demain.",
+    "process": "Notre Processus de Développement",
+    "quote": "Demander un devis",
+    "technologiesTitle": "Nos Expertises Techniques",
+    "developmentProcess": [
+      {
+        "icon": "Search",
+        "title": "Découverte & Planification",
+        "desc": "Comprendre votre vision, vos besoins et définir le périmètre du projet."
+      },
+      {
+        "icon": "PenTool",
+        "title": "Design & Prototypage",
+        "desc": "Créer des interfaces utilisateur intuitives et des expériences adaptées."
+      },
+      {
+        "icon": "Code",
+        "title": "Développement & Tests",
+        "desc": "Construire des applications robustes avec une assurance qualité rigoureuse."
+      },
+      {
+        "icon": "Rocket",
+        "title": "Déploiement & Lancement",
+        "desc": "Assurer un déploiement fluide et une mise sur le marché réussie."
+      },
+      {
+        "icon": "Wrench",
+        "title": "Maintenance & Support",
+        "desc": "Assurer un support continu, des mises à jour et l'optimisation des performances."
+      }
+    ],
+    "technologies": [
+      {
+        "icon": "Monitor",
+        "title": "Développement Frontend",
+        "desc": "Création d'interfaces modernes avec React, Next.js et TypeScript."
+      },
+      {
+        "icon": "Server",
+        "title": "Développement Backend",
+        "desc": "API robustes et évolutives avec Node.js, NestJS et Laravel."
+      },
+      {
+        "icon": "Database",
+        "title": "Base de données",
+        "desc": "Gestion de données avec PostgreSQL, MySQL et solutions NoSQL."
+      },
+      {
+        "icon": "Cloud",
+        "title": "Cloud & Déploiement",
+        "desc": "Déploiement sécurisé avec Docker, Cloudflare et plateformes cloud."
+      },
+      {
+        "icon": "Smartphone",
+        "title": "Applications Mobiles",
+        "desc": "Développement d'applications mobiles performantes et intuitives."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "Sécurité",
+        "desc": "Protection des applications avec les meilleures pratiques de sécurité."
+      }
+    ]
   }
 }

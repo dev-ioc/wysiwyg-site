@@ -50,12 +50,12 @@ const PageHeader = ({ navLinks }: PageHeaderProps) => {
           })}
         </ul>
 
-        <Link
+        {/* <Link
           href="/#contact"
           className="bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-[1.3rem] rounded-r-full hover:bg-green-600"
         >
           Get Free Quote
-        </Link>
+        </Link> */}
       </nav>
     </div>
   );

@@ -67,7 +67,7 @@
         "label": "Application Development",
         "description": "From design and development to maintenance and management of software applications.",
         "icon": "/images/application.avif",
-        "href": "/"
+        "href": "/application-devepment"
       },
       {
         "id": 4,
@@ -274,5 +274,74 @@
     "automatisationReport": "Automate reports, data entry, and workflow triggers.",
     "Adopt": "Adopted by innovators",
     "world": "around the world"
+  },
+  "ApplicationDevelopment": {
+    "title": "Application Development",
+    "description": "From design to development, maintenance, and management of software applications.",
+    "transform": "Transforming ideas into powerful applications",
+    "transform2": "At WYSIWYG, we specialize in creating customized software solutions that drive development and innovation. Our application development services cover the entire software lifecycle, from initial design to implementation, maintenance, and continuous support. We leverage modern technologies and agile methodologies to deliver scalable, secure, and high-performance applications tailored to your unique needs.",
+    "whether": "Whether you need a robust enterprise system, a dynamic web application, or a user-friendly mobile application, our expert team is dedicated to bringing your vision to life. We focus on creating intuitive user experiences and strong backend architectures to ensure your application stands out in tomorrow's digital world.",
+    "process": "Our Development Process",
+    "technologiesTitle": "Our Technical Expertise",
+    "quote": "Get a Quote",
+    "developmentProcess": [
+      {
+        "icon": "Search",
+        "title": "Discovery & Planning",
+        "desc": "Understanding your vision, requirements, and defining the project scope."
+      },
+      {
+        "icon": "PenTool",
+        "title": "Design & Prototyping",
+        "desc": "Creating intuitive user interfaces and experiences."
+      },
+      {
+        "icon": "Code",
+        "title": "Development & Testing",
+        "desc": "Building robust applications with rigorous quality assurance."
+      },
+      {
+        "icon": "Rocket",
+        "title": "Deployment & Launch",
+        "desc": "Seamless deployment and successful market entry."
+      },
+      {
+        "icon": "Wrench",
+        "title": "Maintenance & Support",
+        "desc": "Ongoing support, updates, and performance optimization."
+      }
+    ],
+    "technologies": [
+      {
+        "icon": "Monitor",
+        "title": "Frontend Development",
+        "desc": "Modern interfaces built with React, Next.js and TypeScript."
+      },
+      {
+        "icon": "Server",
+        "title": "Backend Development",
+        "desc": "Scalable and robust APIs with Node.js, NestJS and Laravel."
+      },
+      {
+        "icon": "Database",
+        "title": "Database",
+        "desc": "Data management with PostgreSQL, MySQL and NoSQL solutions."
+      },
+      {
+        "icon": "Cloud",
+        "title": "Cloud & Deployment",
+        "desc": "Secure deployment with Docker, Cloudflare and cloud platforms."
+      },
+      {
+        "icon": "Smartphone",
+        "title": "Mobile Applications",
+        "desc": "High-performance and user-friendly mobile applications."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "Security",
+        "desc": "Application protection following security best practices."
+      }
+    ]
   }
 }
