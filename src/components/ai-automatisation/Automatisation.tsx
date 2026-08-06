@@ -369,4 +369,5 @@ const Automatisation = () => {
     </div>
   );
 };
+
 export default Automatisation;
