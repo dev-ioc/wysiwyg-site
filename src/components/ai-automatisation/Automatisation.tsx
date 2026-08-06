@@ -169,7 +169,7 @@ function AutomationGraph() {
     </svg>
   );
 }
-export default function Automatisation() {
+const Automatisation = () => {
   const t = useTranslations("AIAutomatisation");
   const teams = t.raw("teams") as any[];
   const reduceMotion = useReducedMotion();
@@ -210,7 +210,6 @@ export default function Automatisation() {
                 </span>
               </motion.div>
             </div>
-
             <div className="bg-slate-900 p-4 relative">
               <div className="flex items-start justify-between gap-3">
                 <p className="font-heading text-white text-sm font-semibold leading-snug w-32">
@@ -234,7 +233,6 @@ export default function Automatisation() {
             </span>
             <span className="font-bold dark:text-white">{t("teamConcu2")}</span>
           </motion.h2>
-
           <div
             className="grid grid-cols-3 grid-rows-2 gap-3"
             style={{ perspective: 1200 }}
@@ -268,7 +266,6 @@ export default function Automatisation() {
                 </motion.div>
               );
             })}
-
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -371,4 +368,5 @@ export default function Automatisation() {
       </div>
     </div>
   );
-}
+};
+export default Automatisation;
