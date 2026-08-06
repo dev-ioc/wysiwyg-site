@@ -74,14 +74,14 @@
         "label": "Visual Planning",
         "description": "The essential tool to efficiently organize and monitor your projects. Resource planning, schedule management, and real-time activity tracking.",
         "icon": "/images/visualPlanning.avif",
-        "href": "/"
+        "href": "/visual-planning"
       },
       {
         "id": 5,
         "label": "BlueMind Messaging",
         "description": "A collaborative platform to optimize your communications. Professional email, shared calendars, unified contacts — a sovereign and high-performance solution.",
         "icon": "/images/bluemind.avif",
-        "href": "/"
+        "href": "/messagerie-bluemind"
       },
       {
         "id": 6,
@@ -392,5 +392,103 @@
     "ctaTitle": "Ready to transform your project management?",
     "ctaDescription": "Join organizations that trust WYSIWYG Visual Planning to improve operational efficiency.",
     "ctaButton": "Get Started Today"
+  },
+  "MessagerieBluemind": {
+    "hero": {
+      "eyebrow": "A sovereign solution hosted in France",
+      "titlePrefix": "BlueMind",
+      "titleAccent": "Messaging.",
+      "subtitle": "A collaborative platform to streamline your communication.",
+      "lead": "Professional email, shared calendar, unified contacts: BlueMind brings together all your company's collaboration tools in a single interface, sovereign, high-performing, and hosted in our datacenters in France.",
+      "ctaContact": "Contact us",
+      "badges": {
+        "imap": "IMAP",
+        "smtp": "SMTP",
+        "caldav": "CalDAV",
+        "carddav": "CardDAV",
+        "rgpd": "GDPR"
+      }
+    },
+    "statement": {
+      "title": "A complete collaborative suite, hosted with full sovereignty.",
+      "text": "Optimal productivity and availability — with no dependency on a foreign cloud."
+    },
+    "features": {
+      "title": "Features",
+      "items": [
+        "Email, calendar, and contacts brought together in a single web interface.",
+        "Native mobile sync with your smartphones and tablets.",
+        "Shared calendars and resource management (rooms, equipment).",
+        "Built-in anti-spam and antivirus protection.",
+        "Compatible with open protocols: IMAP, SMTP, CalDAV, CardDAV.",
+        "100% French hosting, GDPR compliant.",
+        "Daily backups and a disaster recovery plan.",
+        "Guided migration from Exchange or any other system."
+      ],
+      "note": "Your data stays hosted in our datacenters, under French law, with a collaborative experience designed for your teams, wherever they work."
+    },
+    "mock": {
+      "url": "webmail.bluemind.fr",
+      "inboxTitle": "Inbox",
+      "inboxNew": "4 new",
+      "mails": [
+        {
+          "sender": "Sales management",
+          "subject": "Back-to-work meeting agenda",
+          "time": "9:14 AM"
+        },
+        {
+          "sender": "Technical support",
+          "subject": "Scheduled server update",
+          "time": "8:47 AM"
+        },
+        {
+          "sender": "HR",
+          "subject": "Leave request — pending approval",
+          "time": "Yesterday"
+        },
+        {
+          "sender": "Accounting",
+          "subject": "Invoice No. 2026-0842",
+          "time": "Yesterday"
+        }
+      ]
+    },
+    "sovereignty": {
+      "eyebrow": "Why BlueMind",
+      "title": "The only professional messaging solution designed, built, and hosted in France.",
+      "cards": [
+        {
+          "num": "01 — Hosting",
+          "title": "French datacenters",
+          "text": "Your data stays located in France, governed exclusively by French law, with no transfer to a foreign cloud."
+        },
+        {
+          "num": "02 — Interoperability",
+          "title": "Open standards",
+          "text": "No proprietary lock-in: IMAP, SMTP, CalDAV, and CardDAV guarantee full compatibility with your existing tools."
+        },
+        {
+          "num": "03 — Compliance",
+          "title": "GDPR by design",
+          "text": "An infrastructure designed from the ground up to protect your organization's personal data."
+        }
+      ]
+    },
+    "track": {
+      "yearsValue": "22",
+      "yearsSuffix": "+",
+      "yearsLabel": "years of experience",
+      "paragraphs": [
+        "WYSIWYG has been serving businesses in France and the Indian Ocean since 1999.",
+        "Wysiwyg is an expert in the latest technologies and methods for optimizing an IT fleet. Managed IT services are a reliable way to keep your business running smoothly.",
+        "A managed IT service requires a contract between your company and an outside provider. We adapt to your needs and the size of your business."
+      ]
+    },
+    "finalCta": {
+      "title": "Ready to switch to sovereign messaging?",
+      "text": "Let's talk about your migration to BlueMind and your team collaboration needs.",
+      "cta": "Contact us"
+    }
   }
 }

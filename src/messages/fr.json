@@ -63,7 +63,7 @@
       {
         "id": 2,
         "label": "ERP Axelor",
-        "description": "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH — centralisez tous vos processus métier sur une seule plateforme.",
+        "description": "Une solution puissante et personnalisable pour simplifier la gestion de votre entreprise. CRM, comptabilité, stocks, RH. Centralisez tous vos processus métier sur une seule plateforme.",
         "icon": "/images/logo_axelor.avif",
         "href": "/"
       },
@@ -84,9 +84,9 @@
       {
         "id": 5,
         "label": "Messagerie BlueMind",
-        "description": "Une plateforme collaborative pour optimiser vos échanges. Messagerie professionnelle, calendrier partagé, contacts unifiés — une solution souveraine et performante.",
+        "description": "Une plateforme collaborative pour optimiser vos échanges. Messagerie professionnelle, calendrier partagé, contacts unifiés, une solution souveraine et performante.",
         "icon": "/images/bluemind.avif",
-        "href": "/"
+        "href": "/messagerie-bluemind"
       },
       {
         "id": 6,
@@ -396,5 +396,103 @@
     "ctaTitle": "Prêt à transformer la gestion de vos projets ?",
     "ctaDescription": "Rejoignez les entreprises qui font confiance à WYSIWYG Visual Planning pour optimiser leur efficacité opérationnelle.",
     "ctaButton": "Commencer dès aujourd'hui"
+  },
+  "MessagerieBluemind": {
+    "hero": {
+      "eyebrow": "Solution souveraine hébergée en France",
+      "titlePrefix": "Messagerie",
+      "titleAccent": "BlueMind.",
+      "subtitle": "Une plateforme collaborative pour optimiser vos échanges.",
+      "lead": "Messagerie professionnelle, calendrier partagé, contacts unifiés : BlueMind réunit tous les outils de collaboration de votre entreprise dans une seule interface, souveraine, performante, et hébergée dans nos datacenters en France.",
+      "ctaContact": "Nous contacter",
+      "badges": {
+        "imap": "IMAP",
+        "smtp": "SMTP",
+        "caldav": "CalDAV",
+        "carddav": "CardDAV",
+        "rgpd": "RGPD"
+      }
+    },
+    "statement": {
+      "title": "Une suite collaborative complète, hébergée en toute souveraineté.",
+      "text": "Une productivité et une disponibilité optimales — sans dépendance à un cloud étranger."
+    },
+    "features": {
+      "title": "Fonctionnalités",
+      "items": [
+        "Messagerie, calendrier et contacts réunis dans une seule interface web.",
+        "Synchronisation mobile native avec vos smartphones et tablettes.",
+        "Calendriers partagés et gestion des ressources (salles, matériel).",
+        "Protection anti-spam et antivirus intégrée.",
+        "Compatibilité avec les protocoles ouverts : IMAP, SMTP, CalDAV, CardDAV.",
+        "Hébergement 100 % français, conforme au RGPD.",
+        "Sauvegarde quotidienne et plan de reprise après sinistre.",
+        "Migration accompagnée depuis Exchange ou tout autre système."
+      ],
+      "note": "Vos données restent hébergées dans nos datacenters, sous droit français, avec une expérience collaborative pensée pour vos équipes, où qu'elles travaillent."
+    },
+    "mock": {
+      "url": "webmail.bluemind.fr",
+      "inboxTitle": "Boîte de réception",
+      "inboxNew": "4 nouveaux",
+      "mails": [
+        {
+          "sender": "Direction commerciale",
+          "subject": "Réunion de rentrée ordre du jour",
+          "time": "09:14"
+        },
+        {
+          "sender": "Support technique",
+          "subject": "Mise à jour du serveur planifiée",
+          "time": "08:47"
+        },
+        {
+          "sender": "RH",
+          "subject": "Congés — validation en attente",
+          "time": "Hier"
+        },
+        {
+          "sender": "Comptabilité",
+          "subject": "Facture n°2026-0842",
+          "time": "Hier"
+        }
+      ]
+    },
+    "sovereignty": {
+      "eyebrow": "Pourquoi BlueMind",
+      "title": "La seule messagerie professionnelle pensée, développée et hébergée en France.",
+      "cards": [
+        {
+          "num": "01 — Hébergement",
+          "title": "Datacenters français",
+          "text": "Vos données restent localisées en France, soumises exclusivement au droit français, sans transfert vers un cloud étranger."
+        },
+        {
+          "num": "02 — Interopérabilité",
+          "title": "Standards ouverts",
+          "text": "Aucune dépendance propriétaire : IMAP, SMTP, CalDAV et CardDAV garantissent une compatibilité totale avec vos outils existants."
+        },
+        {
+          "num": "03 — Conformité",
+          "title": "RGPD par conception",
+          "text": "Une infrastructure pensée dès l'origine pour la protection des données personnelles de votre organisation."
+        }
+      ]
+    },
+    "track": {
+      "yearsValue": "22",
+      "yearsSuffix": "+",
+      "yearsLabel": "ans d'expérience",
+      "paragraphs": [
+        "WYSIWYG propose ses services depuis 1999 aux entreprises de France et dans l'océan Indien.",
+        "Wysiwyg est expert en dernières technologies et méthodes à mettre en place pour optimiser un parc informatique. L'infogérance est un moyen sûr pour le bon fonctionnement de votre entreprise.",
+        "Une prestation d'infogérance nécessite la mise en place d'un contrat entre votre société et un prestataire extérieur. Nous nous adaptons à vos besoins et à la taille de votre entreprise."
+      ]
+    },
+    "finalCta": {
+      "title": "Prêt à passer à une messagerie souveraine ?",
+      "text": "Discutons de votre migration vers BlueMind et de vos besoins en collaboration d'équipe.",
+      "cta": "Nous contacter"
+    }
   }
 }
