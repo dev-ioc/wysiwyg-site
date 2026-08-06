@@ -93,7 +93,7 @@
         "label": "Infogérance",
         "description": "Une infrastructure IT performante et sécurisée. Nous prenons en charge la gestion, la supervision et l'optimisation de vos systèmes informatiques pour garantir leur disponibilité et leur performance.",
         "icon": "/images/Infogérance.avif",
-        "href": "/"
+        "href": "/infogerence"
       }
     ]
   },
@@ -493,6 +493,94 @@
       "title": "Prêt à passer à une messagerie souveraine ?",
       "text": "Discutons de votre migration vers BlueMind et de vos besoins en collaboration d'équipe.",
       "cta": "Nous contacter"
+    }
+  },
+  "Infogerance": {
+    "hero": {
+      "title1": "Une infrastructure IT",
+      "titleHighlight": " performante",
+      "title2": " et sécurisée.",
+      "description": "Nous prenons en charge la gestion, la supervision et l'optimisation de vos systèmes informatiques pour garantir leur disponibilité et leur performance — pendant que vous vous concentrez sur votre métier.",
+      "contact": "Nous contacter",
+      "services": "Voir nos services"
+    },
+    "stats": {
+      "experience": "ans d'expérience",
+      "created": "année de création",
+      "supervision": "supervision proactive",
+      "response": "délai d'intervention moyen"
+    },
+    "servicesSection": {
+      "badge": "Nos services d'infogérance",
+      "title": "Une prise en charge sur-mesure de votre parc",
+      "description": "Logiciel, imprimante, réseau, téléphonie : nous veillons à ce que tous vos outils restent fonctionnels et intervenons rapidement pour éviter toute interruption préjudiciable à votre activité.",
+      "mainTab": "Services principaux",
+      "extraTab": "Produits complémentaires"
+    },
+    "services": {
+      "park": {
+        "title": "Gestion parc informatique",
+        "desc": "Nous assurons la stabilité, la performance et la sécurité de l'ensemble de votre parc informatique, au quotidien."
+      },
+      "support": {
+        "title": "Support utilisateurs",
+        "desc": "Une équipe dédiée prend en charge vos tickets et résout vos incidents dans les meilleurs délais."
+      },
+      "onsite": {
+        "title": "Infogérance sur site",
+        "desc": "Nos techniciens interviennent directement sur vos locaux pour la gestion quotidienne de votre parc."
+      },
+      "dsi": {
+        "title": "DSI externalisé",
+        "desc": "Confiez-nous votre SI et bénéficiez d'une expertise de haut niveau, sans contrainte budgétaire."
+      }
+    },
+    "complements": {
+      "backup": {
+        "title": "Sauvegarde externalisée",
+        "desc": "L'infogérance d'infrastructures étend la gestion de votre parc à la protection de vos données."
+      },
+      "migration": {
+        "title": "Migration",
+        "desc": "Gestion des logiciels et progiciels dont vous restez propriétaire (ERP, CRM, ...)."
+      },
+      "apps": {
+        "title": "Fourniture d'applications",
+        "desc": "Gestion des logiciels et progiciels que vous louez, sans en être propriétaire."
+      },
+      "outsourcing": {
+        "title": "Externalisation globale",
+        "desc": "Concentrez vos efforts sur votre cœur de métier, nous prenons en charge toutes vos démarches IT."
+      }
+    },
+    "reasonsSection": {
+      "title": "Trois raisons de travailler avec nous."
+    },
+    "reasons": {
+      "expertise": {
+        "title": "Niveau d'expertise",
+        "desc": "Notre équipe d'experts élimine les obstacles liés à la complexité des technologies et à l'inefficacité du personnel."
+      },
+      "flexible": {
+        "title": "Flexible",
+        "desc": "Sur site, hors site, à temps partiel ou à temps plein : nous adaptons le niveau de service à vos besoins exacts."
+      },
+      "competitive": {
+        "title": "Compétitif",
+        "desc": "Une longueur d'avance grâce aux technologies les plus récentes, dans le respect des normes de votre secteur."
+      }
+    },
+    "history": {
+      "badge": "Depuis 1999",
+      "title": "27 ans à optimiser des parcs informatiques",
+      "paragraph1": "WYSIWYG propose ses services aux entreprises de France et de l'océan Indien depuis 1999. Nous sommes experts des dernières technologies et méthodes pour optimiser un parc informatique.",
+      "paragraph2": "Chaque prestation d'infogérance repose sur un contrat adapté à vos besoins et à la taille de votre entreprise — que vous souhaitiez externaliser l'intégralité de votre SI ou seulement une partie.",
+      "imageAlt": "Équipe WYSIWYG en réunion de travail"
+    },
+    "cta": {
+      "title": "Prêt à confier votre infogérance ?",
+      "description": "Fournisseur de services hébergés et de moyens de sauvegarde, WYSIWYG vous répond en moins de 48h.",
+      "contact": "Nous contacter"
     }
   }
 }

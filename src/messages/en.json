@@ -88,7 +88,7 @@
         "label": "Managed IT Services",
         "description": "A high-performance and secure IT infrastructure. We handle the management, monitoring, and optimization of your information systems to ensure availability and performance.",
         "icon": "/images/Infogérance.avif",
-        "href": "/"
+        "href": "/infogerence"
       }
     ]
   },
@@ -489,6 +489,94 @@
       "title": "Ready to switch to sovereign messaging?",
       "text": "Let's talk about your migration to BlueMind and your team collaboration needs.",
       "cta": "Contact us"
+    }
+  },
+  "Infogerance": {
+    "hero": {
+      "title1": "A reliable",
+      "titleHighlight": " high-performance",
+      "title2": " and secure IT infrastructure.",
+      "description": "We manage, monitor, and optimize your IT systems to ensure availability and performance — while you stay focused on your business.",
+      "contact": "Contact us",
+      "services": "View our services"
+    },
+    "stats": {
+      "experience": "years of experience",
+      "created": "year founded",
+      "supervision": "proactive monitoring",
+      "response": "average response time"
+    },
+    "servicesSection": {
+      "badge": "Our managed IT services",
+      "title": "Tailored management for your IT environment",
+      "description": "Software, printers, networks, and telephony: we make sure all your tools remain operational and respond quickly to prevent disruptions to your business.",
+      "mainTab": "Core services",
+      "extraTab": "Additional solutions"
+    },
+    "services": {
+      "park": {
+        "title": "IT asset management",
+        "desc": "We ensure the stability, performance, and security of your entire IT infrastructure every day."
+      },
+      "support": {
+        "title": "User support",
+        "desc": "A dedicated team handles your tickets and resolves incidents as quickly as possible."
+      },
+      "onsite": {
+        "title": "On-site IT management",
+        "desc": "Our technicians work directly at your premises to manage your IT environment on a daily basis."
+      },
+      "dsi": {
+        "title": "Outsourced CIO",
+        "desc": "Entrust us with your information system and benefit from high-level expertise without the budget constraints."
+      }
+    },
+    "complements": {
+      "backup": {
+        "title": "Offsite backup",
+        "desc": "Infrastructure management extends beyond equipment to include the protection of your data."
+      },
+      "migration": {
+        "title": "Migration",
+        "desc": "Management of software and business applications that you own (ERP, CRM, ...)."
+      },
+      "apps": {
+        "title": "Application provisioning",
+        "desc": "Management of rented software and business applications without ownership constraints."
+      },
+      "outsourcing": {
+        "title": "Global outsourcing",
+        "desc": "Focus on your core business while we take care of all your IT operations."
+      }
+    },
+    "reasonsSection": {
+      "title": "Three reasons to work with us."
+    },
+    "reasons": {
+      "expertise": {
+        "title": "Expertise",
+        "desc": "Our team of experts removes obstacles caused by technology complexity and operational inefficiencies."
+      },
+      "flexible": {
+        "title": "Flexible",
+        "desc": "On-site, off-site, part-time, or full-time: we adapt the service level to your exact needs."
+      },
+      "competitive": {
+        "title": "Competitive",
+        "desc": "Stay ahead with the latest technologies while complying with the standards of your industry."
+      }
+    },
+    "history": {
+      "badge": "Since 1999",
+      "title": "27 years optimizing IT environments",
+      "paragraph1": "WYSIWYG has been supporting companies in France and the Indian Ocean region since 1999. We are experts in the latest technologies and methods for optimizing IT environments.",
+      "paragraph2": "Each managed IT service is based on a contract tailored to your needs and the size of your company — whether you want to outsource your entire information system or only part of it.",
+      "imageAlt": "WYSIWYG team in a working meeting"
+    },
+    "cta": {
+      "title": "Ready to outsource your IT management?",
+      "description": "As a provider of hosted services and backup solutions, WYSIWYG gets back to you within 48 hours.",
+      "contact": "Contact us"
     }
   }
 }
