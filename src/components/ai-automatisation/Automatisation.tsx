@@ -50,20 +50,33 @@ function TiltCard({
     useTransform(y, [-0.5, 0.5], [intensity, -intensity]),
     { stiffness: 220, damping: 22, mass: 0.4 },
   );
+
   const rotateY = useSpring(
     useTransform(x, [-0.5, 0.5], [-intensity, intensity]),
     { stiffness: 220, damping: 22, mass: 0.4 },
   );
+
   const glowX = useTransform(x, [-0.5, 0.5], [0, 100]);
   const glowY = useTransform(y, [-0.5, 0.5], [0, 100]);
 
+  // Correction : le hook est appelé toujours au même endroit
+  const glowBackground = useTransform(
+    [glowX, glowY],
+    ([gx, gy]: number[]) =>
+      `radial-gradient(200px circle at ${gx}% ${gy}%, rgba(251,191,36,0.18), transparent 70%)`,
+  );
+
   function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
     if (reduceMotion) return;
+
     const rect = ref.current?.getBoundingClientRect();
+
     if (!rect) return;
+
     x.set((e.clientX - rect.left) / rect.width - 0.5);
     y.set((e.clientY - rect.top) / rect.height - 0.5);
   }
+
   function handleMouseLeave() {
     x.set(0);
     y.set(0);
@@ -87,14 +100,11 @@ function TiltCard({
           aria-hidden
           className="pointer-events-none absolute -inset-px rounded-[inherit] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           style={{
-            background: useTransform(
-              [glowX, glowY],
-              ([gx, gy]: number[]) =>
-                `radial-gradient(200px circle at ${gx}% ${gy}%, rgba(251,191,36,0.18), transparent 70%)`,
-            ),
+            background: glowBackground,
           }}
         />
       )}
+
       <div style={{ transform: "translateZ(30px)" }}>{children}</div>
     </motion.div>
   );
