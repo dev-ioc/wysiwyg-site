@@ -24,8 +24,8 @@ export default function Automatisation() {
   const t = useTranslations("AIAutomatisation");
   const teams = t.raw("teams") as any[];
   return (
-    <div className="min-h-screen bg-white  font-sans container mx-auto px-16 dark:bg-slate-900 dark:text-white">
-      <div className="min-h-screen font-body ">
+    <div className="min-h-screen bg-white  font-sans  dark:bg-slate-900 dark:text-white pb-20">
+      <div className="min-h-screen font-body container mx-auto px-16">
         <section className="p-3">
           <div className="rounded-2xl overflow-hidden border border-stone-100">
             <img
@@ -45,10 +45,10 @@ export default function Automatisation() {
         </section>
         <section className="px-5 py-10">
           <h2 className="font-heading text-2xl text-slate-900 mb-6">
-            <span className="font-normal text-slate-400">
+            <span className="font-normal text-slate-400 dark:text-white">
               {t("teamConcu")}{" "}
             </span>
-            <span className="font-bold">{t("teamConcu2")}</span>
+            <span className="font-bold dark:text-white">{t("teamConcu2")}</span>
           </h2>
 
           <div className="grid grid-cols-3 grid-rows-2 gap-3">
@@ -57,22 +57,22 @@ export default function Automatisation() {
               return (
                 <div
                   key={i}
-                  className="col-span-1 bg-white border border-stone-200 rounded-xl p-3 flex flex-col gap-2"
+                  className="col-span-1 bg-white border border-stone-200 rounded-xl p-3 flex flex-col gap-2 dark:bg-slate-800 dark:border-slate-700 "
                 >
                   <span className="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center">
                     {Icon && <Icon className="w-4 h-4 text-amber-600" />}
                   </span>
-                  <h3 className="font-heading text-sm font-semibold text-slate-900">
+                  <h3 className="font-heading text-sm font-semibold text-slate-900 dark:text-white">
                     {team.title}
                   </h3>
-                  <p className="text-xs text-slate-500 leading-snug">
+                  <p className="text-xs text-slate-500 leading-snug dark:text-white">
                     {team.desc}
                   </p>
                 </div>
               );
             })}
 
-            <div className="col-span-1 row-span-2 bg-slate-900 rounded-xl p-4 flex flex-col justify-between">
+            <div className="col-span-1 row-span-2 bg-slate-900 rounded-xl p-4 flex flex-col justify-between dark:bg-slate-800 dark:border-slate-700 ">
               <div>
                 <span className="w-8 h-8 rounded-full bg-amber-400 flex items-center justify-center mb-3">
                   <Sparkles className="w-4 h-4 text-slate-900" />
@@ -87,7 +87,7 @@ export default function Automatisation() {
             </div>
           </div>
         </section>
-        <section className="px-5 py-10 bg-stone-50 border-t border-stone-100">
+        <section className="py-10 bg-stone-50 border-t border-stone-100 px-5">
           <h2 className="font-heading text-2xl text-slate-900 mb-6">
             <span className="font-normal text-slate-400">{t("Adopt")}</span>
             <br />
@@ -132,17 +132,6 @@ export default function Automatisation() {
             </div>
           </div>
         </section>
-        {/* <section className="px-5 py-10 text-center">
-          <h2 className="font-heading text-xl font-bold text-slate-900 mb-2">
-            Prêt à automatiser votre travail ?
-          </h2>
-          <p className="text-sm text-slate-500 mb-5">
-            Aucune carte bancaire requise pour démarrer.
-          </p>
-          <button className="bg-amber-400 text-slate-900 text-sm font-bold font-heading rounded-full px-6 py-3">
-            Démarrer gratuitement
-          </button>
-        </section> */}
       </div>
     </div>
   );
