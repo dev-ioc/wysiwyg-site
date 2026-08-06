@@ -79,7 +79,7 @@
         "label": "Visual Planning",
         "description": "L'outil incontournable pour organiser et suivre vos projets efficacement. Planification des ressources, gestion des plannings et suivi en temps réel de vos activités.",
         "icon": "/images/visualPlanning.avif",
-        "href": "/"
+        "href": "/visual-planning"
       },
       {
         "id": 5,
@@ -347,5 +347,54 @@
         "desc": "Protection des applications avec les meilleures pratiques de sécurité."
       }
     ]
+  },
+  "VisualPlanning": {
+    "title": "Visual Planning : Maîtrisez Vos Projets en Temps Réel",
+    "description": "L'outil incontournable pour organiser, allouer et suivre vos ressources avec une clarté absolue. Transformez la complexité de vos plannings en un avantage compétitif.",
+    "demo": "Demander une Démonstration",
+    "explore": "Explorer les Fonctionnalités",
+
+    "overviewTitle": "Une vision globale et intuitive de toutes vos activités",
+    "overviewDescription": "Le module Visual Planning de WYSIWYG centralise la gestion de vos équipes, de vos équipements et de vos plannings dans une interface fluide et interactive par glisser-déposer.",
+
+    "benefits": [
+      {
+        "title": "Allocation dynamique des ressources",
+        "desc": "Assignez les bons profils aux bons projets selon leurs compétences et leur charge de travail actuelle."
+      },
+      {
+        "title": "Tableaux de bord en temps réel",
+        "desc": "Suivez l'avancement des jalons, anticipez les goulets d'étranglement et ajustez vos plannings instantanément."
+      },
+      {
+        "title": "Collaboration multi-utilisateurs",
+        "desc": "Partagez des vues consolidées avec vos collaborateurs et clients en toute sécurité."
+      }
+    ],
+
+    "featuresTitle": "Conçu pour maximiser votre productivité",
+    "featuresDescription": "Découvrez les piliers technologiques et fonctionnels qui font de Visual Planning l'outil de référence pour les entreprises exigeantes.",
+
+    "features": [
+      {
+        "icon": "Calendar",
+        "title": "Planification des Ressources",
+        "desc": "Visualisez la charge de travail de chaque membre de l'équipe en un clin d'œil. Évitez le surmenage et optimisez l'utilisation de vos capacités opérationnelles."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Suivi en Temps Réel",
+        "desc": "Mesurez les écarts entre le prévisionnel et le réalisé. Des indicateurs de performance clés (KPI) intégrés pour piloter vos projets avec précision."
+      },
+      {
+        "icon": "Users",
+        "title": "Gestion Collaborative",
+        "desc": "Centralisez les communications et les documents liés à chaque tâche. Fini les silos d'information entre départements."
+      }
+    ],
+
+    "ctaTitle": "Prêt à transformer la gestion de vos projets ?",
+    "ctaDescription": "Rejoignez les entreprises qui font confiance à WYSIWYG Visual Planning pour optimiser leur efficacité opérationnelle.",
+    "ctaButton": "Commencer dès aujourd'hui"
   }
 }

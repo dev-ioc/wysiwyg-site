@@ -343,5 +343,54 @@
         "desc": "Application protection following security best practices."
       }
     ]
+  },
+  "VisualPlanning": {
+    "title": "Visual Planning: Master Your Projects in Real Time",
+    "description": "The essential solution to organize, allocate, and monitor your resources with complete clarity. Turn the complexity of project planning into a competitive advantage.",
+    "demo": "Request a Demo",
+    "explore": "Explore Features",
+
+    "overviewTitle": "A clear and intuitive overview of all your activities",
+    "overviewDescription": "The Visual Planning module from WYSIWYG centralizes the management of your teams, equipment, and schedules within a smooth, interactive drag-and-drop interface.",
+
+    "benefits": [
+      {
+        "title": "Dynamic Resource Allocation",
+        "desc": "Assign the right people to the right projects based on their skills and current workload."
+      },
+      {
+        "title": "Real-Time Dashboards",
+        "desc": "Track milestones, anticipate bottlenecks, and instantly adjust schedules with live project visibility."
+      },
+      {
+        "title": "Multi-User Collaboration",
+        "desc": "Securely share consolidated views with your teams and clients to improve collaboration."
+      }
+    ],
+
+    "featuresTitle": "Designed to maximize your productivity",
+    "featuresDescription": "Discover the technological and functional pillars that make Visual Planning the preferred solution for demanding organizations.",
+
+    "features": [
+      {
+        "icon": "Calendar",
+        "title": "Resource Planning",
+        "desc": "Visualize every team member's workload at a glance. Prevent overload and optimize your operational capacity."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Real-Time Monitoring",
+        "desc": "Measure the gap between planned and actual progress. Built-in KPIs help you manage projects with precision."
+      },
+      {
+        "icon": "Users",
+        "title": "Collaborative Management",
+        "desc": "Centralize communications and documents related to every task. Eliminate information silos across departments."
+      }
+    ],
+
+    "ctaTitle": "Ready to transform your project management?",
+    "ctaDescription": "Join organizations that trust WYSIWYG Visual Planning to improve operational efficiency.",
+    "ctaButton": "Get Started Today"
   }
 }
