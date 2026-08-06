@@ -194,7 +194,7 @@ const Navbar = () => {
           })}
         </ul>
 
-        <div className="flex flex-row gap-4 justify-center items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-1  transition-colors whitespace-nowrap">
+        <div className="flex flex-row gap-4 justify-center items-center bg-[#54BE73] text-white text-[15px] font-semibold px-8 py-1   transition-colors whitespace-nowrap">
           <LocaleSwitcher />
           <div>
             <ThemeSwitch />
@@ -236,13 +236,44 @@ const LocaleSwitcher = ({ className = "" }: { className?: string }) => {
     const next = locale === "fr" ? "en" : "fr";
     router.replace(pathname, { locale: next });
   };
-
+  const changeLocale = (newLocale: "fr" | "en") => {
+    if (newLocale === locale) return;
+    router.replace(pathname, { locale: newLocale });
+  };
   return (
-    <button
-      onClick={toggle}
-      className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-[13px] font-semibold  ${className}`}
-    >
-      <span className="text-white uppercase text-[16px]">{locale}</span>
-    </button>
+    <div className="flex items-center bg-white rounded-full shadow-md border border-gray-200">
+      <button
+        onClick={() => changeLocale("fr")}
+        className={`flex items-center gap-2 px-4 py-1 rounded-full transition-all duration-300 font-medium
+          ${
+            locale === "fr"
+              ? "bg-[#0A2463] text-white shadow"
+              : "text-[#0A2463] hover:bg-gray-100"
+          }`}
+      >
+        <img
+          src="/fr.svg"
+          alt="Français"
+          className="w-5 h-5 rounded-sm object-cover"
+        />
+        <span>FR</span>
+      </button>
+      <button
+        onClick={() => changeLocale("en")}
+        className={`flex items-center gap-2 px-4 py-1 rounded-full transition-all duration-300 font-medium
+          ${
+            locale === "en"
+              ? "bg-[#0A2463] text-white shadow"
+              : "text-[#0A2463] hover:bg-gray-100"
+          }`}
+      >
+        <img
+          src="/us.svg"
+          alt="US"
+          className="w-5 h-4 rounded-sm object-cover"
+        />
+        <span>EN</span>
+      </button>
+    </div>
   );
 };
