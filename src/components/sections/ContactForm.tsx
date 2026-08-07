@@ -97,14 +97,14 @@ const ContactForm = () => {
             {t("description")}
           </p>
 
-          <div>
+          {/* <div>
             <a
               href="/a-propos"
               className="inline-block bg-white text-black font-bold px-6 py-2 rounded-full hover:bg-gray-200 transition-colors text-sm"
             >
               {t("rdv")}
             </a>
-          </div>
+          </div> */}
         </div>
         <form onSubmit={handleSubmit}>
           <div

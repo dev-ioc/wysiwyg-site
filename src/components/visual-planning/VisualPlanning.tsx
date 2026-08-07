@@ -1,6 +1,98 @@
-import { Calendar, Users, BarChart3, CheckCircle2 } from "lucide-react";
+"use client";
+import {
+  Calendar,
+  Users,
+  BarChart3,
+  CheckCircle2,
+  LucideIcon,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useEffect, useRef, useState } from "react";
 
+const ZoomInOnView = ({
+  children,
+  delayMs = 0,
+  className = "",
+}: {
+  children: React.ReactNode;
+  delayMs?: number;
+  className?: string;
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.25 },
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      style={{ animationDelay: isVisible ? `${delayMs}ms` : undefined }}
+      className={`${className} ${
+        isVisible ? "animate-zoomIn" : "opacity-0"
+      } motion-reduce:animate-none motion-reduce:opacity-100`}
+    >
+      {children}
+    </div>
+  );
+};
+const CornerMarks = () => (
+  <>
+    <span className="pointer-events-none absolute -top-1.5 -right-1.5 h-3.5 w-3.5 border-t-2 border-r-2 border-primary" />
+    <span className="pointer-events-none absolute -bottom-1.5 -left-1.5 h-3.5 w-3.5 border-b-2 border-l-2 border-primary" />
+  </>
+);
+
+const FeatureCard = ({
+  icon: Icon,
+  title,
+  description,
+  className = "",
+  delayMs = 0,
+}: {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  className?: string;
+  delayMs?: number;
+}) => (
+  <ZoomInOnView
+    delayMs={delayMs}
+    className={`group/card relative w-full md:w-[380px] hover:z-40 ${className}`}
+  >
+    <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#141414] p-7 shadow-2xl shadow-black/40 transition-all duration-300 group-hover/card:-translate-y-1 group-hover/card:scale-[1.03] group-hover/card:border-white/20 group-hover/card:shadow-primary/20">
+      <div className="pointer-events-none absolute inset-0 opacity-[0.06] bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl opacity-20 blur-xl" />
+      <CornerMarks />
+
+      <div className="relative z-10">
+        <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white transition-colors duration-300 group-hover/card:bg-primary group-hover/card:text-black">
+          <Icon size={20} strokeWidth={1.75} />
+        </div>
+        <h3 className="mb-3 text-lg font-bold uppercase tracking-tight text-white">
+          {title}
+        </h3>
+        <p className="text-sm leading-relaxed text-white/60 transition-colors duration-300 group-hover/card:text-white/90">
+          {description}
+        </p>
+      </div>
+    </div>
+  </ZoomInOnView>
+);
 const VisualPlanning = () => {
   const t = useTranslations("VisualPlanning");
   return (
@@ -21,13 +113,16 @@ const VisualPlanning = () => {
             >
               {t("demo")}{" "}
             </a>
-            <button className="border-gray-700 bg-[#b3b6ba]  text-base px-8 py-4 rounded-full text-white shadow-lg transition-all duration-300 transform hover:scale-105">
+            <a
+              href="#overview"
+              className="border-gray-700 bg-[#b3b6ba]  text-base px-8 py-4 rounded-full text-white shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
               {t("explore")}
-            </button>
+            </a>
           </div>
         </div>
       </section>
-      <section className="py-24 px-6 bg-gray-50 dark:bg-slate-900 dark:text-white">
+      <section className="py-16 px-6 bg-gray-50 dark:bg-slate-900 dark:text-white">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2 relative">
@@ -81,47 +176,43 @@ const VisualPlanning = () => {
           </div>
         </div>
       </section>
-      <section className="py-24 px-6 bg-white  dark:bg-slate-900 dark:text-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section
+        className="relative overflow-hidden dark:bg-slate-900  px-6 md:py-16"
+        id="overview"
+      >
+        <div className="relative container mx-auto max-w-6xl">
+          <div className="mb-16 max-w-2xl md:mb-24">
+            <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-black md:text-5xl dark:text-white">
               {t("featuresTitle")}
             </h2>
-            <p className="text-gray-600 text-lg">{t("featuresDescription")}</p>
+            <p className="text-base leading-relaxed text-balck/50 md:text-lg dark:text-white">
+              {t("featuresDescription")}
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow group">
-              <div className="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
-                <Calendar size={28} />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">
-                {t("features.0.title")}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t("features.0.desc")}
-              </p>
-            </div>
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow group">
-              <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                <BarChart3 size={28} />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">
-                {t("features.1.title")}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t("features.1.desc")}
-              </p>
-            </div>
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow group">
-              <div className="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                <Users size={28} />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">
-                {t("features.2.title")}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t("features.2.desc")}
-              </p>
+          <div className="inset-0 grid md:grid-cols-12 items-center justify-center">
+            <div></div>
+            <div className="relative flex flex-col items-center justify-center gap-8 md:block md:h-[520px]">
+              <FeatureCard
+                icon={Calendar}
+                title={t("features.0.title")}
+                description={t("features.0.desc")}
+                delayMs={0}
+                className="md:absolute md:left-0 md:top-0 md:z-10"
+              />
+              <FeatureCard
+                icon={BarChart3}
+                title={t("features.1.title")}
+                description={t("features.1.desc")}
+                delayMs={150}
+                className="md:absolute md:left-[300px] md:top-[120px] md:z-20"
+              />
+              <FeatureCard
+                icon={Users}
+                title={t("features.2.title")}
+                description={t("features.2.desc")}
+                delayMs={300}
+                className="md:absolute md:left-[120px] md:top-[220px] md:z-20"
+              />
             </div>
           </div>
         </div>

@@ -58,8 +58,6 @@ function TiltCard({
 
   const glowX = useTransform(x, [-0.5, 0.5], [0, 100]);
   const glowY = useTransform(y, [-0.5, 0.5], [0, 100]);
-
-  // Correction : le hook est appelé toujours au même endroit
   const glowBackground = useTransform(
     [glowX, glowY],
     ([gx, gy]: number[]) =>
