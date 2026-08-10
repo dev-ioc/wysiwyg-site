@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Fraunces, Work_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" });
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+});
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-plex-mono",
+});
 
 export const metadata: Metadata = {
-  title: "Messagerie BlueMind",
-  description:
-    "Découvrez notre solution de messagerie professionnelle BlueMind pour centraliser vos emails, calendriers et contacts.",
-  icons: {
-    icon: "/logo.png",
-  },
+  title: "WYSIWYG",
 };
 
 export default function RootLayout({
@@ -20,7 +24,11 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning>
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${fraunces.variable} ${workSans.variable} ${plexMono.variable} ${workSans.className}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

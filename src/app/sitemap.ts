@@ -8,16 +8,16 @@ const pages = [
     en: "",
   },
   {
-    fr: "services",
-    en: "services",
+    fr: "about",
+    en: "about",
   },
   {
     fr: "messagerie-bluemind",
     en: "messagerie-bluemind",
   },
   {
-    fr: "contact",
-    en: "contact",
+    fr: "blog",
+    en: "blog",
   },
 ];
 
@@ -29,13 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/fr${page.fr ? `/${page.fr}` : ""}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: page.fr === "" ? 1 : 0.8,
     });
+
     urls.push({
       url: `${BASE_URL}/en${page.en ? `/${page.en}` : ""}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: page.en === "" ? 1 : 0.8,
     });
   });
 

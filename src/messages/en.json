@@ -745,5 +745,24 @@
       "title": "NOTICES AND PROCEDURE FOR MAKING CLAIMS OF COPYRIGHT INFRINGEMENT",
       "content": "Notifications of claimed copyright infringement should be sent to the Service Provider's Designated Agent. ALL INQUIRIES NOT RELEVANT TO THE FOLLOWING PROCEDURE WILL RECEIVE NO RESPONSE. See Notice and Procedure for Making Claims of Copyright Infringement."
     }
+  },
+  "seo": {
+    "home": {
+      "title": "WYSIWYG | Digital solutions for businesses",
+      "description": "Discover our digital solutions..."
+    },
+    "services": {
+      "title": "Our services | WYSIWYG",
+      "description": "Discover our services..."
+    }
+  },
+  "NotFound": {
+    "eyebrow": "COORDINATES UNKNOWN",
+    "title": "You've drifted off the map.",
+    "lede": "This route doesn't appear on any chart we keep. It may have been redrawn, retired, or never surveyed at all.",
+    "cta": "Back to known ground",
+    "trail": "ABANDONED ROUTE",
+    "foot": "ERR_404 · NO SURVEY FOR THIS ROUTE",
+    "hors": "OFF THE CHARTS"
   }
 }

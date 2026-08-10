@@ -749,5 +749,24 @@
       "title": "AVIS ET PROCÉDURE POUR SIGNALER UNE VIOLATION DE DROITS D'AUTEUR",
       "content": "Toute notification de violation présumée des droits d'auteur doit être adressée à l'agent désigné par le prestataire de services. TOUTE DEMANDE NON PERTINENTE PAR RAPPORT À CETTE PROCÉDURE RESTERA SANS RÉPONSE. Consultez l'avis et la procédure applicables pour signaler une violation de droits d'auteur."
     }
+  },
+  "seo": {
+    "home": {
+      "title": "WYSIWYG | Solutions numériques pour les entreprises",
+      "description": "Découvrez nos solutions numériques..."
+    },
+    "services": {
+      "title": "Nos services | WYSIWYG",
+      "description": "Découvrez nos services..."
+    }
+  },
+  "NotFound": {
+    "eyebrow": "COORDONNÉES INCONNUES",
+    "title": "Vous avez dérivé hors des cartes.",
+    "lede": "Cette route ne figure sur aucun relevé que nous tenons à jour. Elle a peut-être été redessinée, retirée, ou n'a jamais été cartographiée.",
+    "cta": "Retour en terrain connu",
+    "trail": "ROUTE ABANDONNÉE",
+    "foot": "ERR_404 · AUCUN RELEVÉ POUR CETTE ROUTE",
+    "hors": "HORS DES CARTES"
   }
 }
