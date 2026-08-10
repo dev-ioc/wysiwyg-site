@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "WYSIWYG",
-  description: "What You See Is What You Get",
+  title: "Messagerie BlueMind",
+  description:
+    "Découvrez notre solution de messagerie professionnelle BlueMind pour centraliser vos emails, calendriers et contacts.",
   icons: {
     icon: "/logo.png",
   },
