@@ -235,7 +235,9 @@
     "navigation": "Navigation",
     "articles": "Dernier article",
     "copyright": "Tous droits réservés",
-    "design": "Conception par l'équipe IOC"
+    "design": "Conception par l'équipe IOC",
+    "privacyPolicy": "Politique de confidentialité",
+    "legalNotice": "Mentions légales"
   },
   "News": {
     "title": "TECHNOLOGIES",
@@ -581,6 +583,171 @@
       "title": "Prêt à confier votre infogérance ?",
       "description": "Fournisseur de services hébergés et de moyens de sauvegarde, WYSIWYG vous répond en moins de 48h.",
       "contact": "Nous contacter"
+    }
+  },
+  "PrivacyPolicy": {
+    "title": "Politique de confidentialité",
+    "cookiePolicy": {
+      "title": "À propos de cette politique relative aux cookies",
+      "intro": "Cette politique relative aux cookies explique ce que sont les cookies, comment nous les utilisons, les types de cookies que nous utilisons, les informations que nous collectons à l'aide des cookies, ainsi que la manière dont ces informations sont utilisées et comment gérer vos préférences en matière de cookies. Pour plus d'informations sur la manière dont nous utilisons, stockons et protégeons vos données personnelles, consultez notre Politique de confidentialité.",
+      "changeConsent": "Vous pouvez à tout moment modifier ou retirer votre consentement depuis la déclaration relative aux cookies disponible sur notre site web. Pour en savoir plus sur notre identité, sur la manière de nous contacter et sur la façon dont nous traitons vos données personnelles, consultez notre Politique de confidentialité. Votre consentement s'applique au domaine suivant : wysiwyg.artover.fr",
+      "currentState": "État actuel : Aucun consentement donné.",
+      "manageConsent": "Gérer vos préférences de consentement"
+    },
+    "whatAreCookies": {
+      "title": "Que sont les cookies ?",
+      "content": "Les cookies sont de petits fichiers texte utilisés pour stocker de petites quantités d'informations. Ils sont stockés sur votre appareil lorsque le site web est chargé dans votre navigateur. Ces cookies nous permettent de faire fonctionner correctement le site, de le rendre plus sécurisé, d'offrir une meilleure expérience utilisateur et de comprendre les performances du site afin d'analyser ce qui fonctionne et ce qui doit être amélioré."
+    },
+    "howWeUseCookies": {
+      "title": "Comment utilisons-nous les cookies ?",
+      "paragraph1": "Comme la plupart des services en ligne, notre site web utilise des cookies propriétaires et des cookies tiers à différentes fins. Les cookies propriétaires sont principalement nécessaires au bon fonctionnement du site et ne collectent aucune donnée permettant de vous identifier personnellement.",
+      "paragraph2": "Les cookies tiers utilisés sur notre site servent principalement à comprendre les performances du site, à analyser la manière dont vous interagissez avec celui-ci, à maintenir la sécurité de nos services, à vous proposer des publicités pertinentes et, plus généralement, à vous offrir une expérience utilisateur améliorée et à accélérer vos interactions futures avec notre site."
+    },
+    "typesOfCookies": {
+      "title": "Quels types de cookies utilisons-nous ?",
+      "essential": {
+        "title": "Essentiels",
+        "content": "Certains cookies sont essentiels pour vous permettre de profiter pleinement des fonctionnalités de notre site. Ils nous permettent de maintenir les sessions utilisateur et de prévenir les menaces de sécurité. Ils ne collectent ni ne stockent aucune information personnelle. Par exemple, ces cookies vous permettent de vous connecter à votre compte, d'ajouter des produits à votre panier et d'effectuer vos achats en toute sécurité."
+      },
+      "statistics": {
+        "title": "Statistiques",
+        "content": "Ces cookies collectent des informations telles que le nombre de visiteurs du site, le nombre de visiteurs uniques, les pages consultées, la source des visites, etc. Ces données nous aident à comprendre et à analyser les performances du site et à identifier les domaines nécessitant des améliorations."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "content": "Notre site web peut afficher des publicités. Ces cookies sont utilisés pour personnaliser les publicités qui vous sont présentées afin qu'elles soient pertinentes pour vous. Ils nous permettent également de mesurer l'efficacité de nos campagnes publicitaires. Les informations stockées dans ces cookies peuvent également être utilisées par des fournisseurs de publicité tiers afin de vous afficher des publicités sur d'autres sites web lorsque vous utilisez votre navigateur."
+      },
+      "functional": {
+        "title": "Fonctionnels",
+        "content": "Ces cookies permettent d'assurer certaines fonctionnalités non essentielles de notre site web. Ces fonctionnalités peuvent notamment inclure l'intégration de contenus tels que des vidéos ou le partage de contenus du site sur les plateformes de réseaux sociaux."
+      },
+      "preferences": {
+        "title": "Préférences",
+        "content": "Ces cookies nous permettent de mémoriser vos paramètres et vos préférences de navigation, telles que votre préférence de langue, afin de vous offrir une expérience plus simple et plus efficace lors de vos prochaines visites sur le site."
+      }
+    },
+    "cookieList": {
+      "title": "Liste des cookies utilisés sur notre site",
+      "columns": {
+        "cookie": "Cookie",
+        "description": "Description"
+      },
+      "items": [
+        {
+          "name": "cookielawinfo-checkbox-analytics",
+          "description": "Ce cookie est défini par le plugin GDPR Cookie Consent. Il est utilisé pour enregistrer le consentement de l'utilisateur concernant les cookies de la catégorie « Analytics »."
+        },
+        {
+          "name": "cookielawinfo-checkbox-functional",
+          "description": "Ce cookie est défini par le plugin GDPR Cookie Consent afin d'enregistrer le consentement de l'utilisateur concernant les cookies de la catégorie « Functional »."
+        },
+        {
+          "name": "cookielawinfo-checkbox-necessary",
+          "description": "Ce cookie est défini par le plugin GDPR Cookie Consent. Il est utilisé pour enregistrer le consentement de l'utilisateur concernant les cookies de la catégorie « Necessary »."
+        },
+        {
+          "name": "cookielawinfo-checkbox-others",
+          "description": "Ce cookie est défini par le plugin GDPR Cookie Consent. Il est utilisé pour enregistrer le consentement de l'utilisateur concernant les cookies de la catégorie « Other »."
+        },
+        {
+          "name": "cookielawinfo-checkbox-performance",
+          "description": "Ce cookie est défini par le plugin GDPR Cookie Consent. Il est utilisé pour enregistrer le consentement de l'utilisateur concernant les cookies de la catégorie « Performance »."
+        },
+        {
+          "name": "viewed_cookie_policy",
+          "description": "Ce cookie est défini par le plugin GDPR Cookie Consent et permet d'enregistrer si l'utilisateur a donné ou non son consentement à l'utilisation des cookies. Il ne stocke aucune donnée personnelle."
+        }
+      ]
+    },
+    "controlPreferences": {
+      "title": "Comment contrôler vos préférences en matière de cookies ?",
+      "paragraph1": "Si vous décidez de modifier ultérieurement vos préférences au cours de votre session de navigation, vous pouvez cliquer sur l'onglet « Politique de confidentialité et relative aux cookies » affiché sur votre écran. La notification de consentement s'affichera à nouveau, vous permettant de modifier vos préférences ou de retirer entièrement votre consentement.",
+      "paragraph2": "En outre, les différents navigateurs proposent différentes méthodes pour bloquer et supprimer les cookies utilisés par les sites web. Vous pouvez modifier les paramètres de votre navigateur afin de bloquer ou de supprimer les cookies. Pour en savoir plus sur la gestion et la suppression des cookies, vous pouvez consulter Wikipedia ou le site All About Cookies."
+    },
+    "consentModal": {
+      "title": "Faites un choix pour vos données",
+      "paragraph1": "Nos partenaires et nous-mêmes utilisons des cookies ou une technologie équivalente pour stocker et/ou accéder à des informations sur vos appareils. Nous pouvons aussi utiliser certaines de vos données personnelles (comme vos données de navigateur et votre adresse IP) pour : vous présenter des publicités et du contenu personnalisé, mesurer la performance publicitaires et du contenu et en apprendre plus sur leur audience, développer et améliorer les produits de nos partenaires.",
+      "paragraph2": "Vous pouvez paramétrer vos choix pour accepter les cookies ou non, ou vous y opposer lorsque l'intérêt légitime est utilisé.",
+      "paragraph3": "Vous pourrez également modifier vos préférences à tout moment en cliquant sur le lien « Paramètres de cookies » en bas de page de ce site. Pour en savoir plus, consultez notre",
+      "privacyPolicyLinkText": "politique de confidentialité",
+      "acceptButton": "J'accepte",
+      "settingsButton": "Paramètres de cookies"
+    }
+  },
+  "MentionsLegales": {
+    "title": "Mentions légales",
+    "agreement": {
+      "title": "ACCORD ENTRE L'UTILISATEUR ET WYSIWYG",
+      "paragraph1": "Le site WYSIWYG est composé de différentes pages web exploitées par WYSIWYG.",
+      "paragraph2": "Le site WYSIWYG vous est proposé à condition que vous acceptiez, sans modification, les termes, conditions et avis contenus dans les présentes. L'utilisation du site WYSIWYG vaut acceptation de l'ensemble de ces termes, conditions et avis."
+    },
+    "modification": {
+      "title": "MODIFICATION DES PRÉSENTES CONDITIONS D'UTILISATION",
+      "content": "WYSIWYG se réserve le droit de modifier les termes, conditions et avis selon lesquels le site WYSIWYG est proposé, y compris, mais sans s'y limiter, les frais associés à son utilisation."
+    },
+    "linksToThirdPartySites": {
+      "title": "LIENS VERS DES SITES TIERS",
+      "content": "Le site WYSIWYG peut contenir des liens vers d'autres sites web (« Sites liés »). Les Sites liés ne sont pas sous le contrôle de WYSIWYG, et WYSIWYG n'est pas responsable du contenu de tout Site lié, y compris, sans limitation, de tout lien contenu dans un Site lié, ou de toute modification ou mise à jour d'un Site lié. WYSIWYG n'est pas responsable de la diffusion ou de toute autre forme de transmission provenant d'un Site lié. WYSIWYG met ces liens à votre disposition uniquement pour votre commodité, et l'inclusion d'un lien n'implique pas l'approbation par WYSIWYG du site en question ni une quelconque association avec ses exploitants."
+    },
+    "noUnlawfulUse": {
+      "title": "AUCUNE UTILISATION ILLÉGALE OU INTERDITE",
+      "content": "En utilisant le site WYSIWYG, vous garantissez à WYSIWYG que vous n'utiliserez pas le site WYSIWYG à des fins illégales ou interdites par les présents termes, conditions et avis. Vous ne pouvez pas utiliser le site WYSIWYG d'une manière susceptible d'endommager, de désactiver, de surcharger ou de nuire au site WYSIWYG, ni d'interférer avec l'utilisation et la jouissance du site WYSIWYG par un tiers. Vous ne pouvez pas obtenir ou tenter d'obtenir des matériels ou informations par des moyens qui n'ont pas été intentionnellement mis à disposition ou fournis par le site WYSIWYG."
+    },
+    "communicationServices": {
+      "title": "UTILISATION DES SERVICES DE COMMUNICATION",
+      "intro": "Le site WYSIWYG peut contenir des services de forums, des espaces de discussion, des groupes de discussion, des communautés, des pages web personnelles, des calendriers et/ou d'autres outils de messagerie ou de communication destinés à vous permettre de communiquer avec le public en général ou avec un groupe (collectivement, les « Services de communication »). Vous acceptez d'utiliser les Services de communication uniquement pour publier, envoyer et recevoir des messages et du contenu appropriés et en rapport avec le Service de communication concerné. À titre d'exemple, et non de manière limitative, vous acceptez, lors de l'utilisation d'un Service de communication, de ne pas :",
+      "listItems": [
+        "Diffamer, injurier, harceler, traquer, menacer ou violer de toute autre manière les droits légaux (tels que les droits à la vie privée et à l'image) d'autrui.",
+        "Publier, télécharger, distribuer ou diffuser tout contenu, nom, matériel ou information inapproprié, injurieux, diffamatoire, contrefaisant, obscène, indécent ou illégal.",
+        "Télécharger des fichiers contenant des logiciels ou d'autres éléments protégés par les droits de propriété intellectuelle (ou par des droits à la vie privée ou à l'image) à moins d'en détenir ou d'en contrôler les droits, ou d'avoir obtenu tous les consentements nécessaires.",
+        "Télécharger des fichiers contenant des virus, des fichiers corrompus ou tout autre logiciel ou programme similaire susceptible d'endommager le fonctionnement de l'ordinateur d'autrui.",
+        "Faire de la publicité ou proposer d'acheter ou de vendre des biens ou services à des fins commerciales, sauf si le Service de communication concerné autorise expressément ce type de message.",
+        "Mener ou relayer des sondages, concours, systèmes pyramidaux ou chaînes de lettres.",
+        "Télécharger tout fichier publié par un autre utilisateur d'un Service de communication dont vous savez, ou devriez raisonnablement savoir, qu'il ne peut être légalement distribué de cette manière.",
+        "Falsifier ou supprimer toute mention d'auteur, avis légaux ou autres avis appropriés, ou toute désignation de propriété relative à l'origine ou à la source d'un logiciel ou d'un autre élément contenu dans un fichier téléchargé.",
+        "Restreindre ou empêcher un autre utilisateur d'utiliser et de profiter des Services de communication.",
+        "Enfreindre tout code de conduite ou toute autre ligne directrice applicable à un Service de communication particulier.",
+        "Collecter ou recueillir des informations sur d'autres personnes, y compris des adresses e-mail, sans leur consentement.",
+        "Enfreindre toute loi ou réglementation applicable."
+      ],
+      "paragraph1": "WYSIWYG n'a aucune obligation de surveiller les Services de communication. Toutefois, WYSIWYG se réserve le droit d'examiner les contenus publiés sur un Service de communication et de supprimer tout contenu à sa seule discrétion. WYSIWYG se réserve le droit de mettre fin à tout moment et sans préavis, pour quelque raison que ce soit, à votre accès à tout ou partie des Services de communication.",
+      "paragraph2": "WYSIWYG se réserve à tout moment le droit de divulguer toute information nécessaire pour se conformer à toute loi, réglementation, procédure judiciaire ou demande gouvernementale applicable, ou de modifier, refuser de publier ou de supprimer toute information ou tout contenu, en tout ou en partie, à sa seule discrétion.",
+      "paragraph3": "Faites toujours preuve de prudence lorsque vous communiquez des informations personnelles vous concernant ou concernant vos enfants dans le cadre d'un Service de communication. WYSIWYG ne contrôle ni n'approuve le contenu, les messages ou les informations présents dans un Service de communication et décline par conséquent toute responsabilité liée aux Services de communication et aux actions résultant de votre participation à un Service de communication. Les modérateurs et animateurs ne sont pas des porte-parole autorisés de WYSIWYG, et leurs points de vue ne reflètent pas nécessairement ceux de WYSIWYG.",
+      "paragraph4": "Les contenus téléchargés sur un Service de communication peuvent être soumis à des limitations d'utilisation, de reproduction et/ou de diffusion publiées. Il vous incombe de respecter ces limitations si vous téléchargez ces contenus."
+    },
+    "materialsProvided": {
+      "title": "CONTENUS FOURNIS À WYSIWYG OU PUBLIÉS SUR UN SITE WYSIWYG",
+      "paragraph1": "WYSIWYG ne revendique aucune propriété sur les contenus que vous fournissez à WYSIWYG (y compris les commentaires et suggestions) ou que vous publiez, téléchargez ou soumettez sur un site WYSIWYG ou ses services associés (collectivement, les « Contributions »). Toutefois, en publiant, téléchargeant ou soumettant votre Contribution, vous accordez à WYSIWYG, à ses sociétés affiliées et aux sous-licenciés nécessaires l'autorisation d'utiliser votre Contribution dans le cadre de l'exploitation de leurs activités sur Internet, y compris, sans limitation, le droit de : copier, distribuer, transmettre, afficher publiquement, exécuter publiquement, reproduire, modifier, traduire et reformater votre Contribution, et de publier votre nom en association avec celle-ci.",
+      "paragraph2": "Aucune rémunération ne sera versée au titre de l'utilisation de votre Contribution, telle que décrite dans les présentes. WYSIWYG n'est nullement tenu de publier ou d'utiliser une Contribution et peut la supprimer à tout moment, à sa seule discrétion.",
+      "paragraph3": "En publiant, téléchargeant, saisissant ou soumettant votre Contribution, vous garantissez et déclarez que vous possédez ou contrôlez tous les droits relatifs à votre Contribution tels que décrits dans la présente section, y compris, sans limitation, tous les droits nécessaires pour la fournir, la publier, la télécharger ou la soumettre."
+    },
+    "liabilityDisclaimer": {
+      "title": "AVIS DE NON-RESPONSABILITÉ",
+      "paragraph1": "LES INFORMATIONS, LOGICIELS, PRODUITS ET SERVICES INCLUS OU DISPONIBLES SUR LE SITE WYSIWYG PEUVENT CONTENIR DES INEXACTITUDES OU DES ERREURS TYPOGRAPHIQUES. DES MODIFICATIONS SONT PÉRIODIQUEMENT APPORTÉES AUX INFORMATIONS CONTENUES DANS LES PRÉSENTES. WYSIWYG ET/OU SES FOURNISSEURS PEUVENT APPORTER DES AMÉLIORATIONS ET/OU DES MODIFICATIONS AU SITE WYSIWYG À TOUT MOMENT. LES CONSEILS REÇUS VIA LE SITE WYSIWYG NE DOIVENT PAS ÊTRE UTILISÉS POUR DES DÉCISIONS PERSONNELLES, MÉDICALES, JURIDIQUES OU FINANCIÈRES, ET VOUS DEVEZ CONSULTER UN PROFESSIONNEL COMPÉTENT POUR OBTENIR DES CONSEILS ADAPTÉS À VOTRE SITUATION.",
+      "paragraph2": "WYSIWYG ET/OU SES FOURNISSEURS NE FONT AUCUNE DÉCLARATION QUANT À L'ADÉQUATION, LA FIABILITÉ, LA DISPONIBILITÉ, LA PONCTUALITÉ ET L'EXACTITUDE DES INFORMATIONS, LOGICIELS, PRODUITS, SERVICES ET GRAPHIQUES CONNEXES CONTENUS SUR LE SITE WYSIWYG, QUELLE QU'EN SOIT LA FINALITÉ. DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI APPLICABLE, TOUTES CES INFORMATIONS, LOGICIELS, PRODUITS, SERVICES ET GRAPHIQUES CONNEXES SONT FOURNIS « EN L'ÉTAT », SANS GARANTIE D'AUCUNE SORTE. WYSIWYG ET/OU SES FOURNISSEURS DÉCLINENT PAR LA PRÉSENTE TOUTE GARANTIE ET CONDITION RELATIVE À CES INFORMATIONS, LOGICIELS, PRODUITS, SERVICES ET GRAPHIQUES CONNEXES, Y COMPRIS TOUTE GARANTIE IMPLICITE DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER, DE TITRE DE PROPRIÉTÉ ET DE NON-CONTREFAÇON.",
+      "paragraph3": "DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI APPLICABLE, EN AUCUN CAS WYSIWYG ET/OU SES FOURNISSEURS NE POURRONT ÊTRE TENUS RESPONSABLES DE TOUT DOMMAGE DIRECT, INDIRECT, PUNITIF, ACCESSOIRE, SPÉCIAL, CONSÉCUTIF OU DE TOUT AUTRE DOMMAGE, Y COMPRIS, SANS LIMITATION, LES DOMMAGES RÉSULTANT DE LA PERTE D'UTILISATION, DE DONNÉES OU DE BÉNÉFICES, DÉCOULANT DE OU LIÉS DE QUELQUE MANIÈRE QUE CE SOIT À L'UTILISATION OU À LA PERFORMANCE DU SITE WYSIWYG, AU RETARD OU À L'IMPOSSIBILITÉ D'UTILISER LE SITE WYSIWYG OU LES SERVICES CONNEXES, À LA FOURNITURE OU AU DÉFAUT DE FOURNITURE DE SERVICES, OU À TOUTE INFORMATION, LOGICIEL, PRODUIT, SERVICE OU GRAPHIQUE CONNEXE OBTENU PAR L'INTERMÉDIAIRE DU SITE WYSIWYG, MÊME SI WYSIWYG OU L'UN DE SES FOURNISSEURS A ÉTÉ INFORMÉ DE LA POSSIBILITÉ DE TELS DOMMAGES. CERTAINS ÉTATS/JURIDICTIONS N'AUTORISANT PAS L'EXCLUSION OU LA LIMITATION DE RESPONSABILITÉ POUR LES DOMMAGES CONSÉCUTIFS OU ACCESSOIRES, LA LIMITATION CI-DESSUS PEUT NE PAS S'APPLIQUER À VOUS. SI VOUS N'ÊTES PAS SATISFAIT D'UNE PARTIE QUELCONQUE DU SITE WYSIWYG, OU DE L'UNE QUELCONQUE DE CES CONDITIONS D'UTILISATION, VOTRE SEUL ET UNIQUE RECOURS CONSISTE À CESSER D'UTILISER LE SITE WYSIWYG."
+    },
+    "serviceContact": {
+      "title": "CONTACT DU SERVICE",
+      "email": "support@caspeo.fr"
+    },
+    "terminationAccessRestriction": {
+      "title": "RÉSILIATION / RESTRICTION D'ACCÈS",
+      "content": "WYSIWYG se réserve le droit, à sa seule discrétion, de résilier votre accès au site WYSIWYG et aux services associés, ou à toute partie de ceux-ci, à tout moment et sans préavis. Dans la mesure maximale permise par la loi, le présent accord est régi par les lois applicables, et vous consentez par les présentes à la compétence exclusive des tribunaux compétents pour tout litige découlant de ou lié à l'utilisation du site WYSIWYG. L'utilisation du site WYSIWYG n'est pas autorisée dans toute juridiction qui ne donne pas effet à l'ensemble des dispositions des présentes conditions, y compris, sans limitation, le présent paragraphe. Vous reconnaissez qu'aucune coentreprise, société de personnes, relation de travail ou de mandat n'existe entre vous et WYSIWYG du fait du présent accord ou de l'utilisation du site WYSIWYG. L'exécution du présent accord par WYSIWYG est soumise aux lois et procédures judiciaires en vigueur, et rien dans le présent accord ne déroge au droit de WYSIWYG de se conformer aux demandes ou exigences gouvernementales, judiciaires et des forces de l'ordre relatives à votre utilisation du site WYSIWYG ou aux informations fournies à WYSIWYG ou collectées par celui-ci dans le cadre de cette utilisation. Si une partie quelconque du présent accord est jugée invalide ou inapplicable en vertu de la loi applicable, y compris, mais sans s'y limiter, les clauses de non-garantie et de limitation de responsabilité énoncées ci-dessus, la disposition invalide ou inapplicable sera réputée remplacée par une disposition valide et applicable correspondant le plus étroitement possible à l'intention de la disposition initiale, et le reste de l'accord demeurera en vigueur. Sauf indication contraire dans les présentes, cet accord constitue l'intégralité de l'accord entre l'utilisateur et WYSIWYG concernant le site WYSIWYG, et il remplace toutes les communications et propositions antérieures ou contemporaines, électroniques, orales ou écrites, entre l'utilisateur et WYSIWYG concernant le site WYSIWYG. Une version imprimée du présent accord et de tout avis donné sous forme électronique sera recevable dans le cadre de procédures judiciaires ou administratives fondées sur ou liées au présent accord, dans la même mesure et sous les mêmes conditions que les autres documents et registres commerciaux initialement générés et conservés sous forme imprimée."
+    },
+    "copyrightTrademarkNotices": {
+      "title": "AVIS DE DROITS D'AUTEUR ET DE MARQUES",
+      "content": "L'ensemble du contenu du site WYSIWYG est : © 2020 Copyright et/ou ses fournisseurs. Tous droits réservés."
+    },
+    "trademarks": {
+      "title": "MARQUES",
+      "paragraph1": "Les noms des sociétés et produits réels mentionnés dans les présentes peuvent être des marques déposées de leurs propriétaires respectifs.",
+      "paragraph2": "Les sociétés, organisations, produits, personnes et événements présentés à titre d'exemple sont fictifs. Aucune association avec une société, une organisation, un produit, une personne ou un événement réel n'est prévue ou ne doit être déduite.",
+      "paragraph3": "Tout droit non expressément accordé dans les présentes est réservé."
+    },
+    "noticesProcedureCopyright": {
+      "title": "AVIS ET PROCÉDURE POUR SIGNALER UNE VIOLATION DE DROITS D'AUTEUR",
+      "content": "Toute notification de violation présumée des droits d'auteur doit être adressée à l'agent désigné par le prestataire de services. TOUTE DEMANDE NON PERTINENTE PAR RAPPORT À CETTE PROCÉDURE RESTERA SANS RÉPONSE. Consultez l'avis et la procédure applicables pour signaler une violation de droits d'auteur."
     }
   }
 }

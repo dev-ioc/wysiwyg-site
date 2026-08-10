@@ -32,6 +32,8 @@ const Footer = () => {
     { label: t("Blog"), href: "/blog" },
     { label: t("Services"), href: "/#services" },
     { label: t("Contact"), href: "/#contact" },
+    { label: tf("privacyPolicy"), href: "/privacy-policy" },
+    { label: tf("legalNotice"), href: "/legal-notice" },
   ];
 
   const servicesList = tf.raw("servicesList") as string[];
