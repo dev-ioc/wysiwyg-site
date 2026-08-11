@@ -32,6 +32,9 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(BASE_URL),
+    keywords: [
+      "wysiwyg, messagerie bluemind, digital transformation, business",
+    ],
     title: seo.title,
     description: seo.description,
     icons: "/logo.png",
