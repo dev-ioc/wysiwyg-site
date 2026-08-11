@@ -46,7 +46,6 @@ const News = () => {
 
             <div className="flex gap-2 items-center text-grey text-sm">
               <span>{new Date().toLocaleDateString()}</span>
-              <span className="border-l border-gray-400 pl-2">By Roby</span>
             </div>
           </div>
           <div className="flex flex-col gap-7">
@@ -62,7 +61,6 @@ const News = () => {
 
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
 
@@ -86,7 +84,6 @@ const News = () => {
 
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
 
@@ -110,7 +107,6 @@ const News = () => {
 
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
 
@@ -140,7 +136,6 @@ const News = () => {
                 </span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>
@@ -150,7 +145,6 @@ const News = () => {
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>
@@ -160,7 +154,6 @@ const News = () => {
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>
@@ -172,7 +165,6 @@ const News = () => {
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>
@@ -182,7 +174,6 @@ const News = () => {
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>
@@ -192,7 +183,6 @@ const News = () => {
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>
@@ -204,7 +194,6 @@ const News = () => {
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>
@@ -214,7 +203,6 @@ const News = () => {
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>
@@ -224,7 +212,6 @@ const News = () => {
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>
@@ -234,7 +221,6 @@ const News = () => {
                 <span>Lorem ipsum dolor sit amet, consectetur</span>
                 <div className="flex gap-2 items-center text-grey text-sm">
                   <span>{new Date().toLocaleDateString()}</span>
-                  <span className="border-l border-gray-400 pl-2">By Roby</span>
                 </div>
               </div>
             </div>

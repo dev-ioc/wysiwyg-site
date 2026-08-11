@@ -34,6 +34,7 @@ export async function generateMetadata({
     metadataBase: new URL(BASE_URL),
     title: seo.title,
     description: seo.description,
+    icons: "/logo.png",
     robots: {
       index: true,
       follow: true,
