@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/en${page.en ? `/${page.en}` : ""}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
+      priority: page.fr === "" ? 1 : 0.8,
     });
   });
 

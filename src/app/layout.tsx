@@ -21,11 +21,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "WYSIWYG",
+    url: "https://wysiwyg-website.onrender.com",
+    logo: "https://wysiwyg-website.onrender.com/logo.png",
+  };
+
   return (
     <html suppressHydrationWarning>
       <body
         className={`${fraunces.variable} ${workSans.variable} ${plexMono.variable} ${workSans.className}`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>

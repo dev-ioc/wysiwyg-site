@@ -9,14 +9,15 @@ const BASE_URL = "https://wysiwyg-website.onrender.com";
 
 const SEO = {
   fr: {
-    title: "WYSIWYG | Solutions numériques pour les entreprises",
+    title:
+      "WYSIWYG | Messagerie Bluemind & Solutions numériques pour entreprises",
     description:
-      "Découvrez nos solutions numériques et nos services pour accompagner les entreprises dans leur transformation digitale.",
+      "WYSIWYG propose des solutions numériques, dont la messagerie Bluemind, pour accompagner les entreprises dans leur transformation digitale.",
   },
   en: {
-    title: "WYSIWYG | Digital solutions for businesses",
+    title: "WYSIWYG | Bluemind Messaging & Digital Solutions for Businesses",
     description:
-      "Discover our digital solutions and services designed to support businesses in their digital transformation.",
+      "WYSIWYG offers digital solutions, including Bluemind messaging, to support businesses in their digital transformation.",
   },
 };
 
@@ -33,7 +34,10 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(BASE_URL),
     keywords: [
-      "wysiwyg, messagerie bluemind, digital transformation, business, karijatsi, caspeo",
+      "wysiwyg",
+      "messagerie bluemind",
+      "digital transformation",
+      "business",
     ],
     title: seo.title,
     description: seo.description,
