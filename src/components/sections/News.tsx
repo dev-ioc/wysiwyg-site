@@ -225,24 +225,6 @@ const News = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-6 lg:grid lg:grid-cols-3 lg:items-center">
-            <div className="flex flex-row gap-3 items-center justify-center lg:justify-start">
-              <FaArrowLeft className="cursor-pointer text-grey hover:text-red-400" />
-              <span className="cursor-pointer hover:text-red-400">1</span>
-              <span className="cursor-pointer hover:text-red-400">2</span>
-              <span className="cursor-pointer hover:text-red-400">3</span>
-              <span>...</span>
-              <span className="cursor-pointer hover:text-red-400">10</span>
-              <FaArrowRight className="cursor-pointer text-grey hover:text-red-400" />
-            </div>
-            <div className="w-full flex justify-center">
-              <button className="flex justify-center items-center w-[100px] h-[100px] rounded-full border border-red-400 text-red-400 hover:bg-red-400 hover:text-white transition-colors">
-                {t("viewAll")}
-              </button>
-            </div>
-
-            <div className="hidden lg:block" />
-          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4">
